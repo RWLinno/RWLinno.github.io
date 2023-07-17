@@ -1,6 +1,11 @@
 title: Weilin Ruan
+subtitle: Academic Style Personal Page
 description: All things come to those who wait.
 url: https://rwlinno.github.io
+author : RWLinno
+language : 
+timezone: China/Beijing
+permalink:   /:categories/:title
 
 # Owner/author information
 owner:
@@ -12,6 +17,8 @@ owner:
   twitter: rwlinno
   # facebook: caihanlin2002
   github: rwlinno
+  CSDN: RWLinno
+  xiaohongshu: 1051584623
   #linkedin: 
   # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
   # instagram: lancecai2002
@@ -46,17 +53,11 @@ links:
     url: /links/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: China/Beijing
 future: true
 highlighter: rouge
 # markdown: kramdown
 # markdown: redcarpet
 # pygments: true
-
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title
-
 
 kramdown:
   auto_ids: true
@@ -79,7 +80,3 @@ disqus:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
-
-
-# Latest update in 2023/05/01 by Hanlin Cai.
-# URL: https://caihanlin.com/

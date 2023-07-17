@@ -6,7 +6,7 @@ layout: page
 
 # About Me
 
-My name is RUAN Weilin, a junior student studying Computer Science at Jinan University in Guangzhou.  Here is [my Resume](https://caihanlin.com/file/CV_en.pdf) in English.
+My name is RUAN Weilin, a junior student studying Computer Science at Jinan University in Guangzhou.  Here is [my Resume](https://rwlinno.github.io/file/CV_en.pdf) in English.
 
 
 
