@@ -12,7 +12,7 @@ My name is RUAN Weilin, a junior student studying Computer Science at Jinan Univ
 
 ## Academic Background
 
-**<font color='red'>[Highlight]</font> I am looking for Mphil/PhD to start in 2025 Fall. Contact me if you have any leads!**
+**<font color='red'>[Highlight]</font> I am looking for Mphil/PhD programs as a 2024 Fall student. Contact me if you have any information!  Thank you for all your help!**
 
 - **Sep 2020 - June 2024:**  Jinan University - CS department - Network Engineering
 
