@@ -1,4 +1,4 @@
-<img src="{{ site.url }}/images/{{ site.owner.avatar }}" class="bio-photo" alt="{{ site.owner.name }} bio photo" width="100" height="100"></a>
+<img src="{{ site.url }}/{{ site.owner.avatar }}" class="photo" alt="{{ site.owner.name }}" width="100" height="100"></a>
 
 <!-- <h4>{{ site.owner.name }}</h4> -->
 
@@ -8,6 +8,12 @@
 {% if site.owner.twitter %}<p style="text-indent:0;"><a href="https://twitter.com/{{ site.owner.twitter }}"><i class="icon-twitter"></i> Twitter</a></p>{% endif %}
 
 {% if site.owner.facebook %}<p style="text-indent:0;"><a href="https://facebook.com/{{ site.owner.facebook }}"><i class="icon-facebook"></i> Facebook</a></p>{% endif %}
+
+{% if site.owner.CSDN %}<p style="text-indent:0;"><a href="{{ site.owner.CSDN }}"><i class="icon-CSDN"></i> CSDN</a></p>{% endif %}
+
+{% if site.owner.xiaohongshu %}<p style="text-indent:0;"><a href="{{ site.owner.xiaohongshu}}"><i class="icon-xiaohongshu"></i> xiaohongshu</a></p>{% endif %}
+
+{% if site.owner.bilibili %}<p style="text-indent:0;"><a href="{{ site.owner.bilibili }}"><i class="icon-bilibili"></i> bilibili</a></p>{% endif %}
 
 {% if site.owner.google_plus %}<p style="text-indent:0;"><a href="{{ site.owner.google_plus }}"><i class="icon-google-plus"></i> Google+</a></p>{% endif %}
 
