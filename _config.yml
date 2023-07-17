@@ -1,21 +1,19 @@
-title: Hanlin Cai
-# tagline: Two roads diverged in woods, I took the one less traveled by.
-description: Two roads diverged in woods, I took the one less traveled by.
-#Comment out url when working locally to resolve base urls correctly
-url: https://caihanlin.com
+title: Weilin Ruan
+description: All things come to those who wait.
+url: https://rwlinno.github.io/
 
 # Owner/author information
 owner:
-  name: Hanlin Cai
-  avatar: hanlin.jpg
+  name: Weilin Ruan
+  avatar: images/selfie1.jpg
 #  bio:
-  email: hanlin.cai@ieee.org
+  email: rwlinno@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter: lancecai2002
+  twitter: rwlinno
   # facebook: caihanlin2002
-  github: GuangLun2000
-  linkedin: hanlin-cai-07b53b23b
-  scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
+  github: rwlinno
+  #linkedin: 
+  # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
   # instagram: lancecai2002
   # lastfm:
   # tumblr:
@@ -24,7 +22,7 @@ owner:
 
 # Analytics and webmaster tools stuff goes here
 # https://search.google.com/search-console/ownership
-google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
+#google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
 
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 # bing_verify: ""
@@ -35,7 +33,7 @@ links:
   - title: About Me
     url: /
   - title: Resume
-    url: /file/Resume-HanlinCAI.pdf
+    url: /file/CV_en.pdf
   - title: Publications
     url: /publications/
   - title: Projects
@@ -77,7 +75,7 @@ kramdown:
 
 # disqus settings:
 disqus:
-  shortname: lancecai
+  shortname: William Ruan
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
