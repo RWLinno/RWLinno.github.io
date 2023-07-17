@@ -1,6 +1,6 @@
 title: Weilin Ruan
 description: All things come to those who wait.
-url: https://rwlinno.github.io/
+url: https://rwlinno.github.io
 
 # Owner/author information
 owner:
@@ -34,8 +34,8 @@ links:
     url: /
   - title: Resume
     url: /file/CV_en.pdf
-  - title: Publications
-    url: /publications/
+  - title: Experiences
+    url: /experiences/
   - title: Projects
     url: /projects/
   - title: Awards
