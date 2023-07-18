@@ -4,9 +4,11 @@ permalink: /projects/index.html
 title: Projects
 ---
 
-# Ongoing Projects
+**<font color='red'>Feel free to Email me if interested in one of these!</font>**
 
-**<font color='red'>Email me if interested in one of these!</font>**
+
+
+# Ongoing Projects
 
 #### ViT Model-based Medical Image Assisted Diagnostic System
 
@@ -14,11 +16,17 @@ title: Projects
 <img src="/images/ViT.png">
 </center>
 
+
+
 #### [Intelligent complementary diagnosis of degenerative OA following TCM thinking](https://rwlinno.github.io/portfolios/OA.pdf)
 
 <center>
 <img src="/images/OA.png">
 </center>
+
+
+
+
 
 # Finished Projects
 
@@ -61,27 +69,25 @@ I Participated in the **RBCC offline** held in HKUST(GZ) and achieved **outstand
 
 - Construct a multimodal sentiment analysis model
 
-  - <center>
-    <img src="/images/IMSAM.png">
-    </center>
+  <center>
+  <img src="/images/IMSAM.png">
+  </center>
 
-- Development of multimodal sentiment analysis application 
+- Development of multimodal sentiment analysis application
 
-  - <center>
-    <img src="/images/MSA_application.gif">
-    </center>
+  <center>
+  <img src="/images/MSA_application.gif">
+  </center>
 
-- [Write parts of technical documents](https://rwlinno.github.io/portfolios/Smarthome_en.pdf)
+- [**Write parts of technical documents**](https://rwlinno.github.io/portfolios/Smarthome_en.pdf)
 
 - Project Management
 
-  - <center>
-    <img src="/images/Project_Management.gif">
-    </center>
+  <center>
+  <img src="/images/Project_Management.gif">
+  </center>
 
 - Video Producing
-
-  - 
 
   <center>
   <img src="/images/smart_home_video.gif">
@@ -90,7 +96,8 @@ I Participated in the **RBCC offline** held in HKUST(GZ) and achieved **outstand
 
 
 
----
+
+
 
 # Game Projects
 
