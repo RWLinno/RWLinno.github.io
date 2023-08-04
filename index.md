@@ -33,3 +33,4 @@ My name is RUAN Weilin, a junior student studying Computer Science at Jinan Univ
 ## News and Updates
 
 - **July 2023：**Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
+- **July 2023：** Clear the game Breath of the Wild and Little Nightmares Ⅱ with my gf.
