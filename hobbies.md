@@ -25,11 +25,13 @@ title: Hobbies
 | CupHead              | NG+        | I like to play with my girlfriend very much and have a sense of achievement. |
 | Breath of the Wild   | NG+        | I didn't will to fight the boss once, think of it as a casual game now. |
 | Tears of the Kingdom | Exploring  | Open but not very friendly in the beginning.                 |
+| Super Mario Odyssey  | Exploring  | It's better to play with VR and somatosensory.               |
 | Pokémon Violet       | Clear      | Pokemon deserves better.                                     |
 | GRIS                 | Clear      | As a game, it lacks; as a work of art, it deserves.          |
 | Inside               | Clear      | It's worth several hours of your time.                       |
 | Little Nightmares Ⅱ  | clear      | The most beautiful horror game I've ever seen                |
 | Katana Zero          | Clear      | Very Cool Game.                                              |
+| Metroid Dread        | Clear      | The most expensive game I have played.                       |
 | Cyberpunk2077        | Unfinished | Maybe it needs to continue to be optimized when I played.    |
 | Genshin Impact       | Level Full | Games for retirement.                                        |
 
