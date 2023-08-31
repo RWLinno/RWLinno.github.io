@@ -34,4 +34,4 @@ My name is RUAN Weilin, a junior student studying Computer Science at Jinan Univ
 
 - **July 2023：**Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
 - **July 2023：** Cleared the game Breath of the Wild and Little Nightmares Ⅱ with my gf.
-- **Aug 2023：** Joined the team [CityMind](https://citymind.top/about-us/) as an INTERNS led by [Prof. Yuxuan Liang](http://yuxuanliang.com/).
+- **Aug 2023：** Joined the team [CityMind](https://citymind.top/about-us/) as an INTERN led by [Prof. Yuxuan Liang](http://yuxuanliang.com/).
