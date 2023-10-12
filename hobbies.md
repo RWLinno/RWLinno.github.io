@@ -43,7 +43,13 @@ I Have published **4**  Indie games on online game platforms, which improved my 
 
 
 
-## Knowledge Sharing
+## Blog
+
+##### CSDN
+
+- 2000+ fans reached
 
 I enjoy using the CSDN blog for ACM-related knowledge sharing, which recorded my learning experience.
+
+##### 
 

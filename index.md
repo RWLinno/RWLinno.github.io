@@ -25,6 +25,7 @@ My name is RUAN Weilin, a junior student studying Computer Science at Jinan Univ
 - Machine Learning
 - Computer Vision
 - Spatio-Temporal Data Mining
+- Graph Learning
 
 
 
@@ -33,5 +34,5 @@ My name is RUAN Weilin, a junior student studying Computer Science at Jinan Univ
 ## News and Updates
 
 - **July 2023：**Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
-- **July 2023：** Cleared the game Breath of the Wild and Little Nightmares Ⅱ with my gf.
 - **Aug 2023：** Joined the team [CityMind](https://citymind.top/about-us/) as an INTERN led by [Prof. Yuxuan Liang](http://yuxuanliang.com/).
+- **Oct 2023:** Passed IELTS with 6.5 (6.5 8.0 6.0 6.0).
