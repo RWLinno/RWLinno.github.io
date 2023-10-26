@@ -18,7 +18,11 @@ title: Links
 
 nothing temporarily.
 
+<a href="https://www.easycounter.com/">Web Counters</a>
 
+<a href="https://www.easycounter.com/">
+<img src="https://www.easycounter.com/counter.php?rwlinno"
+border="0" alt="Hit Counter"></a>
 
 ## Other Helpful
 
@@ -29,4 +33,6 @@ nothing temporarily.
 [Zorua](https://zoruasama.gitee.io/)
 
 [Ken-Chy](https://www.ken-chy129.cn/)
+
+
 
