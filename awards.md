@@ -6,6 +6,8 @@ title: Awards
 
 ## Scholarships
 
+- Fall 2023: : **Golden Arowana Scholarship**(TOP 0.5%, only 30 places at JNU)
+- Fall 2023: **Excellent Student Cadre Title** of Jinan University.(TOP 5%)
 - Fall 2022: **Excellent Student Cadre Title** of Jinan University.(TOP 5%) 
 - Fall 2022: Outstanding students of Jinan University **First-class scholarship**.(Top 10%) 
 - Fall 2021: Outstanding students of Jinan University **Second-class scholarship**.(Top 30%)

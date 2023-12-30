@@ -4,9 +4,9 @@ permalink: /projects/index.html
 title: Projects
 ---
 
-**<font color='red'>Feel free to Email me if interested in one of these!</font>**
+**<font color='red'>I apologize that the page is currently out of date, please move to my github page for project information. Feel free to Email me if interested in one of those!</font>**
 
-
+**https://github.com/RWLinno**
 
 # Ongoing Projects
 
