@@ -8,6 +8,8 @@ title: Hobbies
 
 **<font color='red'>I hope I can make friends with you all through the following information!!!</font>** 
 
+
+
 ## Play Games
 
 #### List
@@ -34,6 +36,9 @@ title: Hobbies
 | Metroid Dread        | Clear      | The most expensive game I have played.                       |
 | Cyberpunk2077        | Unfinished | Maybe it needs to continue to be optimized when I played.    |
 | Genshin Impact       | Level Full | Games for retirement.                                        |
+| Elden Ring           | NG+        | Easy Soul Game.                                              |
+
+
 
 
 
@@ -47,9 +52,7 @@ I Have published **4**  Indie games on online game platforms, which improved my 
 
 ##### CSDN
 
-- 2000+ fans reached
+- 3000+ fans reached
 
 I enjoy using the CSDN blog for ACM-related knowledge sharing, which recorded my learning experience.
-
-##### 
 
