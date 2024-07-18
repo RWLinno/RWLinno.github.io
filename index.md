@@ -6,11 +6,11 @@ layout: page
 
 # About Me
 
-:wave: My name is Weilin RUAN. Here is [my Resume](https://rwlinno.github.io/file/CV_en.pdf) in English.
+My name is Weilin RUAN. Here is [my Resume](https://rwlinno.github.io/file/CV_en.pdf) in English.
 
 Currently I have been offered an Mphil place at HKUST-GZ through RBCC, and I am very honored to enroll in 24fall and join [Prof. Liang's research group](https://citymind.top/about-us/) for my research work. 
 
-**<font color='red'>[Highlight]</font> Now I am looking for research partners. If interested in my research direction, please feel free to contact me!**:love_letter:
+**<font color='red'>[Highlight]</font> Now I am looking for research partners. If interested in my research direction, please feel free to contact me!**
 
 
 
@@ -48,5 +48,6 @@ Currently I have been offered an Mphil place at HKUST-GZ through RBCC, and I am 
 ## Photo Wall
 
 <center>
-<img src="/images/_DSC3237.JPG">
+<img src="/images/honghaizi.png">
 </center>
+
