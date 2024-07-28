@@ -26,6 +26,10 @@ border="0" alt="Hit Counter"></a>
 
 ## Other Helpful
 
+
+
+## Good Connections
+
 [RainArtist](https://icecreamartist.github.io/)
 
 [SongNing Lai]( https://xll0328.github.io/)
@@ -34,5 +38,4 @@ border="0" alt="Hit Counter"></a>
 
 [Ken-Chy](https://www.ken-chy129.cn/)
 
-
-
+[DUO'BLOG](www.blog.chongduo-h.cn)
