@@ -171,6 +171,6 @@ social:
   - platform: email
     url: mailto:rwlinno@gmail.com
   - platform: google-scholar
-    url: https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID
+    url: https://scholar.google.com/citations?user=9uk1jJoAAAAJ
   - platform: openreview
-    url: https://openreview.net/profile?id=YOUR_OPENREVIEW_ID 
+    url: https://openreview.net/profile?id=~Weilin_Ruan2

@@ -17,7 +17,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>HKUST(GZ)</strong> - DSA MPhil
+                                <strong>HKUST(GZ)</strong> - Information Hub - Data Science and Analysis
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">Sep 2024 - June 2026</span>
@@ -27,7 +27,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>Jinan University</strong> - CS Department - Network Engineering
+                                <strong>Jinan University</strong> - Computer Science Department - Network Engineering
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">Sep 2020 - June 2024</span>

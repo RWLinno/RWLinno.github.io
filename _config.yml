@@ -26,7 +26,8 @@ owner:
   CSDN: SC_Linno
   bilibili: 6954236
   #linkedin: 
-  # scholar: https://scholar.google.com/citations?user=8igSoWgAAAAJ
+  scholar: https://scholar.google.com/citations?user=9uk1jJoAAAAJ
+  openreview: https://openreview.net/profile?id=~Weilin_Ruan2
   # instagram: lancecai2002
   # lastfm:
   # tumblr:
@@ -47,6 +48,8 @@ links:
     url: /
   - title: Resume
     url: /file/CV_en.pdf
+  - title: Publications
+    url: /publications/
   - title: Experiences
     url: /experiences/
   - title: Projects
