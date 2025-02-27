@@ -1,0 +1,109 @@
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        {% for item in site.data.profile.education %}
+                        <div class="row mb-2">
+                            <div class="col-auto mr-auto">
+                                <h5 class="mb-0">{{ item.name }}</h5>
+                                <p class="mb-0 text-muted">{{ item.position }}</p>
+                            </div>
+                            <div class="col-auto text-right">
+                                <p class="mb-0 text-muted">{{ item.date }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-briefcase"></i> Experience
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        {% for item in site.data.profile.experience %}
+                        <div class="row mb-2">
+                            <div class="col-auto mr-auto">
+                                <h5 class="mb-0">{{ item.name }}</h5>
+                                <p class="mb-0 text-muted">{{ item.position }}</p>
+                            </div>
+                            <div class="col-auto text-right">
+                                <p class="mb-0 text-muted">{{ item.date }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if site.data.profile.awards %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-award"></i> Awards
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        {% for item in site.data.profile.awards %}
+                        <div class="row mb-2">
+                            <div class="col-auto mr-auto">
+                                <h5 class="mb-0">{{ item.name }}</h5>
+                            </div>
+                            <div class="col-auto text-right">
+                                <p class="mb-0 text-muted">{{ item.date }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if site.data.profile.activities %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-users"></i> Activities
+                </h4>
+                <div class="row">
+                    <div class="col">
+                        {% for item in site.data.profile.activities %}
+                        <div class="row mb-2">
+                            <div class="col-auto mr-auto">
+                                <h5 class="mb-0">{{ item.name }}</h5>
+                            </div>
+                            <div class="col-auto text-right">
+                                <p class="mb-0 text-muted">{{ item.date }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %} 

@@ -1,20 +1,31 @@
-# GuangLun means Nimbus in Chinese
+# Weilin RUAN's Personal Website
 
-My name is **Hanlin Cai (Lance, 蔡汉霖)**. Here is my personal website. Welcome to fork for free!
+My name is **Weilin RUAN (Linno, 阮威霖)**. This is my personal website. 
 
-Besides, [my Chinese Website](https://mieclance.club/) averages over 200+ unique visits monthly, [my Zhihu](https://www.zhihu.com/people/chlire) account has more than 1500+ followers and 15000+ likes. In addition, [my Bilibili](https://space.bilibili.com/594030035) (Chinese YouTube) possesses around 2000 fans.
+## About Me
 
-## Update and News
+I'm a student at South China University of Technology, majoring in Computer Science. I'm passionate about algorithms, game development, and machine learning. I have been offered an MPhil place at HKUST-GZ through RBCC, and I am very honored to enroll in 24fall and join [Prof. Liang's research group](https://citymind.top/about-us/) for my research work.
 
-- **[News] I am actively searching for a PhD program, please contact me!**
-- **May 2023:** **[Jekyll website building tutorial](https://www.bilibili.com/video/BV1ja4y1G7tX/?share_source=copy_web&vd_source=c8936a3bacfd65375f9e88b3bb9a12ba)** have been uploaded to Bilibili (in Chinese)
-- **Feb. 2023:** If you have any problem, please feel free to contact me - [Online Talk 15mins](https://calendly.com/lancecai/meet-with-lance)
-- **Dec. 2022:** My personal website have been implemented and deployed in [caihanlin.com](https://caihanlin.com)
+## Research Interests
 
-## Star History
+- Spatio-Temporal Data Mining
+- Computer Vision
+- LLM-Agents
+- Graph Learning
 
-[![Star History Chart](https://api.star-history.com/svg?repos=GuangLun2000/GuangLun2000.github.io&type=Date)](https://star-history.com/#GuangLun2000/GuangLun2000.github.io&Date)
+## News and Updates
+
+- **June 2024:** As an **outstanding graduate** of the department of Information Science and Technology, receive the undergraduate certificate from Jinan University.
+- **July 2023:** Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
+- **Aug 2023:** Joined the team [CityMind](https://citymind.top/about-us/) as an INTERN led by [Prof. Yuxuan Liang](http://yuxuanliang.com/).
+- **Oct 2023:** Passed IELTS with 6.5 (6.5 8.0 6.0 6.0).
+
+## Contact
+
+- **Email:** 2042599101@qq.com
+- **GitHub:** [RWLinno](https://github.com/RWLinno/)
+- **CSDN:** [SC_Linno](https://blog.csdn.net/SC_Linno)
 
 ## Statement
 
-© 2023 Hanlin Cai. Published with [GitHub Pages](https://pages.github.com/), powered by [Jekyll](https://jekyllrb.com/), based on the [Minimal Mistakes](https://mademistakes.com/) theme and [Jason Ansel's site](https://github.com/jansel/jansel.github.io). Source code for this website can be found [here](https://github.com/GuangLun2000/GuangLun2000.github.io).
+© 2024 Weilin RUAN. Published with [GitHub Pages](https://pages.github.com/), powered by [Jekyll](https://jekyllrb.com/), based on the template from [siruzhong](https://github.com/siruzhong/siruzhong.github.io).

@@ -1,0 +1,13 @@
+pages:
+- name: Home
+  url: /
+- name: Experiences
+  url: /experiences
+- name: Projects
+  url: /projects
+- name: Awards
+  url: /awards
+- name: Hobbies
+  url: /hobbies
+- name: Links
+  url: /links 
