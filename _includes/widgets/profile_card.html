@@ -106,16 +106,47 @@
 {% endif %}
 
 <div class="social-icons mt-3">
+    <!-- CV -->
+    {% if site.data.profile.cv_link %}
+    <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+        <i class="fas fa-file-alt mr-1"></i> Curriculum Vitae
+    </a>
+    {% endif %}
+    
+    <!-- Email -->
     <a href="mailto:{{ site.data.profile.email }}" class="btn btn-outline-primary mr-2 mb-2">
         <i class="fas fa-envelope mr-1"></i> {{ site.data.profile.email }}
     </a>
     
+    <!-- GitHub -->
     {% if site.data.profile.github %}
     <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
         <i class="fab fa-github mr-1"></i> GitHub
     </a>
     {% endif %}
     
+    <!-- Google Scholar -->
+    {% if site.owner.scholar %}
+    <a href="{{ site.owner.scholar }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+        <i class="ai ai-google-scholar mr-1"></i> Google Scholar
+    </a>
+    {% endif %}
+    
+    <!-- OpenReview -->
+    {% if site.owner.openreview %}
+    <a href="{{ site.owner.openreview }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+        <i class="ai ai-open-review mr-1"></i> OpenReview
+    </a>
+    {% endif %}
+    
+    <!-- Twitter -->
+    {% if site.data.profile.twitter %}
+    <a href="https://twitter.com/{{ site.data.profile.twitter }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+        <i class="fab fa-twitter mr-1"></i> Twitter
+    </a>
+    {% endif %}
+    
+    <!--
     {% if site.data.profile.csdn %}
     <a href="https://blog.csdn.net/{{ site.data.profile.csdn }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
         <i class="fas fa-blog mr-1"></i> CSDN
@@ -127,30 +158,14 @@
         <i class="fab fa-bilibili mr-1"></i> Bilibili
     </a>
     {% endif %}
-    
-    {% if site.data.profile.cv_link %}
-    <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fas fa-file-alt mr-1"></i> Curriculum Vitae
-    </a>
-    {% endif %}
+    -->
 </div>
 
-<div class="social-icons">
-    {% if site.owner.scholar %}
-    <a href="{{ site.owner.scholar }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="ai ai-google-scholar mr-1"></i> Google Scholar
-    </a>
-    {% endif %}
-    
-    {% if site.owner.openreview %}
-    <a href="{{ site.owner.openreview }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="ai ai-open-review mr-1"></i> OpenReview
-    </a>
-    {% endif %}
-    
-    {% if site.data.profile.twitter %}
-    <a href="https://twitter.com/{{ site.data.profile.twitter }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fab fa-twitter mr-1"></i> Twitter
-    </a>
-    {% endif %}
-</div> 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const cardLinks = document.querySelectorAll('.card-body .social-icons:not(:last-child)');
+    cardLinks.forEach(function(element) {
+        element.style.display = 'none';
+    });
+});
+</script> 
