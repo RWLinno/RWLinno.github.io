@@ -88,17 +88,17 @@ navbar_title: Home
 {% endif %}
 
 {% if site.data.display.homepage.show_publications %}
-{% assign selected_publications = site.publications | where: "selected", true | sort: "pub_date" | reverse %}
-{% if selected_publications.size > 0 %}
+{% assign publications = site.publications | sort: "pub_date" | reverse %}
+{% if publications.size > 0 %}
 <div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-book"></i> Selected Publications
+                    <i class="fas fa-book"></i> Publications
                 </h4>
                 
-                {% for item in selected_publications limit:4 %}
+                {% for item in publications limit:4 %}
                 <div class="row mb-4 {% unless forloop.last %}border-bottom pb-3{% endunless %}">
                     {% if item.cover %}
                     <div class="col-md-3">
@@ -126,7 +126,7 @@ navbar_title: Home
                 </div>
                 {% endfor %}
                 
-                {% if selected_publications.size > 4 %}
+                {% if publications.size > 4 %}
                 <div class="text-center mt-3">
                     <a href="{{ '/publications' | relative_url }}" class="btn btn-outline-primary">View All Publications</a>
                 </div>
