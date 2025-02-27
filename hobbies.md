@@ -19,20 +19,23 @@ navbar_title: Hobbies
     </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mb-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
                     <i class="fas fa-gamepad"></i> Play Games
                 </h4>
-                <h5>Currently Playing</h5>
+                <p>I enjoy playing various games in my free time. Here are some of my current favorites:</p>
+                
+                <h5 class="mt-4">Currently Playing</h5>
                 <ul>
-                    <li>Dark Souls Remastered</li>
-                    <li>DEATH STRANDING</li>
+                    <li>Celeste</li>
+                    <li>Hollow Knight</li>
+                    <li>Minecraft</li>
                 </ul>
                 
-                <h5 class="mt-4">Here's my list of recommended games</h5>
+                <h5 class="mt-4">Recommended Games</h5>
                 <div class="table-responsive">
                     <table class="table table-hover">
                         <thead class="thead-light">
@@ -45,83 +48,18 @@ navbar_title: Hobbies
                         <tbody>
                             <tr>
                                 <td>Celeste</td>
-                                <td>NG+</td>
-                                <td>Best platform jumping game in my mind.</td>
-                            </tr>
-                            <tr>
-                                <td>Dark Soul Ⅲ</td>
-                                <td>NG+</td>
-                                <td>Best Hidetaka Miyazaki</td>
+                                <td><span class="badge badge-success">Completed</span></td>
+                                <td>A challenging platformer with a touching story about overcoming anxiety and depression.</td>
                             </tr>
                             <tr>
                                 <td>Hollow Knight</td>
-                                <td>NG+</td>
-                                <td>Looking forward to the sequel.</td>
+                                <td><span class="badge badge-warning">In Progress</span></td>
+                                <td>An atmospheric metroidvania with beautiful hand-drawn art and challenging combat.</td>
                             </tr>
                             <tr>
-                                <td>CupHead</td>
-                                <td>NG+</td>
-                                <td>I like to play with my girlfriend very much and have a sense of achievement.</td>
-                            </tr>
-                            <tr>
-                                <td>Breath of the Wild</td>
-                                <td>NG+</td>
-                                <td>I didn't will to fight the boss once, think of it as a casual game now.</td>
-                            </tr>
-                            <tr>
-                                <td>Tears of the Kingdom</td>
-                                <td>Exploring</td>
-                                <td>Open but not very friendly in the beginning.</td>
-                            </tr>
-                            <tr>
-                                <td>Super Mario Odyssey</td>
-                                <td>Exploring</td>
-                                <td>It's better to play with VR and somatosensory.</td>
-                            </tr>
-                            <tr>
-                                <td>Pokémon Violet</td>
-                                <td>Clear</td>
-                                <td>Pokemon deserves better.</td>
-                            </tr>
-                            <tr>
-                                <td>GRIS</td>
-                                <td>Clear</td>
-                                <td>As a game, it lacks; as a work of art, it deserves.</td>
-                            </tr>
-                            <tr>
-                                <td>Inside</td>
-                                <td>Clear</td>
-                                <td>It's worth several hours of your time.</td>
-                            </tr>
-                            <tr>
-                                <td>Little Nightmares Ⅱ</td>
-                                <td>clear</td>
-                                <td>The most beautiful horror game I've ever seen</td>
-                            </tr>
-                            <tr>
-                                <td>Katana Zero</td>
-                                <td>Clear</td>
-                                <td>Very Cool Game.</td>
-                            </tr>
-                            <tr>
-                                <td>Metroid Dread</td>
-                                <td>Clear</td>
-                                <td>The most expensive game I have played.</td>
-                            </tr>
-                            <tr>
-                                <td>Cyberpunk2077</td>
-                                <td>Unfinished</td>
-                                <td>Maybe it needs to continue to be optimized when I played.</td>
-                            </tr>
-                            <tr>
-                                <td>Genshin Impact</td>
-                                <td>Level Full</td>
-                                <td>Games for retirement.</td>
-                            </tr>
-                            <tr>
-                                <td>Elden Ring</td>
-                                <td>NG+</td>
-                                <td>Easy Soul Game.</td>
+                                <td>Minecraft</td>
+                                <td><span class="badge badge-info">Ongoing</span></td>
+                                <td>A sandbox game that allows for endless creativity and exploration.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -131,35 +69,165 @@ navbar_title: Hobbies
     </div>
 </div>
 
-<div class="row mt-4">
+<!-- Daily Challenges Section -->
+<div class="row mb-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-code"></i> Game Development
+                    <i class="fas fa-brain"></i> Daily Challenges
                 </h4>
-                <p>I Have published <strong>4</strong> Indie games on online game platforms, which improved my engineering and programming skills. If you're interested, feel free to try my representative work "<strong>Orphan of the Petal</strong>" on Steam:</p>
-                <a href="https://store.steampowered.com/app/975050/Orphan_of_the_Petal/" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-steam"></i> View on Steam
-                </a>
+                
+                <!-- Daily Sudoku -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-th"></i> Daily Sudoku</h5>
+                        <div class="embed-responsive embed-responsive-1by1" style="max-height: 400px;">
+                            <iframe class="embed-responsive-item" src="https://sudoku.com/embed" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Daily Chess Puzzle -->
+                    <div class="col-md-6">
+                        <h5><i class="fas fa-chess"></i> Daily Chess Puzzle</h5>
+                        <div id="chess-puzzle" style="max-width: 400px; margin: 0 auto;">
+                            <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 100%; height: 400px;" allowtransparency="true" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Daily Coding Challenge -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5><i class="fas fa-code"></i> Daily Coding Challenge</h5>
+                        <div id="daily-coding-challenge" class="p-3 bg-light rounded">
+                            <h6 id="challenge-title">Loading challenge...</h6>
+                            <p id="challenge-description" class="mb-2"></p>
+                            <div id="challenge-difficulty" class="mb-3"></div>
+                            <a id="challenge-link" href="#" target="_blank" class="btn btn-primary btn-sm">Solve on LeetCode</a>
+                        </div>
+                        
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // LeetCode problems (simplified list)
+                                const problems = [
+                                    {
+                                        title: "Two Sum",
+                                        difficulty: "Easy",
+                                        description: "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.",
+                                        link: "https://leetcode.com/problems/two-sum/"
+                                    },
+                                    {
+                                        title: "Add Two Numbers",
+                                        difficulty: "Medium",
+                                        description: "You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit.",
+                                        link: "https://leetcode.com/problems/add-two-numbers/"
+                                    },
+                                    {
+                                        title: "Longest Substring Without Repeating Characters",
+                                        difficulty: "Medium",
+                                        description: "Given a string s, find the length of the longest substring without repeating characters.",
+                                        link: "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+                                    },
+                                    {
+                                        title: "Median of Two Sorted Arrays",
+                                        difficulty: "Hard",
+                                        description: "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.",
+                                        link: "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+                                    },
+                                    {
+                                        title: "Longest Palindromic Substring",
+                                        difficulty: "Medium",
+                                        description: "Given a string s, return the longest palindromic substring in s.",
+                                        link: "https://leetcode.com/problems/longest-palindromic-substring/"
+                                    }
+                                ];
+                                
+                                // Get date-based index
+                                const today = new Date();
+                                const dateString = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+                                const dateHash = Array.from(dateString).reduce((hash, char) => hash + char.charCodeAt(0), 0);
+                                const problemIndex = dateHash % problems.length;
+                                
+                                // Display the problem
+                                const problem = problems[problemIndex];
+                                document.getElementById('challenge-title').textContent = problem.title;
+                                document.getElementById('challenge-description').textContent = problem.description;
+                                
+                                // Set difficulty badge color
+                                let badgeClass = 'badge ';
+                                if (problem.difficulty === 'Easy') badgeClass += 'badge-success';
+                                else if (problem.difficulty === 'Medium') badgeClass += 'badge-warning';
+                                else badgeClass += 'badge-danger';
+                                
+                                document.getElementById('challenge-difficulty').innerHTML = `<span class="${badgeClass}">${problem.difficulty}</span>`;
+                                document.getElementById('challenge-link').href = problem.link;
+                                
+                                // Try to fetch a random problem from LeetCode API (note: this is for illustration, LeetCode doesn't have a public API)
+                                // In a real implementation, you might need to use a proxy service or another coding challenge API
+                                fetch('https://leetcode-stats-api.herokuapp.com/problems')
+                                    .then(response => response.json())
+                                    .then(data => {
+                                        // This would be implemented if LeetCode had a public API
+                                        console.log("Successfully fetched from API");
+                                    })
+                                    .catch(error => {
+                                        console.log("Using local problem data");
+                                    });
+                            });
+                        </script>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="row mb-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-gamepad"></i> Game Development
+                </h4>
+                <p>I have experience in publishing indie games. One of my notable works is:</p>
+
 <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="{{ '/images/orphan-of-the-petal.png' | relative_url }}" alt="Orphan of the Petal" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-8">
+                        <h5>Orphan of the Petal</h5>
+                        <p>A narrative-driven adventure game with unique art style and emotional storytelling.</p>
+                        <a href="https://store.steampowered.com/app/1793340/_/" target="_blank" class="btn btn-primary">View on Steam</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
                     <i class="fas fa-blog"></i> Blog
                 </h4>
-                <h5>CSDN</h5>
-                <p>3000+ fans reached</p>
-                <p>I enjoy using the CSDN blog for ACM-related knowledge sharing, which recorded my learning experience.</p>
-                <a href="https://blog.csdn.net/SC_Linno" target="_blank" class="btn btn-primary">
-                    <i class="fa fa-blog"></i> Visit My CSDN Blog
-                </a>
+                <p>I maintain a CSDN blog where I share my knowledge and experiences, particularly related to ACM.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CSDN Blog</h5>
+                                <p class="card-text">1000+ Fans</p>
+                                <p class="card-text">Sharing ACM knowledge</p>
+                                <a href="https://blog.csdn.net/SC_Linno" target="_blank" class="btn btn-primary">Visit Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
