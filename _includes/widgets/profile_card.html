@@ -103,4 +103,60 @@
         </div>
     </div>
 </div>
-{% endif %} 
+{% endif %}
+
+<div class="social-icons">
+    {% if site.data.profile.github %}
+    <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.twitter %}
+    <a href="https://twitter.com/{{ site.data.profile.twitter }}" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.linkedin %}
+    <a href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.email %}
+    <a href="mailto:{{ site.data.profile.email }}" class="social-icon">
+        <i class="fas fa-envelope"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.csdn %}
+    <a href="https://blog.csdn.net/{{ site.data.profile.csdn }}" target="_blank" class="social-icon">
+        <i class="fas fa-blog"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.bilibili %}
+    <a href="https://space.bilibili.com/{{ site.data.profile.bilibili }}" target="_blank" class="social-icon">
+        <i class="fab fa-bilibili"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.google_scholar %}
+    <a href="https://scholar.google.com/citations?user={{ site.data.profile.google_scholar }}" target="_blank" class="social-icon">
+        <i class="ai ai-google-scholar"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.openreview %}
+    <a href="https://openreview.net/profile?id={{ site.data.profile.openreview }}" target="_blank" class="social-icon">
+        <i class="ai ai-open-review"></i>
+    </a>
+    {% endif %}
+    
+    {% if site.data.profile.cv_link %}
+    <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="social-icon">
+        <i class="fas fa-file-alt"></i>
+    </a>
+    {% endif %}
+</div> 

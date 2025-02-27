@@ -16,6 +16,8 @@ csdn: SC_Linno
 bilibili: 6954236
 #twitter: rwlinno
 # linkedin: your_linkedin_id
+google_scholar: 9uk1jJoAAAAJ
+openreview: Weilin_Ruan2
 
 short_bio: >-
   <p style="margin-bottom: 5px;">
@@ -167,4 +169,8 @@ social:
   - platform: github
     url: https://github.com/rwlinno
   - platform: email
-    url: mailto:rwlinno@gmail.com 
+    url: mailto:rwlinno@gmail.com
+  - platform: google-scholar
+    url: https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID
+  - platform: openreview
+    url: https://openreview.net/profile?id=YOUR_OPENREVIEW_ID 
