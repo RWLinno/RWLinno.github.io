@@ -105,7 +105,7 @@
 </div>
 {% endif %}
 
-<div class="social-icons mt-3">
+<div class="social-buttons mt-3">
     <!-- CV -->
     {% if site.data.profile.cv_link %}
     <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
@@ -145,20 +145,6 @@
         <i class="fab fa-twitter mr-1"></i> Twitter
     </a>
     {% endif %}
-    
-    <!--
-    {% if site.data.profile.csdn %}
-    <a href="https://blog.csdn.net/{{ site.data.profile.csdn }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fas fa-blog mr-1"></i> CSDN
-    </a>
-    {% endif %}
-    
-    {% if site.data.profile.bilibili %}
-    <a href="https://space.bilibili.com/{{ site.data.profile.bilibili }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fab fa-bilibili mr-1"></i> Bilibili
-    </a>
-    {% endif %}
-    -->
 </div>
 
 <script>
