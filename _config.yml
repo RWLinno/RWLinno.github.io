@@ -7,6 +7,12 @@ language :
 timezone: China/Beijing
 permalink:   /:categories/:title
 
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /:collection/:path/
+
 # Owner/author information
 owner:
   name: Weilin Ruan

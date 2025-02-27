@@ -1,0 +1,12 @@
+{% assign authors = include.authors %}
+{% for author in authors %}
+    {% if author.url %}
+        <a href="{{ author.url }}" target="_blank">{{ author.name }}</a>{% unless forloop.last %}, {% endunless %}
+    {% else %}
+        {% if author == site.data.profile.primary_name %}
+            <strong>{{ author }}</strong>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+            {{ author }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+    {% endif %}
+{% endfor %} 

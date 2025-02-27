@@ -5,51 +5,15 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
-{% if site.data.display.homepage.show_experience %}
-{% include widgets/experience_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_news %}
-{% include widgets/news_card.html %}
-{% endif %}
-
-{% if site.data.display.homepage.show_projects %}
-{% include widgets/projects_card.html %}
-{% endif %}
-
+{% if site.data.display.homepage.show_education %}
 <div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-camera"></i> Photo Wall
-                </h4>
-                <div class="text-center">
-                    <img src="/images/honghaizi.png" class="img-fluid rounded" alt="Photo Wall">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row mt-4">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body">
-                <h4 class="card-title">
-                    <i class="fas fa-user-graduate"></i> Academic Background
+                    <i class="fas fa-user-graduate"></i> Education
                 </h4>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item border-0">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <strong>Jinan University</strong> - CS Department - Network Engineering
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-secondary">Sep 2020 - June 2024</span>
-                            </div>
-                        </div>
-                    </li>
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
@@ -60,104 +24,167 @@ navbar_title: Home
                             </div>
                         </div>
                     </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Jinan University</strong> - CS Department - Network Engineering
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Sep 2020 - June 2024</span>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+{% endif %}
 
+{% if site.data.display.homepage.show_news %}
 <div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-flask"></i> Research Interests
+                    <i class="fas fa-newspaper"></i> Latest News
                 </h4>
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">
-                                <i class="fas fa-map-marked-alt text-primary"></i> Spatio-Temporal Data Mining
-                            </li>
-                            <li class="list-group-item border-0">
-                                <i class="fas fa-eye text-primary"></i> Computer Vision
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">
-                                <i class="fas fa-robot text-primary"></i> LLM-Agents
-                            </li>
-                            <li class="list-group-item border-0">
-                                <i class="fas fa-project-diagram text-primary"></i> Graph Learning
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Outstanding Graduate</strong> - Received the undergraduate certificate from Jinan University as an outstanding graduate of the department of Information Science and Technology.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">June 2024</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Research Internship</strong> - Joined the <a href="https://citymind.top/about-us/" target="_blank">CityMind</a> team as an intern led by <a href="http://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Aug 2023</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>RBCC Achievement</strong> - Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">July 2023</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </div>
+{% endif %}
 
+{% if site.data.display.homepage.show_publications %}
+{% assign selected_publications = site.publications | where: "selected", true | sort: "pub_date" | reverse %}
+{% if selected_publications.size > 0 %}
 <div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-bullhorn"></i> Announcements
+                    <i class="fas fa-book"></i> Selected Publications
                 </h4>
-                <div class="alert alert-danger">
-                    <strong><i class="fas fa-exclamation-circle"></i> Highlight:</strong> Now I am looking for research partners. If interested in my research direction, please feel free to contact me!
+                
+                {% for item in selected_publications limit:3 %}
+                <div class="row mb-4 {% unless forloop.last %}border-bottom pb-3{% endunless %}">
+                    {% if item.cover %}
+                    <div class="col-md-3">
+                        <img src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-9">
+                    {% else %}
+                    <div class="col-md-12">
+                    {% endif %}
+                        <h5 class="mb-1">{{ item.title }}</h5>
+                        <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
+                        <p class="mb-1 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+                        <p class="mb-2 small text-muted">{{ item.abstract }}</p>
+                        
+                        <p class="small mb-0">
+                            {% for link in item.links %}
+                            {% if link[1].url %}
+                            <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}" class="btn btn-sm btn-outline-primary mr-1">{{ link[0] }}</a>
+                            {% else %}
+                            <a target="_blank" href="{{ link[1] }}" class="btn btn-sm btn-outline-primary mr-1">{{ link[0] }}</a>
+                            {% endif %}
+                            {% endfor %}
+                        </p>
+                    </div>
                 </div>
-                <p class="mb-0">
-                    My name is Weilin RUAN. Here is <a href="https://rwlinno.github.io/file/CV_en.pdf" target="_blank">my Resume</a> in English.
-                </p>
-                <p>
-                    Currently I have been offered an MPhil place at HKUST-GZ through RBCC, and I am very honored to enroll in 24fall and join <a href="https://citymind.top/about-us/" target="_blank">Prof. Liang's research group</a> for my research work.
-                </p>
+                {% endfor %}
+                
+                {% if selected_publications.size > 3 %}
+                <div class="text-center mt-3">
+                    <a href="{{ '/publications' | relative_url }}" class="btn btn-outline-primary">View All Publications</a>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
 </div>
+{% endif %}
+{% endif %}
 
-# About Me
-
-My name is Weilin RUAN. Here is [my Resume](https://rwlinno.github.io/file/CV_en.pdf) in English.
-
-Currently I have been offered an Mphil place at HKUST-GZ through RBCC, and I am very honored to enroll in 24fall and join [Prof. Liang's research group](https://citymind.top/about-us/) for my research work. 
-
-**<font color='red'>[Highlight]</font> Now I am looking for research partners. If interested in my research direction, please feel free to contact me!**
-
-
-
-## Academic Background
-
-- **Sep 2020 - June 2024:**  Jinan University - CS Department - Network Engineering 
-- **Sep 2024 - June 2026：**HKUST(gz) - DSA Mphil
-
-
-
----
-
-## Research Interests
-
-- Spatio-Temporal Data Mining
-- Computer Vision
-- LLM-Agents
-- Graph Learning
-
-
-
----
-
-## News and Updates
-
-- **June 2024：** As an **outstanding graduate** of the department of Information Science and Technology,  receive the undergraduate certificate from Jinan University.
-
-- **July 2023：**Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
-- **Aug 2023：** Joined the team [CityMind](https://citymind.top/about-us/) as an INTERN led by [Prof. Yuxuan Liang](http://yuxuanliang.com/).
-- **Oct 2023:** Passed IELTS with 6.5 (6.5 8.0 6.0 6.0).
-- **Nov 2023:**  Updated my scholarships and honors……
+{% if site.data.display.homepage.show_awards %}
+<div class="row mt-4">
+    <div class="col">
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-award"></i> Selected Awards
+                </h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Outstanding Graduates</strong> - Jinan University
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Fall 2024</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Golden Arowana Scholarship</strong> - Jinan University
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Fall 2023</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Bronze Medal</strong> - ICPC International Collegiate Programming Contest
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Fall 2022</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text-center mt-3">
+                    <a href="{{ '/awards' | relative_url }}" class="btn btn-outline-primary">View All Awards</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 

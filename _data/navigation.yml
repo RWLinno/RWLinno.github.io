@@ -1,6 +1,8 @@
 pages:
 - name: Home
   url: /
+- name: Publications
+  url: /publications
 - name: Experiences
   url: /experiences
 - name: Projects
