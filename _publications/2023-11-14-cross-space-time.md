@@ -8,7 +8,7 @@ authors:
   - Li Liu
   - Yuxuan Liang
 pub: "Under review"
-pub_date: "2023"
+pub_date: "2024"
 selected: true
 categories: ["Spatio-temporal"]
 cover: "/images/cross-space-time.png"

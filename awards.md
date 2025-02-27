@@ -88,13 +88,13 @@ navbar_title: Awards
                     </li>
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span><strong>1 Champion & 2 Second Prize</strong>: University-level ACM Programming Contest</span>
-                            <span class="badge badge-primary">2021-2023</span>
+                            <span><strong>Champion</strong>: Jinan University 2023 Neusoft Education Cup ACM Programming Competition (<a href="https://ac.nowcoder.com/acm/contest/47948" target="_blank">All Killed</a>). </span>
+                            <span class="badge badge-primary">2023</span>
                         </div>
                     </li>
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between align-items-center">
-                            <span><strong>1 Gold Medal & 1 Silver Medal</strong>: National University Student Algorithm Design and Programming Challenge (Top 5%)</span>
+                            <span><strong>1 Gold Medal & 1 Silver Medal</strong>: National University Student Algorithm Design and Programming Challenge</span>
                             <span class="badge badge-primary">2022</span>
                         </div>
                     </li>
