@@ -98,7 +98,7 @@ navbar_title: Home
                     <i class="fas fa-book"></i> Selected Publications
                 </h4>
                 
-                {% for item in selected_publications limit:3 %}
+                {% for item in selected_publications limit:4 %}
                 <div class="row mb-4 {% unless forloop.last %}border-bottom pb-3{% endunless %}">
                     {% if item.cover %}
                     <div class="col-md-3">
@@ -110,7 +110,7 @@ navbar_title: Home
                     {% endif %}
                         <h5 class="mb-1">{{ item.title }}</h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                        <p class="mb-1 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+                        <p class="mb-1 small"><i>{{ item.pub }}</i>. {{ item.pub_date }}</p>
                         <p class="mb-2 small text-muted">{{ item.abstract }}</p>
                         
                         <p class="small mb-0">
@@ -126,7 +126,7 @@ navbar_title: Home
                 </div>
                 {% endfor %}
                 
-                {% if selected_publications.size > 3 %}
+                {% if selected_publications.size > 4 %}
                 <div class="text-center mt-3">
                     <a href="{{ '/publications' | relative_url }}" class="btn btn-outline-primary">View All Publications</a>
                 </div>

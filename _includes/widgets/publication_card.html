@@ -18,7 +18,7 @@
                         {% endif %}
                             <h5 class="mb-1">{{ item.title }}</h5>
                             <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
-                            <p class="mb-1 small">{{item.pub_pre}}<i>{{ item.pub }}</i>{{ item.pub_post }} {{ item.pub_date }} {{ item.pub_last }}</p>
+                            <p class="mb-1 small"><i>{{ item.pub }}</i>. {{ item.pub_date }}</p>
                             <p class="mb-2 small text-muted">{{ item.abstract }}</p>
                             
                             <p class="small mb-0">

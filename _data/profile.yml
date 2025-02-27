@@ -1,4 +1,5 @@
-primary_name: "Weilin Ruan"
+name: Weilin Ruan
+primary_name: Weilin Ruan
 secondary_name: ""
 navbar_name: "Weilin Ruan"
 
@@ -8,7 +9,7 @@ positions:
 - name: Bachelor of Engineering @ Jinan University
   date: Sep 2020 - June 2024
 
-email: "rwlinno@gmail.com"
+email: rwlinno@gmail.com
 cv_link: /file/CV_en.pdf
 github: rwlinno
 csdn: SC_Linno
@@ -152,4 +153,17 @@ homepage:
   show_experience: true
   show_news: true
   show_projects: true
-  show_selected_publications: false 
+  show_publications: false 
+
+position: MPhil Student
+institution: HKUST(GZ)
+department: Data Science and Analytics
+bio: >
+  I am a MPhil student in Data Science at the Hong Kong University of Science and Technology (Guangzhou), 
+  supervised by Prof. Yuxuan Liang. My research focuses on Spatial-Temporal Data Mining, 
+  Computer Vision, and Time Series Analysis.
+social:
+  - platform: github
+    url: https://github.com/rwlinno
+  - platform: email
+    url: mailto:rwlinno@gmail.com 
