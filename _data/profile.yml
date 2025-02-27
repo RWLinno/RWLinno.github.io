@@ -3,9 +3,9 @@ secondary_name: ""
 navbar_name: "Weilin Ruan"
 
 positions:
-- name: MPhil Student @ HKUST(GZ), Spatio-Temporal Data Mining
+- name: MPhil Student @ HKUST(GZ)
   date: Sep 2024 - June 2026
-- name: Bachelor of Engineering @ Jinan University, Network Engineering
+- name: Bachelor of Engineering @ Jinan University
   date: Sep 2020 - June 2024
 
 email: "rwlinno@gmail.com"
@@ -18,10 +18,11 @@ twitter: rwlinno
 
 short_bio: >-
   <p style="margin-bottom: 5px;">
-  I have been offered an MPhil place at HKUST-GZ through RBCC, and I am very honored to enroll in 24fall and join <a href="https://citymind.top/about-us/" target="_blank">Prof. Liang's research group</a> for my research work.
+  I am a first-year MPhil student in <a href="http://dsa.hkust-gz.edu.cn/" target="_blank">Data Science</a> at the <a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a>, supervised by <a href="https://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
+  My research interests include Spatio-Temporal Forecasting, Computer Vision, LLM-Agents, and Graph Learning.
   </p>
   <p style="margin-bottom: 5px;">
-  <strong><font color='red'>[Highlight]</font> Now I am looking for research partners. If interested in my research direction, please feel free to contact me!</strong>
+  <strong><font color='red'>[Highlight]</font> Now I am looking for research partners and PhD opportunities. If interested in my research direction, please feel free to contact me!</strong>
   </p>
   <p style="margin-bottom: 5px;">
   My research interests include Spatio-Temporal Data Mining, Computer Vision, LLM-Agents, and Graph Learning.
@@ -33,10 +34,10 @@ portrait_caption: >-
 
 education:
 - name: Hong Kong University of Science and Technology (Guangzhou)
-  position: Master of Philosophy - Data Science & Analytics
+  position: Master of Philosophy - Information Hub - Data Science & Analytics
   date: Sep 2024 - June 2026
 - name: Jinan University
-  position: Bachelor of Engineering - Network Engineering
+  position: Bachelor of Engineering - Computer Science and Technology - Network Engineering
   date: Sep 2020 - June 2024
 
 experience:
