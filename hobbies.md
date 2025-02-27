@@ -26,44 +26,6 @@ navbar_title: Hobbies
                 <h4 class="card-title">
                     <i class="fas fa-gamepad"></i> Play Games
                 </h4>
-                <p>I enjoy playing various games in my free time. Here are some of my current favorites:</p>
-                
-                <h5 class="mt-4">Currently Playing</h5>
-                <ul>
-                    <li>Celeste</li>
-                    <li>Hollow Knight</li>
-                    <li>Minecraft</li>
-                </ul>
-                
-                <h5 class="mt-4">Recommended Games</h5>
-                <div class="table-responsive">
-                    <table class="table table-hover">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Game</th>
-                                <th>Status</th>
-                                <th>Comment</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Celeste</td>
-                                <td><span class="badge badge-success">Completed</span></td>
-                                <td>A challenging platformer with a touching story about overcoming anxiety and depression.</td>
-                            </tr>
-                            <tr>
-                                <td>Hollow Knight</td>
-                                <td><span class="badge badge-warning">In Progress</span></td>
-                                <td>An atmospheric metroidvania with beautiful hand-drawn art and challenging combat.</td>
-                            </tr>
-                            <tr>
-                                <td>Minecraft</td>
-                                <td><span class="badge badge-info">Ongoing</span></td>
-                                <td>A sandbox game that allows for endless creativity and exploration.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </div>
     </div>
@@ -194,12 +156,12 @@ navbar_title: Hobbies
 
 <div class="row mt-4">
                     <div class="col-md-4">
-                        <img src="{{ '/images/orphan-of-the-petal.png' | relative_url }}" alt="Orphan of the Petal" class="img-fluid rounded">
+                        <img src="{{ '/images/orphan-of-the-petal.jpg' | relative_url }}" alt="Orphan of the Petal" class="img-fluid rounded">
                     </div>
                     <div class="col-md-8">
                         <h5>Orphan of the Petal</h5>
-                        <p>A narrative-driven adventure game with unique art style and emotional storytelling.</p>
-                        <a href="https://store.steampowered.com/app/1793340/_/" target="_blank" class="btn btn-primary">View on Steam</a>
+                        <p>There is a story, “Black Jenny” will have a seven-color flowers, came to the side of the suffering children, the children's wishes... ? ... and yet, it's impossible not to pay the price. ? The hero Winnie, not aware of the danger of pansy, she made a wish, lost memory and relatives, everything around become chaotic? . Will she end up as a petal, or will she be saved by a dark blue-haired mystery girl?.</p>
+                        <a href="https://store.steampowered.com/app/975050/Orphan_of_the_Petal/" target="_blank" class="btn btn-primary">View on Steam</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +183,7 @@ navbar_title: Hobbies
                         <div class="card">
                             <div class="card-body text-center">
                                 <h5 class="card-title">CSDN Blog</h5>
-                                <p class="card-text">1000+ Fans</p>
+                                <p class="card-text">3000+ Fans</p>
                                 <p class="card-text">Sharing ACM knowledge</p>
                                 <a href="https://blog.csdn.net/SC_Linno" target="_blank" class="btn btn-primary">Visit Blog</a>
                             </div>
