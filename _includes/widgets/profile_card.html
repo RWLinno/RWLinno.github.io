@@ -1,85 +1,60 @@
 <div class="row">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body" style="padding-left: 2rem;padding-right: 2em;">
-                <div class="row">
-                    <div class="col">
-                        <div class="h3 font-weight-normal">
-                            {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
-                        </div>
-                        <div class="text-profile-position" style="background-color: #edeff0">
-                            {% for position in site.data.profile.positions %}
-                            {% if position.logo -%}
-                            <img src="{{ position.logo | relative_url }}" alt="Logo" class="inline-badge"/>
-                            {%- endif %}
-                            {{ position.name }}<br/>
-                            {% endfor %}
-                        </div>
-                        <div class="text-profile-bio mt-3">
-                            {{ site.data.profile.short_bio }}
-                        </div>
-                        {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                        {% endif %}
-
-                        <p style="margin-top:15px"></p>
-                        
-                        <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
-                            <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
-                        </a>
-
-                        {% if site.data.profile.gscholar %}
-                        <a class="pr-3 no-break" target="_blank" href="https://scholar.google.com/citations?user={{ site.data.profile.gscholar }}&hl=en">
-                            <i class="fab fa-google-scholar"></i> Google Scholar
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.github %}
-                        <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                            <i class="fab fa-github"></i> GitHub
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.csdn %}
-                        <a class="pr-3 no-break" target="_blank" href="https://blog.csdn.net/{{ site.data.profile.csdn }}">
-                            <i class="fa fa-blog"></i> CSDN
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.bilibili %}
-                        <a class="pr-3 no-break" target="_blank" href="https://space.bilibili.com/{{ site.data.profile.bilibili }}">
-                            <i class="fab fa-bilibili"></i> Bilibili
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.twitter %}
-                        <a class="pr-3 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
-                            <i class="fab fa-twitter"></i> Twitter
-                        </a>
-                        {% endif %}
-
-                        {% if site.data.profile.linkedin %}
-                        <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
-                            <i class="fab fa-linkedin"></i> LinkedIn
-                        </a>
-                        {% endif %}
-                    </div>
-                    {% if site.data.profile.portrait_url %}
-                    <div class="col-md-auto">
-                        <figure class="figure">
-                            <img 
-                                src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid img-thumbnail" 
-                                style="height: 254px;"
-                                data-toggle="tooltip" 
-                                data-placement="top" 
-                                title="{{ site.data.profile.portrait_caption }}"
-                            >
-                            <figcaption class="figure-caption text-right"></figcaption>
-                        </figure>
-                    </div>
-                    {% endif %}
+            <div class="card-body">
+                <div class="text-center mb-3">
+                    <img src="{{ site.data.profile.portrait_url | relative_url }}" alt="{{ site.data.profile.name }}" class="rounded-circle img-fluid" style="max-width: 150px;">
+                    <h3 class="mt-3">{{ site.data.profile.name }}</h3>
+                    {% for position in site.data.profile.positions %}
+                    <p class="text-muted mb-1">{{ position.name }}</p>
+                    {% endfor %}
                 </div>
+                
+                <div class="card-text">
+                    {{ site.data.profile.short_bio }}
+                </div>
+            </div>
+            
+            <div class="social-buttons mt-3">
+                <!-- 简历 -->
+                {% if site.data.profile.cv_link %}
+                <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="fas fa-file-alt mr-1"></i> Curriculum Vitae
+                </a>
+                {% endif %}
+                
+                <!-- 电子邮件 -->
+                <a href="mailto:{{ site.data.profile.email }}" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="fas fa-envelope mr-1"></i> {{ site.data.profile.email }}
+                </a>
+                
+                <!-- GitHub -->
+                {% if site.data.profile.github %}
+                <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="fab fa-github mr-1"></i> GitHub
+                </a>
+                {% endif %}
+                
+                <!-- Google Scholar -->
+                {% if site.owner.scholar %}
+                <a href="{{ site.owner.scholar }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="ai ai-google-scholar mr-1"></i> Google Scholar
+                </a>
+                {% endif %}
+                
+                <!-- OpenReview -->
+                {% if site.owner.openreview %}
+                <a href="{{ site.owner.openreview }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="ai ai-open-review mr-1"></i> OpenReview
+                </a>
+                {% endif %}
+                
+                <!-- Twitter -->
+                {% if site.data.profile.twitter %}
+                <a href="https://twitter.com/{{ site.data.profile.twitter }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
+                    <i class="fab fa-twitter mr-1"></i> Twitter
+                </a>
+                {% endif %}
             </div>
         </div>        
     </div>
@@ -104,48 +79,6 @@
     </div>
 </div>
 {% endif %}
-
-<div class="social-buttons mt-3">
-    <!-- CV -->
-    {% if site.data.profile.cv_link %}
-    <a href="{{ site.data.profile.cv_link | relative_url }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fas fa-file-alt mr-1"></i> Curriculum Vitae
-    </a>
-    {% endif %}
-    
-    <!-- Email -->
-    <a href="mailto:{{ site.data.profile.email }}" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fas fa-envelope mr-1"></i> {{ site.data.profile.email }}
-    </a>
-    
-    <!-- GitHub -->
-    {% if site.data.profile.github %}
-    <a href="https://github.com/{{ site.data.profile.github }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fab fa-github mr-1"></i> GitHub
-    </a>
-    {% endif %}
-    
-    <!-- Google Scholar -->
-    {% if site.owner.scholar %}
-    <a href="{{ site.owner.scholar }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="ai ai-google-scholar mr-1"></i> Google Scholar
-    </a>
-    {% endif %}
-    
-    <!-- OpenReview -->
-    {% if site.owner.openreview %}
-    <a href="{{ site.owner.openreview }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="ai ai-open-review mr-1"></i> OpenReview
-    </a>
-    {% endif %}
-    
-    <!-- Twitter -->
-    {% if site.data.profile.twitter %}
-    <a href="https://twitter.com/{{ site.data.profile.twitter }}" target="_blank" class="btn btn-outline-primary mr-2 mb-2">
-        <i class="fab fa-twitter mr-1"></i> Twitter
-    </a>
-    {% endif %}
-</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
