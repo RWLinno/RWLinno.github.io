@@ -39,44 +39,46 @@ navbar_title: Hobbies
                 <h4 class="card-title">
                     <i class="fas fa-brain"></i> Daily Challenges
                 </h4>
+                <div class="row">
                     <!-- Daily Chess Puzzle -->
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <h5><i class="fas fa-chess"></i> Daily Chess Puzzle</h5>
                         <div id="chess-puzzle" style="max-width: 400px; margin: 0 auto;">
                             <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 100%; height: 400px;" allowtransparency="true" frameborder="0"></iframe>
                         </div>
+                        <div class="text-center mt-2">
+                            <p class="small text-muted">
+                                Daily chess puzzle - Solve it directly on this page!
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <!-- Daily Killer Sudoku -->
-                <div class="row mt-4">
-                    <div class="col-md-12">
+                    
+                    <!-- Daily Killer Sudoku -->
+                    <div class="col-md-4">
                         <h5><i class="fas fa-puzzle-piece"></i> Daily Killer Sudoku</h5>
-                        <div id="sudoku-puzzle" style="max-width: 450px; margin: 0 auto;">
+                        <div id="sudoku-puzzle" style="max-width: 400px; margin: 0 auto;">
                             <iframe src="https://www.killersudokuonline.com/game.html?embed=1" 
-                                    style="width: 100%; height: 500px;" 
+                                    style="width: 100%; height: 400px;" 
                                     allowtransparency="true" 
                                     frameborder="0">
                             </iframe>
                         </div>
                         <div class="text-center mt-2">
                             <p class="small text-muted">
-                                Daily Killer Sudoku puzzle - Solve it directly on this page! If loading fails, <a href="https://www.killersudokuonline.com/" target="_blank">visit the full version</a>.
+                                Daily Killer Sudoku puzzle - Solve it directly on this page!
                             </p>
                         </div>
                     </div>
-                </div>
-                <!-- Daily NowCoder Problem -->
-                <div class="row mt-4">
-                    <div class="col-md-12">
-                        <h5><i class="fas fa-code"></i> Daily Competitive Programming Challenge</h5>
-                        <div id="nowcoder-challenge" class="p-3 bg-light rounded">
-                            <div id="problem-container" style="height: 600px; overflow: hidden;">
-                                <iframe id="problem-frame" 
-                                        style="width: 100%; height: 100%; border: none;" 
-                                        allowtransparency="true" 
-                                        frameborder="0">
-                                </iframe>
-                            </div>
+                    
+                    <!-- Daily Programming Challenge -->
+                    <div class="col-md-4">
+                        <h5><i class="fas fa-code"></i> Daily Coding Challenge</h5>
+                        <div id="nowcoder-challenge" style="max-width: 400px; margin: 0 auto;">
+                            <iframe id="problem-frame" 
+                                    style="width: 100%; height: 400px; border: none;" 
+                                    allowtransparency="true" 
+                                    frameborder="0">
+                            </iframe>
                             <script>
                                 document.addEventListener('DOMContentLoaded', function() {
                                     // Problem links
@@ -110,11 +112,11 @@ navbar_title: Hobbies
                                     problemFrame.src = getTodayProblemLink();
                                 });
                             </script>
-                            <div class="text-center mt-3">
-                                <p class="small text-muted">
-                                    Daily competitive programming challenge - A new problem each day!
-                                </p>
-                            </div>
+                        </div>
+                        <div class="text-center mt-2">
+                            <p class="small text-muted">
+                                Daily competitive programming challenge - A new problem each day!
+                            </p>
                         </div>
                     </div>
                 </div>
