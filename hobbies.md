@@ -71,6 +71,7 @@ navbar_title: Hobbies
                                     Each cage (group of cells with the same color) must add up to the number shown, 
                                     and no digit can repeat within a cage.
                                 </p>
+                                <img src="/images/killer-sudoku-sample.jpg" alt="Killer Sudoku Example" class="img-fluid mt-2 border rounded" style="max-height: 200px;">
                             </div>
                         </div>
                     </div>
@@ -79,17 +80,18 @@ navbar_title: Hobbies
                 <!-- Coding Challenge -->
                 <div class="row">
                     <div class="col-md-6">
-                        <h5>Daily Coding Challenge</h5>
+                        <h5>Random Coding Challenge</h5>
                         <div class="card bg-light">
                             <div class="card-body text-center">
-                                <p class="text-muted mb-2">Sharpen your programming skills with a daily problem:</p>
-                                <a href="https://loj.ac/p/random" target="_blank" class="btn btn-primary">
-                                    <i class="fas fa-code"></i> Get a Random Problem
+                                <p class="text-muted mb-2">Sharpen your programming skills with random Codeforces problems:</p>
+                                <a href="https://karimelghamry.github.io/Codeforces-Randomizer/" target="_blank" class="btn btn-primary">
+                                    <i class="fas fa-code"></i> Codeforces Randomizer
                                 </a>
                                 <p class="mt-3 small">
-                                    LibreOJ (LOJ) offers a variety of algorithmic problems ranging from easy to hard.
-                                    Practice implementing algorithms, data structures, and problem-solving techniques.
+                                    Get random competitive programming problems from Codeforces based on difficulty level.
+                                    Perfect for algorithm practice and interview preparation.
                                 </p>
+                                <img src="/images/codeforces-randomizer.jpg" alt="Codeforces Randomizer Example" class="img-fluid mt-2 border rounded" style="max-height: 200px;">
                             </div>
                         </div>
                     </div>
