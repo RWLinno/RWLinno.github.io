@@ -185,32 +185,19 @@ navbar_title: Hobbies
                                     <h5 class="mb-0"><i class="fas fa-file-alt mr-2"></i> Random Blog Post</h5>
                                 </div>
                                 <div class="card-body blog-content">
-                                    {% assign blog_posts = site.posts | sample: 1 %}
-                                    {% for post in blog_posts %}
-                                    <h4 class="font-weight-bold">{{ post.title }}</h4>
-                                    <p class="text-muted mb-3">
-                                        <i class="far fa-calendar-alt mr-1"></i> {{ post.date | date: "%B %d, %Y" }}
-                                        {% if post.categories %}
-                                        <span class="mx-2">|</span>
-                                        <i class="fas fa-folder-open mr-1"></i> 
-                                        {% for category in post.categories %}
-                                        <span class="badge badge-secondary mr-1">{{ category }}</span>
-                                        {% endfor %}
-                                        {% endif %}
-                                    </p>
-                                    <div class="post-excerpt">
-                                        {{ post.excerpt }}
+                                    <div id="github-md-container">
+                                        <div class="text-center py-4">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="sr-only">Loading...</span>
+                                            </div>
+                                            <p class="mt-2 text-muted">Loading random note from GitHub...</p>
+                                        </div>
                                     </div>
-                                    <a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-primary mt-3">
-                                        <i class="fas fa-book-open mr-1"></i> Read More
-                                    </a>
-                                    {% endfor %}
-                                    
-                                    {% if blog_posts.size == 0 %}
-                                    <div class="alert alert-info">
-                                        <i class="fas fa-info-circle mr-2"></i> No blog posts available at the moment.
+                                    <div class="text-center mt-3" id="github-repo-link" style="display: none;">
+                                        <a href="https://github.com/RWLinno/notes" target="_blank" class="btn btn-sm btn-outline-secondary">
+                                            <i class="fab fa-github mr-1"></i> View All Notes on GitHub
+                                        </a>
                                     </div>
-                                    {% endif %}
                                 </div>
                             </div>
                         </div>
@@ -269,5 +256,138 @@ navbar_title: Hobbies
         padding-left: 15px;
         margin: 15px 0;
     }
+    .github-markdown {
+        padding: 15px;
+    }
+    .github-markdown h1 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #eaecef;
+    }
+    .github-markdown h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.3rem;
+        border-bottom: 1px solid #eaecef;
+    }
+    .github-markdown h3 {
+        font-size: 1.25rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+    .github-markdown pre {
+        background-color: #f6f8fa;
+        border-radius: 6px;
+        padding: 16px;
+        overflow: auto;
+    }
+    .github-markdown code {
+        background-color: rgba(27, 31, 35, 0.05);
+        border-radius: 3px;
+        font-family: monospace;
+        padding: 0.2em 0.4em;
+    }
+    .github-markdown img {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .github-markdown blockquote {
+        padding: 0 1em;
+        color: #6a737d;
+        border-left: 0.25em solid #dfe2e5;
+        margin-left: 0;
+    }
+    .file-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 0;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #eaecef;
+    }
+    .file-name {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    .file-name i {
+        margin-right: 5px;
+        color: #6a737d;
+    }
+    .file-date {
+        font-size: 0.85rem;
+        color: #6a737d;
+    }
+}
 </style>
 
+<!-- JavaScript for GitHub Markdown rendering -->
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const apiUrl = 'https://api.github.com/repos/RWLinno/notes/contents';
+    const container = document.getElementById('github-md-container');
+    const repoLink = document.getElementById('github-repo-link');
+    
+    // Fetch all markdown files from the repository
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Filter for markdown files only
+            const mdFiles = data.filter(file => 
+                file.name.toLowerCase().endsWith('.md') || 
+                file.name.toLowerCase().endsWith('.markdown'));
+            
+            if (mdFiles.length === 0) {
+                showError('No Markdown files found in the repository.');
+                return;
+            }
+            
+            // Select a random markdown file
+            const randomFile = mdFiles[Math.floor(Math.random() * mdFiles.length)];
+            
+            // Fetch the content of the selected file
+            return fetch(randomFile.download_url)
+                .then(response => response.text())
+                .then(content => {
+                    // Display the file info and content
+                    const fileDate = new Date(randomFile.sha).toLocaleDateString();
+                    const fileInfoHTML = `
+                        <div class="file-info">
+                            <div class="file-name">
+                                <i class="fas fa-file-alt"></i> ${randomFile.name}
+                            </div>
+                            <div class="file-date">
+                                <i class="far fa-clock"></i> Random selection
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Render markdown content using marked.js
+                    const renderedContent = marked.parse(content);
+                    
+                    // Set the HTML content
+                    container.innerHTML = fileInfoHTML + 
+                        `<div class="github-markdown">${renderedContent}</div>`;
+                    
+                    // Show the GitHub repo link
+                    repoLink.style.display = 'block';
+                });
+        })
+        .catch(error => {
+            showError('Error fetching content from GitHub: ' + error.message);
+            console.error('GitHub API Error:', error);
+        });
+        
+    function showError(message) {
+        container.innerHTML = `
+            <div class="alert alert-warning" role="alert">
+                <i class="fas fa-exclamation-triangle mr-2"></i> ${message}
+            </div>
+        `;
+        repoLink.style.display = 'block';
+    }
+});
+</script>
