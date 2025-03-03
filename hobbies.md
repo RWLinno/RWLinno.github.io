@@ -57,27 +57,15 @@ navbar_title: Hobbies
                     <div class="col-md-4">
                         <h5><i class="fas fa-puzzle-piece"></i> Daily Killer Sudoku</h5>
                         <div class="challenge-container" style="max-width: 400px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                            <iframe id="sudoku-frame" 
+                            <iframe src="https://sudoku.com/killer/embed" 
                                     style="width: 100%; height: 400px;" 
                                     allowtransparency="true" 
                                     frameborder="0">
                             </iframe>
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    // Generate a random 5-digit number between 10000 and 99999
-                                    function getRandomSudokuId() {
-                                        return Math.floor(Math.random() * 90000) + 10000;
-                                    }
-                                    
-                                    // Set iframe source to a random sudoku puzzle
-                                    const sudokuFrame = document.getElementById('sudoku-frame');
-                                    sudokuFrame.src = "https://www.dailykillersudoku.com/puzzle/" + getRandomSudokuId();
-                                });
-                            </script>
                         </div>
                         <div class="text-center mt-3">
                             <p class="small text-muted">
-                                Daily Killer Sudoku puzzle - A new challenge each day!
+                                Daily Killer Sudoku puzzle - Solve it directly on this page!
                             </p>
                         </div>
                     </div>
