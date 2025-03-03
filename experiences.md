@@ -15,7 +15,14 @@ navbar_title: Experiences
                     <div class="col">
                         <h5>Research Intern</h5>
                         <p class="text-muted">Hong Kong University of Science and Technology(GZ) | Fall 2023 - Fall 2024</p>
-                        <p>Research intern in the CityMind group led by Prof. Yuxuan Liang. Research includes ST data prediction and time series prediction; reproducing ST graphical models in traffic flow/urban scenarios, innovating accessory modules based on existing models and confirming performance improvements through experiments.</p>
+                        <p>Research intern in the CityMind group led by Prof. Yuxuan Liang. Research includes ST data prediction and time series prediction, reproducing ST graphical models in traffic flow/urban scenarios, innovating accessory modules based on existing models and confirming performance improvements through experiments.</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <h5>AI Research Intern</h5>
+                        <p class="text-muted">Neusoft Corporation & Jinan University | Fall 2023</p>
+                        <p>Participated in a joint artificial intelligence internship project between Neusoft Corporation and Jinan University. Focused on multimodal emotion recognition algorithm development and system implementation.</p>
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -69,7 +76,7 @@ navbar_title: Experiences
                     <div class="col">
                         <h5>Club Membership</h5>
                         <p class="text-muted">The ACM Programming Team of Jinan University | 2020-2023</p>
-                        <p>Achieved 1762 points on Codeforces. First freshman to win bronze medal in varsity team history and achieve AK in varsity competition.</p>
+                        <p>Achieved 1762 rating (max. candidate master, 1961) on Codeforces. First freshman to win bronze medal in varsity team history and achieve AK in varsity competition.</p>
                     </div>
                 </div>
             </div>
