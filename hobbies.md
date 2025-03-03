@@ -43,10 +43,10 @@ navbar_title: Hobbies
                     <!-- Daily Chess Puzzle -->
                     <div class="col-md-4">
                         <h5><i class="fas fa-chess"></i> Daily Chess Puzzle</h5>
-                        <div id="chess-puzzle" style="max-width: 400px; margin: 0 auto;">
+                        <div class="challenge-container" style="max-width: 400px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                             <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 100%; height: 400px;" allowtransparency="true" frameborder="0"></iframe>
                         </div>
-                        <div class="text-center mt-2">
+                        <div class="text-center mt-3">
                             <p class="small text-muted">
                                 Daily chess puzzle - Solve it directly on this page!
                             </p>
@@ -56,16 +56,28 @@ navbar_title: Hobbies
                     <!-- Daily Killer Sudoku -->
                     <div class="col-md-4">
                         <h5><i class="fas fa-puzzle-piece"></i> Daily Killer Sudoku</h5>
-                        <div id="sudoku-puzzle" style="max-width: 400px; margin: 0 auto;">
-                            <iframe src="https://www.killersudokuonline.com/game.html?embed=1" 
+                        <div class="challenge-container" style="max-width: 400px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <iframe id="sudoku-frame" 
                                     style="width: 100%; height: 400px;" 
                                     allowtransparency="true" 
                                     frameborder="0">
                             </iframe>
+                            <script>
+                                document.addEventListener('DOMContentLoaded', function() {
+                                    // Generate a random 5-digit number between 10000 and 99999
+                                    function getRandomSudokuId() {
+                                        return Math.floor(Math.random() * 90000) + 10000;
+                                    }
+                                    
+                                    // Set iframe source to a random sudoku puzzle
+                                    const sudokuFrame = document.getElementById('sudoku-frame');
+                                    sudokuFrame.src = "https://www.dailykillersudoku.com/puzzle/" + getRandomSudokuId();
+                                });
+                            </script>
                         </div>
-                        <div class="text-center mt-2">
+                        <div class="text-center mt-3">
                             <p class="small text-muted">
-                                Daily Killer Sudoku puzzle - Solve it directly on this page!
+                                Daily Killer Sudoku puzzle - A new challenge each day!
                             </p>
                         </div>
                     </div>
@@ -73,49 +85,16 @@ navbar_title: Hobbies
                     <!-- Daily Programming Challenge -->
                     <div class="col-md-4">
                         <h5><i class="fas fa-code"></i> Daily Coding Challenge</h5>
-                        <div id="nowcoder-challenge" style="max-width: 400px; margin: 0 auto;">
-                            <iframe id="problem-frame" 
+                        <div class="challenge-container" style="max-width: 400px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                            <iframe src="https://karimelghamry.github.io/Codeforces-Randomizer/" 
                                     style="width: 100%; height: 400px; border: none;" 
                                     allowtransparency="true" 
                                     frameborder="0">
                             </iframe>
-                            <script>
-                                document.addEventListener('DOMContentLoaded', function() {
-                                    // Problem links
-                                    const problemLinks = [
-                                        "https://ac.nowcoder.com/acm/problem/53785",
-                                        "https://ac.nowcoder.com/acm/problem/23483",
-                                        "https://ac.nowcoder.com/acm/problem/15425",
-                                        "https://ac.nowcoder.com/acm/problem/16429",
-                                        "https://ac.nowcoder.com/acm/problem/16596",
-                                        "https://ac.nowcoder.com/acm/problem/21302",
-                                        "https://ac.nowcoder.com/acm/problem/22164",
-                                        "https://ac.nowcoder.com/acm/problem/14583",
-                                        "https://ac.nowcoder.com/acm/problem/20953",
-                                        "https://ac.nowcoder.com/acm/problem/17241"
-                                    ];
-                                    
-                                    // Get today's problem link
-                                    function getTodayProblemLink() {
-                                        const today = new Date();
-                                        const day = today.getDate();
-                                        const month = today.getMonth() + 1;
-                                        const year = today.getFullYear();
-                                        
-                                        // Use date as index to ensure a new problem each day
-                                        const index = (day + month * 30 + (year - 2020) * 365) % problemLinks.length;
-                                        return problemLinks[index];
-                                    }
-                                    
-                                    // Set iframe source to today's problem
-                                    const problemFrame = document.getElementById('problem-frame');
-                                    problemFrame.src = getTodayProblemLink();
-                                });
-                            </script>
                         </div>
-                        <div class="text-center mt-2">
+                        <div class="text-center mt-3">
                             <p class="small text-muted">
-                                Daily competitive programming challenge - A new problem each day!
+                                Random Codeforces problem - Challenge yourself with competitive programming!
                             </p>
                         </div>
                     </div>
