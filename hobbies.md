@@ -40,7 +40,7 @@ navbar_title: Hobbies
                     <i class="fas fa-brain"></i> Daily Challenges
                 </h4>
                 
-                <!-- Chess Puzzle (保留现有的) -->
+                <!-- Chess Puzzle -->
                 <div class="row mb-4">
                     <div class="col-md-6">
                         <h5>Daily Chess Puzzle</h5>
@@ -53,8 +53,84 @@ navbar_title: Hobbies
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.js"></script>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chessboard-js/1.0.0/chessboard-1.0.0.min.css">
                         <script>
-                            // 现有的国际象棋脚本保持不变
-                            // ...
+                            document.addEventListener('DOMContentLoaded', function() {
+                                // Initialize variables
+                                var board = null;
+                                var game = new Chess();
+                                var puzzles = [
+                                    {
+                                        fen: "r2qk2r/pp1n1ppp/2pbpn2/3p4/2PP4/1PNQPN2/P4PPP/R1B1K2R w KQkq - 0 9",
+                                        solution: ["e1c1", "d7b6", "f3e5", "f6e4", "e5c6", "b7c6", "d3e4", "d5e4"]
+                                    },
+                                    {
+                                        fen: "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+                                        solution: ["f3g5", "d7d5", "e4d5", "c6a5", "c4b5", "c7c6", "d5c6", "b7c6", "b5a4"]
+                                    },
+                                    {
+                                        fen: "rn1qkb1r/ppp2ppp/3p1n2/4p3/2B1P1b1/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+                                        solution: ["f3e5", "d6e5", "d3d4"]
+                                    }
+                                ];
+                                var currentPuzzle = 0;
+                                var currentMove = 0;
+
+                                // Set up the board
+                                function setupBoard(puzzleIndex) {
+                                    // Reset game and move counter
+                                    game = new Chess(puzzles[puzzleIndex].fen);
+                                    currentMove = 0;
+                                    
+                                    // Set up the board with the FEN position
+                                    board = Chessboard('chess-board', {
+                                        position: puzzles[puzzleIndex].fen,
+                                        pieceTheme: 'https://chessboardjs.com/img/chesspieces/wikipedia/{piece}.png',
+                                        draggable: false,
+                                        orientation: 'white'
+                                    });
+                                }
+
+                                // Show the solution move by move
+                                function showSolution() {
+                                    var solution = puzzles[currentPuzzle].solution;
+                                    if (currentMove < solution.length) {
+                                        // Make the move
+                                        game.move({
+                                            from: solution[currentMove].substring(0, 2),
+                                            to: solution[currentMove].substring(2, 4),
+                                            promotion: solution[currentMove].substring(4, 5) || undefined
+                                        });
+                                        
+                                        // Update the board
+                                        board.position(game.fen());
+                                        
+                                        // Increment the move counter
+                                        currentMove++;
+                                        
+                                        // Schedule the next move after a delay
+                                        setTimeout(showSolution, 1000);
+                                    }
+                                }
+
+                                // Set up the initial board
+                                setupBoard(currentPuzzle);
+
+                                // Event listeners for buttons
+                                document.getElementById('showSolution').addEventListener('click', function() {
+                                    // Reset the board to the starting position before showing solution
+                                    board.position(puzzles[currentPuzzle].fen);
+                                    game = new Chess(puzzles[currentPuzzle].fen);
+                                    currentMove = 0;
+                                    
+                                    // Start showing the solution
+                                    showSolution();
+                                });
+
+                                document.getElementById('newPuzzle').addEventListener('click', function() {
+                                    // Move to the next puzzle
+                                    currentPuzzle = (currentPuzzle + 1) % puzzles.length;
+                                    setupBoard(currentPuzzle);
+                                });
+                            });
                         </script>
                     </div>
                     
@@ -71,7 +147,6 @@ navbar_title: Hobbies
                                     Each cage (group of cells with the same color) must add up to the number shown, 
                                     and no digit can repeat within a cage.
                                 </p>
-                                <img src="/images/killer-sudoku-sample.jpg" alt="Killer Sudoku Example" class="img-fluid mt-2 border rounded" style="max-height: 200px;">
                             </div>
                         </div>
                     </div>
@@ -91,7 +166,6 @@ navbar_title: Hobbies
                                     Get random competitive programming problems from Codeforces based on difficulty level.
                                     Perfect for algorithm practice and interview preparation.
                                 </p>
-                                <img src="/images/codeforces-randomizer.jpg" alt="Codeforces Randomizer Example" class="img-fluid mt-2 border rounded" style="max-height: 200px;">
                             </div>
                         </div>
                     </div>
