@@ -143,12 +143,14 @@ pages:
   url: /publications
 - name: Experiences
   url: /experiences
-- name: Projects
-  url: /projects
+# - name: Projects
+#   url: /projects
 - name: Awards
   url: /awards
 - name: Hobbies
   url: /hobbies
+- name: Daily Challenges
+  url: /daily-challenges
 - name: Links
   url: /links 
 

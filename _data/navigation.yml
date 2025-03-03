@@ -5,10 +5,12 @@ pages:
   url: /publications
 - name: Awards
   url: /awards
-- name: Projects
-  url: /projects
+# - name: Projects  # 注释掉Projects
+#   url: /projects  
 - name: Hobbies
   url: /hobbies
+- name: Daily Challenges
+  url: /daily-challenges
 - name: Experiences
   url: /experiences
 - name: Links

@@ -145,24 +145,39 @@ navbar_title: Hobbies
     </div>
 </div>
 
-<div class="row mb-4">
+<div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
                     <i class="fas fa-gamepad"></i> Game Development
                 </h4>
-                <p>I have experience in publishing indie games. One of my notable works is:</p>
-
-<div class="row mt-4">
-                    <div class="col-md-4">
-                        <img src="{{ '/images/orphan-of-the-petal.jpg' | relative_url }}" alt="Orphan of the Petal" class="img-fluid rounded">
+                
+                <div class="container">
+                    {% assign game_projects = site.data.projects | where: "category", "Game Development" %}
+                    {% for project in game_projects %}
+                    <div class="row mb-5">
+                        <div class="col-md-4">
+                            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="img-fluid rounded shadow-sm">
+                        </div>
+                        <div class="col-md-8">
+                            <h5>{{ project.title }}</h5>
+                            <p class="text-muted mb-2"><i class="far fa-calendar-alt"></i> {{ project.status }}</p>
+                            <p>{{ project.description }}</p>
+                            <div class="mt-2 mb-3">
+                                {% for tag in project.tags %}
+                                <span class="badge badge-primary">{{ tag }}</span>
+                                {% endfor %}
+                            </div>
+                            {% if project.link %}
+                            <a href="{{ project.link }}" target="_blank" class="btn btn-sm btn-outline-primary">
+                                <i class="fas {% if project.link contains 'github' %}fa-github{% elsif project.link contains 'pdf' %}fa-file-pdf{% elsif project.link contains 'steam' %}fa-steam{% else %}fa-external-link-alt{% endif %}"></i> 
+                                {% if project.link_text %}{{ project.link_text }}{% else %}View Project{% endif %}
+                            </a>
+                            {% endif %}
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <h5>Orphan of the Petal</h5>
-                        <p>There is a story, “Black Jenny” will have a seven-color flowers, came to the side of the suffering children, the children's wishes... ? ... and yet, it's impossible not to pay the price. ? The hero Winnie, not aware of the danger of pansy, she made a wish, lost memory and relatives, everything around become chaotic? . Will she end up as a petal, or will she be saved by a dark blue-haired mystery girl?.</p>
-                        <a href="https://store.steampowered.com/app/975050/Orphan_of_the_Petal/" target="_blank" class="btn btn-primary">View on Steam</a>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
