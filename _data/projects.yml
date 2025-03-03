@@ -60,48 +60,48 @@
 
 - title: Orphan of the Petal
   category: Game Development
-  status: 2021
-  description: A narrative-driven adventure game with unique art style and emotional storytelling. The game follows the journey of a young orphan in a fantastical world of floating petals.
+  status: 2022
+  description: Black history.
   image: /images/orphan-of-the-petal.png
   tags:
-    - Unity
-    - C#
-    - Narrative Game
-  link: https://store.steampowered.com/app/1793340/_/
+    - RPG Maker
+    - Ruby
+    - Indie Game
+  link: https://store.steampowered.com/app/975050/Orphan_of_the_Petal/
   link_text: View on Steam
 
 - title: Spring End
   category: Game Development
-  status: 2022
-  description: A puzzle-platformer game with a focus on environmental storytelling. Players navigate through a world where spring has mysteriously ended, solving puzzles to uncover the truth.
+  status: 2017
+  description: Black history.
   image: /images/spring-end.png
   tags:
-    - Unity
-    - C#
-    - Puzzle Game
-  link: https://store.steampowered.com/app/1793340/_/
-  link_text: View on Steam
+    - RPG Maker
+    - Ruby
+    - Indie Game
+  link: https://github.com/RWLinno/SpringEnd
+  link_text: View on Github
 
 - title: Joy
   category: Game Development
-  status: 2022
-  description: A casual mobile game focused on bringing moments of joy to players through simple yet engaging gameplay mechanics. Features colorful visuals and relaxing audio.
+  status: 2016
+  description: Black history.
   image: /images/joy.png
   tags:
-    - Unity
-    - C#
-    - Mobile Game
+    - RPG Maker
+    - Ruby
+    - Indie Game
   link: https://github.com/RWLinno/Joy
   link_text: View on GitHub
 
 - title: Dimensional Cave
   category: Game Development
-  status: 2023
-  description: An experimental game that plays with the concept of dimensions. Players navigate through a cave system that shifts between 2D and 3D perspectives, creating unique puzzle-solving opportunities.
+  status: 2014
+  description: Black history.
   image: /images/dimensional-cave.png
   tags:
-    - Unity
-    - C#
-    - Experimental
+    - RPG Maker
+    - Ruby
+    - Indie Game
   link: https://github.com/RWLinno/DimensionalCave
   link_text: View on GitHub 
