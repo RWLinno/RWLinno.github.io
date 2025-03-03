@@ -55,9 +55,9 @@ navbar_title: Hobbies
                     
                     <!-- Daily Killer Sudoku -->
                     <div class="col-md-4">
-                        <h5><i class="fas fa-puzzle-piece"></i> Daily Killer Sudoku</h5>
+                        <h5><i class="fas fa-puzzle-piece"></i> Daily Sudoku Puzzle</h5>
                         <div class="challenge-container" style="max-width: 400px; margin: 0 auto; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                            <iframe src="https://sudoku.com/killer/embed" 
+                            <iframe src="https://www.websudoku.com/?level=3&embed=true" 
                                     style="width: 100%; height: 400px;" 
                                     allowtransparency="true" 
                                     frameborder="0">
@@ -65,7 +65,7 @@ navbar_title: Hobbies
                         </div>
                         <div class="text-center mt-3">
                             <p class="small text-muted">
-                                Daily Killer Sudoku puzzle - Solve it directly on this page!
+                                Daily Sudoku puzzle - A new challenge each day!
                             </p>
                         </div>
                     </div>
@@ -151,6 +151,9 @@ navbar_title: Hobbies
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="mt-4">
+                    {{ site.data.random_blog_content | markdownify }}
                 </div>
             </div>
         </div>
