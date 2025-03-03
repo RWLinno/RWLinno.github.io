@@ -18,6 +18,8 @@ navbar_title: Publications
                         <button type="button" class="btn btn-outline-primary" data-filter="Spatio-temporal">Spatio-temporal</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Time Series">Time Series</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Multimodal">Multimodal</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="Computer Vision">Computer Vision</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="Reinforcement Learning">Reinforcement Learning</button>
                     </div>
                 </div>
                 
