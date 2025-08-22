@@ -17,7 +17,7 @@ navbar_title: Biography
                     </div>
                     <div class="col-md-8">
                         <p>
-                            Hello! I'm Linrui Wang (王林锐), a graduate student at the Hong Kong University of Science and Technology (Guangzhou), where I'm pursuing my studies in Data Science and Analytics at the Information Hub. My research interests primarily focus on time series analysis, spatio-temporal data mining, and multimodal learning.
+                            Hello! I'm Weilin Ruan (阮炜霖), a graduate student at the Hong Kong University of Science and Technology (Guangzhou), where I'm pursuing my studies in Data Science and Analytics at the Information Hub. My research interests primarily focus on time series analysis, spatio-temporal data mining, and multimodal learning.
                         </p>
                         <p>
                             My academic journey began at Jinan University, where I completed my undergraduate studies in Network Engineering. During my undergraduate years, I developed a strong foundation in computer science and discovered my passion for research in artificial intelligence and data science.

@@ -1,6 +1,6 @@
-name: Weilin Ruan
+name: Weilin Ruan (阮炜霖)
 primary_name: Weilin Ruan
-secondary_name: ""
+secondary_name: "阮炜霖"
 navbar_name: "Weilin Ruan"
 
 positions:
@@ -28,7 +28,7 @@ short_bio: >-
   <strong><font color='red'>[Highlight]</font> Now I am looking for research partners and PhD opportunities. If interested in my research direction, please feel free to contact me!</strong>
   </p>
   <p style="margin-bottom: 5px;">
-  My research interests include Spatio-Temporal Data Mining, Multimodal Learning, LLM-Agents, Computer Vision, and Graph Learning.
+  My research interests include Time Series Forecasting, Spatio-Temporal Data Mining, Multimodal Learning, Urban Computing, and Deep Learning Applications.
   </p>
 
 portrait_url: /images/4000x4000ce.jpg
@@ -44,6 +44,9 @@ education:
   date: Sep 2020 - June 2024
 
 experience:
+- name: ByteDance Inc.
+  position: Algorithm Research Intern
+  date: Summer 2025
 - name: Guangzhou Sesame Coding Education Technology Co., Ltd.
   position: Algorithm Learning Engineer
   date: Fall 2021

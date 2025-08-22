@@ -7,8 +7,8 @@ authors:
   - Wei Chen
   - Li Liu
   - Yuxuan Liang
-pub: "T-iTS"
-pub_date: "2024"
+pub: "TITS"
+pub_date: "2025"
 selected: true
 categories: ["Spatio-temporal"]
 cover: "/images/cross-space-time.png"
@@ -16,5 +16,8 @@ abstract: "This paper proposes a novel spatio-temporal unitized model for traffi
 links:
   Paper:
     url: "https://arxiv.org/abs/2411.09251"
+    target: "_blank"
+  Code:
+    url: "https://github.com/RWLinno/STUM/"
     target: "_blank"
 --- 

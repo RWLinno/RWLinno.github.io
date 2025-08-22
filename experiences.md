@@ -13,6 +13,13 @@ navbar_title: Experiences
                 </h4>
                 <div class="row mb-4">
                     <div class="col">
+                        <h5>Algorithm Research Intern</h5>
+                        <p class="text-muted">ByteDance Inc. | Summer 2025</p>
+                        <p>Main contributions: 1) Operations tool optimization: Added Actor monitoring alerts and log capacity warning mechanisms; 2) Model training platform maintenance and feature development: Provided monitoring services on the Norbert platform and participated in early development of ParameterServer synchronization functionality after search and recommendation model training; 3) Intelligent operations system development: Led the development of OnCallAgent intelligent engineering Q&A system, based on Vision Language Models (VLM) and multi-agent collaboration technology, providing intelligent diagnostic solutions for enterprise OnCall scenarios.</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
                         <h5>Research Intern</h5>
                         <p class="text-muted">Hong Kong University of Science and Technology(GZ) | Fall 2023 - Fall 2024</p>
                         <p>Research intern in the CityMind group led by Prof. Yuxuan Liang. Research includes ST data prediction and time series prediction, reproducing ST graphical models in traffic flow/urban scenarios, innovating accessory modules based on existing models and confirming performance improvements through experiments.</p>

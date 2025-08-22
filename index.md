@@ -63,7 +63,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>Program Committee Member</strong> - Invited to serve as a Program Committee member for AAAI 2026.
+                                <strong>Program Committee</strong> - Invited to serve as a Program Committee member for AAAI 2026.
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">July 2025</span>
@@ -83,7 +83,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>Paper Acceptance</strong> - Paper on Traffic Flow Forecasting accepted to IEEE TITS 2025.
+                                <strong>Paper Acceptance</strong> - Paper on Traffic Flow Forecasting accepted to IEEE TITS Journal.
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">Aug 2025</span>
@@ -113,7 +113,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>Paper Acceptance</strong> - Paper on spatio-temporal forecasting accepted to ECML-PKDD 2025.
+                                <strong>Paper Acceptance</strong> - Paper on Spatio-Temporal Forecasting accepted to ECML-PKDD 2025.
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">May 2025</span>
@@ -137,6 +137,36 @@ navbar_title: Home
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">Dec 2024</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Outstanding Graduate</strong> - Received the undergraduate certificate from Jinan University as an outstanding graduate of the department of Information Science and Technology.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">June 2024</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Research Internship</strong> - Joined the <a href="https://citymind.top/about-us/" target="_blank">CityMind</a> team as an intern led by <a href="http://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Aug 2023</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>RBCC Achievement</strong> - Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">July 2023</span>
                             </div>
                         </div>
                     </li>
