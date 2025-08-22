@@ -19,15 +19,13 @@ owner:
   avatar: images/4000x4000ce.jpg
 #  bio:
   email: rwlinno@gmail.com
-  # Social networking links are used in author-bio sidebar. Update and remove as you like.
-  twitter: rwlinno
-  # facebook: caihanlin2002
+  # Social networking links are used in author-bio sidebar
   github: rwlinno
-  CSDN: SC_Linno
-  bilibili: 6954236
-  #linkedin: 
   scholar: https://scholar.google.com/citations?user=9uk1jJoAAAAJ
   openreview: https://openreview.net/profile?id=~Weilin_Ruan2
+  twitter: rwlinno
+  CSDN: SC_Linno
+  bilibili: 6954236
   # instagram: lancecai2002
   # lastfm:
   # tumblr:

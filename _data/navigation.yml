@@ -15,3 +15,5 @@ pages:
   url: /experiences
 - name: Links
   url: /links 
+- name: Biography
+  url: /biography

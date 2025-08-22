@@ -15,22 +15,32 @@ navbar_title: Home
                 </h4>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item border-0">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <strong>HKUST(GZ)</strong> - Information Hub - Data Science and Analysis
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-secondary">Sep 2024 - June 2026</span>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ '/images/hkust_logo.png' | relative_url }}" alt="HKUST(GZ) Logo" class="mr-3" style="height: 50px;">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <strong>HKUST(GZ)</strong> - Information Hub - Data Science and Analysis
+                                    </div>
+                                    <div>
+                                        <span class="badge badge-pill badge-secondary">Sep 2024 - June 2026</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item border-0">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <strong>Jinan University</strong> - Computer Science Department - Network Engineering
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-secondary">Sep 2020 - June 2024</span>
+                        <div class="d-flex align-items-center">
+                            <img src="{{ '/images/jnu_logo.png' | relative_url }}" alt="Jinan University Logo" class="mr-3" style="height: 50px;">
+                            <div class="flex-grow-1">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <strong>Jinan University</strong> - Computer Science Department - Network Engineering
+                                    </div>
+                                    <div>
+                                        <span class="badge badge-pill badge-secondary">Sep 2020 - June 2024</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -53,30 +63,80 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>Outstanding Graduate</strong> - Received the undergraduate certificate from Jinan University as an outstanding graduate of the department of Information Science and Technology.
+                                <strong>Program Committee Member</strong> - Invited to serve as a Program Committee member for AAAI 2026.
                             </div>
                             <div>
-                                <span class="badge badge-pill badge-secondary">June 2024</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <strong>Research Internship</strong> - Joined the <a href="https://citymind.top/about-us/" target="_blank">CityMind</a> team as an intern led by <a href="http://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-secondary">Aug 2023</span>
+                                <span class="badge badge-pill badge-secondary">July 2025</span>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>RBCC Achievement</strong> - Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
+                                <strong>Paper Acceptance</strong> - Paper accepted to ICCV 2025 Workshop.
                             </div>
                             <div>
-                                <span class="badge badge-pill badge-secondary">July 2023</span>
+                                <span class="badge badge-pill badge-secondary">July 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - Paper on Traffic Flow Forecasting accepted to IEEE TITS 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Aug 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - Paper on Multimodal Building Electricity Loads Forecasting accepted to ACM MM 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">July 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - Paper on Urban Heat Island Effect Forecasting accepted to KDD 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">May 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - Paper on spatio-temporal forecasting accepted to ECML-PKDD 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">May 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - Paper on Multimodal Time Series Forecasting accepted to ICML 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">May 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Reviewer Appointment</strong> - Appointed as a reviewer for IJCNN and ICASSP conferences.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Dec 2024</span>
                             </div>
                         </div>
                     </li>
