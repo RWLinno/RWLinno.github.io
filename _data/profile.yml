@@ -13,12 +13,6 @@ email: rwlinno@gmail.com
 cv_link: /file/CV_en.pdf
 cv_zh_link: /file/CV_zh.pdf
 github: rwlinno
-csdn: SC_Linno
-bilibili: 6954236
-#twitter: rwlinno
-# linkedin: your_linkedin_id
-google_scholar: 9uk1jJoAAAAJ
-openreview: ~Weilin_Ruan2
 
 short_bio: >-
   <p style="margin-bottom: 5px;">
@@ -28,155 +22,9 @@ short_bio: >-
   <strong><font color='red'>[Highlight]</font> Now I am looking for research partners and PhD opportunities. If interested in my research direction, please feel free to contact me!</strong>
   </p>
   <p style="margin-bottom: 5px;">
-  My research interests include Time Series Forecasting, Spatio-Temporal Data Mining, Multimodal Learning, Urban Computing, and Deep Learning.
+  My research interests include Time Series Forecasting, Spatio-Temporal Data Mining, Multimodal Learning, Urban Computing, and Deep Learning Applications.
   </p>
 
 portrait_url: /images/4000x4000ce.jpg
 portrait_caption: >-
   Welcome to my homepage!
-
-education:
-- name: Hong Kong University of Science and Technology (Guangzhou)
-  position: Master of Philosophy - Information Hub - Data Science & Analytics
-  date: Sep 2024 - June 2026
-- name: Jinan University
-  position: Bachelor of Engineering - Computer Science and Technology - Network Engineering
-  date: Sep 2020 - June 2024
-
-experience:
-- name: ByteDance Inc.
-  position: Algorithm Research Intern
-  date: Summer 2025
-- name: Guangzhou Sesame Coding Education Technology Co., Ltd.
-  position: Algorithm Learning Engineer
-  date: Fall 2021
-- name: Jinan University
-  position: Class President, The 20th Network Engineering Class Committee
-  date: 2020-2024
-- name: Jinan University
-  position: Minister of Propaganda Department, Student Dormitory Building Association
-  date: 2020-2022
-- name: Jinan University
-  position: Club Member, Computer Geek Association
-  date: 2020-2023
-
-awards:
-- name: Outstanding Graduates (TOP 0.5%, only 37 places at CS department)
-  date: Fall 2024
-- name: Golden Arowana Scholarship (TOP 0.5%, only 30 places at JNU)
-  date: Fall 2023
-- name: Excellent Student Cadre Title of Jinan University (TOP 5%)
-  date: Fall 2023
-- name: Excellent Student Cadre Title of Jinan University (TOP 5%)
-  date: Fall 2022
-- name: Outstanding students of Jinan University First-class scholarship (Top 10%)
-  date: Fall 2022
-- name: Outstanding students of Jinan University Second-class scholarship (Top 30%)
-  date: Fall 2021
-- name: 3 Bronze Medals, The ICPC International Collegiate Programming Contest (ACM-ICPC) 45-47th
-  date: 2020-2022
-- name: 1 Silver Medal & 2 Bronze Medals, 2022 China Collegiate Programming Contest (ACM-CCPC)
-  date: Spring 2022
-- name: Honorable Mentions, The Mathematical/Interdisciplinary Contest in Modeling (MCM/ICM)
-  date: Spring 2023
-- name: 2 National Second Prize & 2 Provincial First Prize, Professional Software Engineering LanQiao Cup Final Contest
-  date: 2021-2023
-- name: 1 Champion & 2 Second Prize, University-level ACM Programming Contest
-  date: 2021-2023
-- name: 1 Gold Medal & 1 Silver Medal, National University Student Algorithm Design and Programming Challenge (Top 5%)
-  date: 2022
-
-news:
-- content: As an outstanding graduate of the department of Information Science and Technology, receive the undergraduate certificate from Jinan University.
-  date: June 2024
-- content: Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper.
-  date: July 2023
-- content: Joined the team CityMind as an INTERN led by Prof. Yuxuan Liang.
-  date: Aug 2023
-- content: Passed IELTS with 6.5 (6.5 8.0 6.0 6.0).
-  date: Oct 2023
-- content: Updated my scholarships and honors.
-  date: Nov 2023
-
-projects:
-- name: ViT Model-based Medical Image Assisted Diagnostic System
-  date: Ongoing
-  image: /images/ViT.png
-  description: A medical image diagnostic system based on Vision Transformer models.
-- name: Intelligent complementary diagnosis of degenerative OA following TCM thinking
-  date: Ongoing
-  image: /images/OA.png
-  description: A project focused on complementary diagnosis of osteoarthritis using traditional Chinese medicine principles.
-  link: https://rwlinno.github.io/portfolios/OA.pdf
-- name: Predicting Wordle Results
-  date: 2023
-  image: /images/predicting-wordle-results.png
-  description: A project that aims to predict the number of users for a platform, the percentage of achievement intervals, and the difficulty factor on a dataset of Wordle puzzles. I was the main coder and author of the paper. The project received Honorable Mention in MCM/ICM.
-  link: https://rwlinno.github.io/portfolios/predicting-wordle-results.pdf
-- name: ARIMA-LSTM-XGBoost Combined Forecasting Model of Wheat Price
-  date: 2022
-  image: /images/Wheat-Price.png
-  description: This project aimed at regulating supply and demand in the wheat market, regulating pricing in the wheat market, and ensuring national food security. I was responsible for time series analysis, construction of ARIMA models, report writing, presentation, and defense. The project was recognized as a Province-level project in the College Students' Innovative Entrepreneurial Training Program.
-  link: https://rwlinno.github.io/portfolios/wheat-price.pdf
-- name: RBCC-SMARTHOME
-  date: 2023
-  image: /images/IMSAM.png
-  description: Participated in the RBCC offline held in HKUST(GZ) and achieved outstanding camper. My work included constructing a multimodal sentiment analysis model, developing a multimodal sentiment analysis application, writing parts of technical documents, project management, and video production.
-  link: https://rwlinno.github.io/portfolios/Smarthome_en.pdf
-
-activities:
-- name: RBCC offline at HKUST(GZ)
-  date: 2023
-- name: ACM-ICPC Programming Contest
-  date: 2020-2022
-- name: China Collegiate Programming Contest (ACM-CCPC)
-  date: 2022
-- name: Mathematical/Interdisciplinary Contest in Modeling (MCM/ICM)
-  date: 2023
-- name: LanQiao Cup Final Contest
-  date: 2021-2023
-- name: University-level ACM Programming Contest
-  date: 2021-2023
-- name: National University Student Algorithm Design and Programming Challenge
-  date: 2022 
-
-pages:
-- name: Home
-  url: /
-- name: Publications
-  url: /publications
-- name: Experiences
-  url: /experiences
-# - name: Projects
-#   url: /projects
-- name: Awards
-  url: /awards
-- name: Hobbies
-  url: /hobbies
-- name: Daily Challenges
-  url: /daily-challenges
-- name: Links
-  url: /links 
-
-homepage:
-  show_experience: true
-  show_news: true
-  show_projects: true
-  show_publications: true 
-
-position: MPhil Student
-institution: HKUST(GZ)
-department: Data Science and Analytics
-bio: >
-  I am a MPhil student in Data Science at the Hong Kong University of Science and Technology (Guangzhou), 
-  supervised by Prof. Yuxuan Liang. My research focuses on Spatial-Temporal Data Mining, 
-  Computer Vision, and Time Series Analysis.
-social:
-  - platform: github
-    url: https://github.com/rwlinno
-  - platform: email
-    url: mailto:rwlinno@gmail.com
-  - platform: google-scholar
-    url: https://scholar.google.com/citations?user=9uk1jJoAAAAJ
-  - platform: openreview
-    url: https://openreview.net/profile?id=~Weilin_Ruan2

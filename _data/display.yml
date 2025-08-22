@@ -1,8 +1,6 @@
 homepage:
   show_experience: true
   show_news: true
-  show_projects: true
-  show_selected_publications: true
   show_education: true
   show_publications: true
   show_awards: true 

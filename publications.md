@@ -40,7 +40,7 @@ navbar_title: Publications
                         <h5 class="mb-1">
                             {{ item.title }}
                             {% if item.pinned %}
-                            <span class="badge badge-warning ml-2">Featured</span>
+                            <span class="badge badge-warning ml-2">Pinned</span>
                             {% endif %}
                         </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>

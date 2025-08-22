@@ -26,66 +26,20 @@ owner:
   twitter: rwlinno
   CSDN: SC_Linno
   bilibili: 6954236
-  # instagram: lancecai2002
-  # lastfm:
-  # tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  # google_plus:
 
-# Analytics and webmaster tools stuff goes here
-# https://search.google.com/search-console/ownership
-#google_verify: "SkiyuGpJOKT74vv5GmXLvYXXDkXy4v8VWPtbelYz3Hs"
+# Site navigation is handled by _data/navigation.yml
 
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-# bing_verify: ""
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title: About Me
-    url: /
-  - title: Resume
-    url: /file/CV_en.pdf
-  - title: 中文简历
-    url: /file/CV_zh.pdf
-  - title: Publications
-    url: /publications/
-  - title: Experiences
-    url: /experiences/
-  - title: Projects
-    url: /projects/
-  - title: Awards
-    url: /awards/
-  - title: Hobbies
-    url: /hobbies/
-  - title: Links
-    url: /links/
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Jekyll settings
 future: true
 highlighter: rouge
-# markdown: kramdown
-# markdown: redcarpet
-# pygments: true
+markdown: kramdown
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  enable_coderay: false
 
-  # coderay:
-  #   coderay_line_numbers:
-  #   coderay_line_numbers_start: 1
-  #   coderay_tab_width: 4
-  #   coderay_bold_every: 10
-  #   coderay_css: class
-
-
-# disqus settings:
-disqus:
-  shortname: William Ruan
-
+# Build settings
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", ".DS_Store", "node_modules", "Gemfile", "Gemfile.lock"]
