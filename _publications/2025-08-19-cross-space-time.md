@@ -10,6 +10,7 @@ authors:
 pub: "TITS"
 pub_date: "2025"
 selected: true
+pinned: true
 categories: ["Spatio-temporal"]
 cover: "/images/cross-space-time.png"
 abstract: "This paper proposes a novel spatio-temporal unitized model for traffic flow forecasting that effectively captures complex dependencies across both space and time dimensions, achieving state-of-the-art performance on multiple benchmark datasets."

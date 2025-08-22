@@ -178,17 +178,19 @@ navbar_title: Home
 {% endif %}
 
 {% if site.data.display.homepage.show_publications %}
-{% assign publications = site.publications | sort: "pub_date" | reverse %}
-{% if publications.size > 0 %}
+{% assign pinned_publications = site.publications | where: "pinned", true | sort: "pub_date" | reverse %}
+{% assign other_publications = site.publications | where_exp: "item", "item.pinned != true" | sort: "pub_date" | reverse %}
+{% assign all_publications = pinned_publications | concat: other_publications %}
+{% if all_publications.size > 0 %}
 <div class="row mt-4">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-book"></i> Publications
+                    <i class="fas fa-book"></i> Featured Publications
                 </h4>
                 
-                {% for item in publications limit:4 %}
+                {% for item in all_publications limit:5 %}
                 <div class="row mb-4 {% unless forloop.last %}border-bottom pb-3{% endunless %}">
                     {% if item.cover %}
                     <div class="col-md-3">
@@ -198,7 +200,12 @@ navbar_title: Home
                     {% else %}
                     <div class="col-md-12">
                     {% endif %}
-                        <h5 class="mb-1">{{ item.title }}</h5>
+                        <h5 class="mb-1">
+                            {{ item.title }}
+                            {% if item.pinned %}
+                            <span class="badge badge-warning ml-2">Featured</span>
+                            {% endif %}
+                        </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
                         <p class="mb-1 small"><i>{{ item.pub }}</i>. {{ item.pub_date }}</p>
                         <p class="mb-2 small text-muted">{{ item.abstract }}</p>
@@ -216,7 +223,7 @@ navbar_title: Home
                 </div>
                 {% endfor %}
                 
-                {% if publications.size > 4 %}
+                {% if all_publications.size > 5 %}
                 <div class="text-center mt-3">
                     <a href="{{ '/publications' | relative_url }}" class="btn btn-outline-primary">View All Publications</a>
                 </div>

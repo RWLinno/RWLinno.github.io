@@ -23,8 +23,10 @@ navbar_title: Publications
                     </div>
                 </div>
                 
-                {% assign publications = site.publications | sort: "pub_date" | reverse %}
-                {% for item in publications %}
+                {% assign pinned_publications = site.publications | where: "pinned", true | sort: "pub_date" | reverse %}
+                {% assign other_publications = site.publications | where_exp: "item", "item.pinned != true" | sort: "pub_date" | reverse %}
+                {% assign all_publications = pinned_publications | concat: other_publications %}
+                {% for item in all_publications %}
                 <div class="row mb-4 border-bottom pb-3 publication-item" 
                      data-categories="{{ item.categories | join: ',' }}">
                     {% if item.cover %}
@@ -35,7 +37,12 @@ navbar_title: Publications
                     {% else %}
                     <div class="col-md-12">
                     {% endif %}
-                        <h5 class="mb-1">{{ item.title }}</h5>
+                        <h5 class="mb-1">
+                            {{ item.title }}
+                            {% if item.pinned %}
+                            <span class="badge badge-warning ml-2">Featured</span>
+                            {% endif %}
+                        </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
                         <p class="mb-1 small"><i>{{ item.pub }}</i>. {{ item.pub_date }}</p>
                         <p class="mb-2 small text-muted">{{ item.abstract }}</p>

@@ -18,7 +18,4 @@ links:
   Paper:
     url: "https://arxiv.org/abs/2505.15392"
     target: "_blank"
-  Code:
-    url: ""
-    target: "_blank"
 ---
