@@ -187,7 +187,7 @@ navbar_title: Home
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-book"></i> Featured Publications
+                    <i class="fas fa-book"></i> Pinned Publications
                 </h4>
                 
                 {% for item in all_publications limit:5 %}
@@ -203,7 +203,7 @@ navbar_title: Home
                         <h5 class="mb-1">
                             {{ item.title }}
                             {% if item.pinned %}
-                            <span class="badge badge-warning ml-2">Featured</span>
+                            <span class="badge badge-warning ml-2">Pinned</span>
                             {% endif %}
                         </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
