@@ -45,30 +45,28 @@
                                 {% endif %}
                                 {% endfor %}
                                 
-                                {% comment %} Check for slide and poster files based on publication filename {% endcomment %}
+                                {% comment %} Check for slide and poster files {% endcomment %}
                                 {% assign pub_filename = item.slug %}
+                                {% assign slide_path = "/publications/slides/" | append: pub_filename | append: ".pdf" %}
+                                {% assign poster_path = "/publications/posters/" | append: pub_filename | append: ".pdf" %}
+                                
                                 {% assign slide_found = false %}
                                 {% assign poster_found = false %}
                                 
                                 {% for static_file in site.static_files %}
-                                    {% assign file_basename = static_file.basename %}
-                                    {% if static_file.extname == '.pdf' %}
-                                        {% if static_file.path contains '/publications/slides/' and file_basename == pub_filename %}
-                                            {% assign slide_found = true %}
-                                            {% assign slide_url = static_file.path %}
-                                        {% endif %}
-                                        {% if static_file.path contains '/publications/posters/' and file_basename == pub_filename %}
-                                            {% assign poster_found = true %}
-                                            {% assign poster_url = static_file.path %}
-                                        {% endif %}
+                                    {% if static_file.path == slide_path %}
+                                        {% assign slide_found = true %}
+                                    {% endif %}
+                                    {% if static_file.path == poster_path %}
+                                        {% assign poster_found = true %}
                                     {% endif %}
                                 {% endfor %}
                                 
                                 {% if slide_found %}
-                                <a target="_blank" href="{{ slide_url | relative_url }}" class="btn btn-sm btn-outline-success mr-1">Slides</a>
+                                <a target="_blank" href="{{ slide_path | relative_url }}" class="btn btn-sm btn-outline-success mr-1">Slides</a>
                                 {% endif %}
                                 {% if poster_found %}
-                                <a target="_blank" href="{{ poster_url | relative_url }}" class="btn btn-sm btn-outline-info mr-1">Poster</a>
+                                <a target="_blank" href="{{ poster_path | relative_url }}" class="btn btn-sm btn-outline-info mr-1">Poster</a>
                                 {% endif %}
                             </p>
                         </div>
