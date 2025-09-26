@@ -42,6 +42,16 @@ navbar_title: Publications
                             {% if item.pinned %}
                             <span class="badge badge-warning ml-2">Pinned</span>
                             {% endif %}
+                            {% if item.selected %}
+                            <span class="badge badge-success ml-2">Featured</span>
+                            {% endif %}
+                            {% if item.oral %}
+                            <span class="badge badge-info ml-2">Oral</span>
+                            {% elsif item.spotlight %}
+                            <span class="badge badge-primary ml-2">Spotlight</span>
+                            {% elsif item.poster %}
+                            <span class="badge badge-secondary ml-2">Poster</span>
+                            {% endif %}
                         </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>
                         <p class="mb-1 small"><i>{{ item.pub }}</i>. {{ item.pub_date }}</p>
@@ -55,6 +65,32 @@ navbar_title: Publications
                             <a target="_blank" href="{{ link[1] }}" class="btn btn-sm btn-outline-primary mr-1">{{ link[0] }}</a>
                             {% endif %}
                             {% endfor %}
+                            
+                            {% comment %} Check for slide and poster files based on publication filename {% endcomment %}
+                            {% assign pub_filename = item.slug %}
+                            {% assign slide_found = false %}
+                            {% assign poster_found = false %}
+                            
+                            {% for static_file in site.static_files %}
+                                {% assign file_basename = static_file.basename %}
+                                {% if static_file.extname == '.pdf' %}
+                                    {% if static_file.path contains '/publications/slides/' and file_basename == pub_filename %}
+                                        {% assign slide_found = true %}
+                                        {% assign slide_url = static_file.path %}
+                                    {% endif %}
+                                    {% if static_file.path contains '/publications/posters/' and file_basename == pub_filename %}
+                                        {% assign poster_found = true %}
+                                        {% assign poster_url = static_file.path %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                            
+                            {% if slide_found %}
+                            <a target="_blank" href="{{ slide_url | relative_url }}" class="btn btn-sm btn-outline-success mr-1">Slides</a>
+                            {% endif %}
+                            {% if poster_found %}
+                            <a target="_blank" href="{{ poster_url | relative_url }}" class="btn btn-sm btn-outline-info mr-1">Poster</a>
+                            {% endif %}
                             
                             {% if item.categories %}
                             <span class="ml-2">

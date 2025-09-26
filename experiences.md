@@ -14,6 +14,13 @@ navbar_title: Experiences
                 <div class="row mb-4">
                     <div class="col">
                         <h5>Algorithm Research Intern</h5>
+                        <p class="text-muted">Knowin.AI (Shenzhen) | September 2024 - Present</p>
+                        <p>Currently working on Embodied AI Navigation Action RAG research. Will participate in a joint PhD program between CUHK and the company starting next year, focusing on cutting-edge research in embodied AI and intelligent navigation systems.</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <h5>Algorithm Research Intern</h5>
                         <p class="text-muted">ByteDance Inc. | Summer 2025</p>
                         <p>Main contributions: 1) Operations tool optimization: Added Actor monitoring alerts and log capacity warning mechanisms; 2) Model training platform maintenance and feature development: Provided monitoring services on the Norbert platform and participated in early development of ParameterServer synchronization functionality after search and recommendation model training; 3) Intelligent operations system development: Led the development of OnCallAgent intelligent engineering Q&A system, based on Vision Language Models (VLM) and multi-agent collaboration technology, providing intelligent diagnostic solutions for enterprise OnCall scenarios.</p>
                     </div>

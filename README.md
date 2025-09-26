@@ -2,6 +2,12 @@
 
 My name is **Weilin RUAN (Linno)**. This is my personal website.
 
+# Todo
+1. 更新实习经历
+2. 更新工作
+3. 更新hobbies页面
+4. 记录自传
+
 # 一些梗
 ### 奖项
 2006年度风云人物
