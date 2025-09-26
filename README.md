@@ -3,7 +3,7 @@
 My name is **Weilin RUAN (Linno)**. This is my personal website.
 
 # Todo
-1. 更新实习经历
+1. 更新实习经历,给每一个公司加上logo
 2. 更新工作
 3. 更新hobbies页面
 4. 记录自传
