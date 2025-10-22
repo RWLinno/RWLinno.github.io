@@ -63,6 +63,26 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
+                                <strong>Reviewer Appointment</strong> - Appointed as a reviewer for ICLR 2026 conference.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Sep 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>New Position</strong> - Joined Knowin AI Inc. as an Algorithm Researcher.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Sep 2025</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
                                 <strong>Program Committee</strong> - Invited to serve as a Program Committee member for AAAI 2026.
                             </div>
                             <div>
@@ -137,6 +157,16 @@ navbar_title: Home
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">Dec 2024</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Program Committee</strong> - Invited to serve as a Program Committee member for WebST 2025.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Jan 2025</span>
                             </div>
                         </div>
                     </li>

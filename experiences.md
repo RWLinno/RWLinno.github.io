@@ -13,8 +13,8 @@ navbar_title: Experiences
                 </h4>
                 <div class="row mb-4">
                     <div class="col">
-                        <h5>Algorithm Research Intern</h5>
-                        <p class="text-muted">Knowin.AI (Shenzhen) | September 2025 - Present</p>
+                        <h5>Algorithm Researcher</h5>
+                        <p class="text-muted">Knowin AI Inc. (Shenzhen) | September 2025 - Present</p>
                         <p>Currently working on Embodied AI Navigation Action RAG research. Will participate in a joint PhD program between CUHK and the company starting next year, focusing on cutting-edge research in embodied AI and intelligent navigation systems.</p>
                     </div>
                 </div>
