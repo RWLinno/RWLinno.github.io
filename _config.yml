@@ -2,6 +2,7 @@ title: Weilin Ruan (阮炜霖)
 subtitle: Academic Style Personal Page
 description: All things come to those who wait.
 url: https://rwlinno.github.io
+baseurl: ""
 author : RWLinno
 language : 
 timezone: China/Beijing
@@ -42,4 +43,10 @@ kramdown:
 
 # Build settings
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", ".DS_Store", "node_modules", "Gemfile", "Gemfile.lock"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", ".DS_Store", "node_modules", "vendor"]
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
