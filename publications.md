@@ -49,8 +49,6 @@ navbar_title: Publications
                             <span class="badge badge-info ml-2">Oral</span>
                             {% elsif item.spotlight %}
                             <span class="badge badge-primary ml-2">Spotlight</span>
-                            {% elsif item.poster %}
-                            <span class="badge badge-secondary ml-2">Poster</span>
                             {% endif %}
                         </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>

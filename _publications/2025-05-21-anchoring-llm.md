@@ -8,8 +8,8 @@ authors:
   - Songxin Lei
   - Yutao Yue
   - Xinlei He
-pub: "Under Review"
-pub_date: "2025"
+pub: "ICLR Workshop HCAIR"
+pub_date: "2026"
 selected: true
 categories: ["Natural Language Processing", "Cognitive Bias", "Large Language Models"]
 cover: "/images/anchoring-llm.png"

@@ -63,6 +63,26 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
+                                <strong>Citation Milestone</strong> - Google Scholar citations reached 100+.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Mar 2026</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>Paper Acceptance</strong> - One paper accepted to ICLR Workshop HCAIR 2026.
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Mar 2026</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
                                 <strong>Paper Acceptance</strong> - Two papers accepted to AAAI 2026.
                             </div>
                             <div>
