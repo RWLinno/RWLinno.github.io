@@ -18,6 +18,7 @@ navbar_title: Publications
                         <button type="button" class="btn btn-outline-primary" data-filter="Spatio-temporal">Spatio-temporal</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Time Series">Time Series</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Multimodal">Multimodal</button>
+                        <button type="button" class="btn btn-outline-primary" data-filter="Multi-Agent Systems">Multi-Agent Systems</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Computer Vision">Computer Vision</button>
                         <button type="button" class="btn btn-outline-primary" data-filter="Reinforcement Learning">Reinforcement Learning</button>
                     </div>
@@ -41,6 +42,13 @@ navbar_title: Publications
                             {{ item.title }}
                             {% if item.pinned %}
                             <span class="badge badge-warning ml-2">Pinned</span>
+                            {% endif %}
+                            {% if item.status %}
+                            {% assign status_badge_class = "badge-secondary" %}
+                            {% if item.status == "Under Review" %}
+                            {% assign status_badge_class = "badge-info" %}
+                            {% endif %}
+                            <span class="badge {{ status_badge_class }} ml-2">{{ item.status }}</span>
                             {% endif %}
                             {% if item.selected %}
                             <span class="badge badge-success ml-2">Featured</span>

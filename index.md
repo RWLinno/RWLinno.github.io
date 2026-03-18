@@ -5,6 +5,58 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
+{% assign total_publications = site.publications.size %}
+{% assign featured_publications = site.publications | where: "selected", true | size %}
+{% assign under_review_publications = site.publications | where: "status", "Under Review" | size %}
+{% assign latest_pub_year = site.publications | map: "pub_date" | sort | last %}
+
+<div class="row mt-4">
+    <div class="col-lg-6 mb-3 mb-lg-0">
+        <div class="card border-0 shadow-sm bg-white h-100">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-chart-line"></i> Research Snapshot
+                </h4>
+                <div class="row text-center">
+                    <div class="col-6 mb-3">
+                        <div class="snapshot-value">{{ total_publications }}</div>
+                        <div class="snapshot-label">Publications</div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="snapshot-value">{{ featured_publications }}</div>
+                        <div class="snapshot-label">Featured Works</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="snapshot-value">{{ under_review_publications }}</div>
+                        <div class="snapshot-label">Under Review</div>
+                    </div>
+                    <div class="col-6">
+                        <div class="snapshot-value">{{ latest_pub_year }}</div>
+                        <div class="snapshot-label">Latest Year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card border-0 shadow-sm bg-white h-100">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <i class="fas fa-compass"></i> Research Focus
+                </h4>
+                <p class="text-muted mb-3">I work on reliable and adaptive machine intelligence for real-world temporal and multimodal data.</p>
+                <div>
+                    <span class="badge badge-light focus-pill">Time Series Forecasting</span>
+                    <span class="badge badge-light focus-pill">Spatio-Temporal Learning</span>
+                    <span class="badge badge-light focus-pill">Multimodal Learning</span>
+                    <span class="badge badge-light focus-pill">Multi-Agent Systems</span>
+                    <span class="badge badge-light focus-pill">Embodied AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% if site.data.display.homepage.show_education %}
 <div class="row mt-4">
     <div class="col">
@@ -60,6 +112,16 @@ navbar_title: Home
                     <i class="fas fa-newspaper"></i> Latest News
                 </h4>
                 <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <strong>New Preprint</strong> - MAS4TS: Visual Reasoning over Time Series via Multi-Agent System is available on <a href="https://arxiv.org/abs/2602.03026" target="_blank">arXiv</a> (under review).
+                            </div>
+                            <div>
+                                <span class="badge badge-pill badge-secondary">Feb 2026</span>
+                            </div>
+                        </div>
+                    </li>
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
@@ -264,6 +326,13 @@ navbar_title: Home
                             {{ item.title }}
                             {% if item.pinned %}
                             <span class="badge badge-warning ml-2">Pinned</span>
+                            {% endif %}
+                            {% if item.status %}
+                            {% assign status_badge_class = "badge-secondary" %}
+                            {% if item.status == "Under Review" %}
+                            {% assign status_badge_class = "badge-info" %}
+                            {% endif %}
+                            <span class="badge {{ status_badge_class }} ml-2">{{ item.status }}</span>
                             {% endif %}
                         </h5>
                         <p class="mb-1 small">{% include widgets/author_list.html authors=item.authors %}</p>

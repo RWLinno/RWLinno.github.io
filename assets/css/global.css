@@ -73,3 +73,24 @@ h1, h2, h3, h4, h5, h6 {
 footer {
     border-top: 1px solid #eee;
 } 
+
+.snapshot-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    line-height: 1.2;
+}
+
+.snapshot-label {
+    font-size: 0.88rem;
+    color: #6c757d;
+}
+
+.focus-pill {
+    border: 1px solid #dee2e6;
+    padding: 0.4rem 0.65rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #495057;
+}
