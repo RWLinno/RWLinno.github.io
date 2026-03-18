@@ -24,11 +24,11 @@ navbar_title: Home
                     </li>
                     <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
                         <span><i class="fas fa-medal text-warning mr-2"></i> Awards</span>
-                        <span class="badge badge-pill badge-warning">40+</span>
+                        <span class="badge badge-pill badge-warning">20+</span>
                     </li>
                     <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
-                        <span><i class="fas fa-pen-nib text-info mr-2"></i> Current Status</span>
-                        <span class="badge badge-pill badge-info">Under Review Ongoing</span>
+                        <span><i class="fas fa-pen-nib text-info mr-2"></i>Blog Fans</span>
+                        <span class="badge badge-pill badge-info">3600+</span>
                     </li>
                 </ul>
             </div>
@@ -46,6 +46,15 @@ navbar_title: Home
                     <span class="badge badge-light interest-pill"><i class="fas fa-table-tennis-paddle-ball mr-1"></i>Badminton</span>
                     <span class="badge badge-light interest-pill"><i class="fas fa-mountain mr-1"></i>Hiking</span>
                     <span class="badge badge-light interest-pill"><i class="fas fa-film mr-1"></i>Movies</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-car-side mr-1"></i>Cars</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-plane-departure mr-1"></i>Travel</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-camera mr-1"></i>Photography</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-music mr-1"></i>Music</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-code mr-1"></i>Indie Game Dev</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-paw mr-1"></i>Pets</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-chess mr-1"></i>Chess</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-dice mr-1"></i>Board Games</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-book-open mr-1"></i>Web Novels</span>
                 </div>
                 <div class="mt-3">
                     <a href="{{ '/hobbies' | relative_url }}" class="btn btn-sm btn-outline-primary">

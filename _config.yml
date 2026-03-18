@@ -53,6 +53,7 @@ plugins:
 
 giscus:
   enabled: true
+  installed: false
   repo: "RWLinno/RWLinno.github.io"
   repo_id: ""
   category: "General"
