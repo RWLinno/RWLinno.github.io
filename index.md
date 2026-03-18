@@ -5,36 +5,32 @@ navbar_title: Home
 ---
 {% include widgets/profile_card.html %}
 
-{% assign total_publications = site.publications.size %}
-{% assign featured_publications = site.publications | where: "selected", true | size %}
-{% assign under_review_publications = site.publications | where: "status", "Under Review" | size %}
-{% assign latest_pub_year = site.publications | map: "pub_date" | sort | last %}
-
 <div class="row mt-4">
     <div class="col-lg-6 mb-3 mb-lg-0">
         <div class="card border-0 shadow-sm bg-white h-100">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-chart-line"></i> Research Snapshot
+                    <i class="fas fa-trophy"></i> Milestones
                 </h4>
-                <div class="row text-center">
-                    <div class="col-6 mb-3">
-                        <div class="snapshot-value">{{ total_publications }}</div>
-                        <div class="snapshot-label">Publications</div>
-                    </div>
-                    <div class="col-6 mb-3">
-                        <div class="snapshot-value">{{ featured_publications }}</div>
-                        <div class="snapshot-label">Featured Works</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="snapshot-value">{{ under_review_publications }}</div>
-                        <div class="snapshot-label">Under Review</div>
-                    </div>
-                    <div class="col-6">
-                        <div class="snapshot-value">{{ latest_pub_year }}</div>
-                        <div class="snapshot-label">Latest Year</div>
-                    </div>
-                </div>
+                <p class="text-muted mb-3">Key progress in research and academic activities.</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-book text-primary mr-2"></i> Publications</span>
+                        <span class="badge badge-pill badge-primary">{{ site.publications.size }}+</span>
+                    </li>
+                    <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-quote-right text-success mr-2"></i> Citations</span>
+                        <span class="badge badge-pill badge-success">100+</span>
+                    </li>
+                    <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-medal text-warning mr-2"></i> Awards</span>
+                        <span class="badge badge-pill badge-warning">40+</span>
+                    </li>
+                    <li class="list-group-item border-0 px-0 d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-pen-nib text-info mr-2"></i> Current Status</span>
+                        <span class="badge badge-pill badge-info">Under Review Ongoing</span>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -42,15 +38,19 @@ navbar_title: Home
         <div class="card border-0 shadow-sm bg-white h-100">
             <div class="card-body">
                 <h4 class="card-title">
-                    <i class="fas fa-compass"></i> Research Focus
+                    <i class="fas fa-heart"></i> Interests
                 </h4>
-                <p class="text-muted mb-3">I work on reliable and adaptive machine intelligence for real-world temporal and multimodal data.</p>
+                <p class="text-muted mb-3">Beyond research, I enjoy these activities in daily life.</p>
                 <div>
-                    <span class="badge badge-light focus-pill">Time Series Forecasting</span>
-                    <span class="badge badge-light focus-pill">Spatio-Temporal Learning</span>
-                    <span class="badge badge-light focus-pill">Multimodal Learning</span>
-                    <span class="badge badge-light focus-pill">Multi-Agent Systems</span>
-                    <span class="badge badge-light focus-pill">Embodied AI</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-gamepad mr-1"></i>Video Games</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-table-tennis-paddle-ball mr-1"></i>Badminton</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-mountain mr-1"></i>Hiking</span>
+                    <span class="badge badge-light interest-pill"><i class="fas fa-film mr-1"></i>Movies</span>
+                </div>
+                <div class="mt-3">
+                    <a href="{{ '/hobbies' | relative_url }}" class="btn btn-sm btn-outline-primary">
+                        View More Hobbies
+                    </a>
                 </div>
             </div>
         </div>

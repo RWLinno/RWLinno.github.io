@@ -17,3 +17,5 @@ pages:
   url: /links 
 - name: Biography
   url: /biography
+- name: Guestbook
+  url: /guestbook

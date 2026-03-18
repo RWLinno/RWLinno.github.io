@@ -50,3 +50,17 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+giscus:
+  enabled: true
+  repo: "RWLinno/RWLinno.github.io"
+  repo_id: ""
+  category: "General"
+  category_id: ""
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "top"
+  theme: "light"
+  lang: "zh-CN"
