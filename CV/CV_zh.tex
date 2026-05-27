@@ -1,0 +1,48 @@
+%最后更新: 2026.1.28
+
+\documentclass[10pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{black}
+
+% 中文支持 - 使用 ctex 宏包（Overleaf 兼容）
+\usepackage[UTF8]{ctex}
+
+\usepackage[top=1cm,bottom=1.5cm,left=1cm,right=1cm]{geometry}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[final]{pdfpages}
+\usepackage{ulem}
+\usepackage{graphicx}
+\graphicspath{ {.} }
+
+%----------------------------------------------------------------------------------------
+%   NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\name{阮}{炜霖}
+\phone[mobile]{(+86)~136 7254 6637}
+\email{rwlinno@gmail.com}
+\newcommand*{\wechatsocialsymbol}{{\small\faWeixin}~}
+\social[wechat]{RWLinno}
+\social[github]{RWLinno}
+\homepage{https://rwlinno.github.io/}
+
+\newcommand*{\scholarsocialsymbol}{\includegraphics[height=.7\baselineskip]{fig/google-scholar.pdf}}
+\collectionadd[scholar]{socials}{\href{https://scholar.google.com/citations?user=9uk1jJoAAAAJ&hl=zh-CN}{Google Scholar}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+\makecvtitle
+
+\input{cv_zh/Education}
+\input{cv_zh/Publication}
+\input{cv_zh/Competition}
+\input{cv_zh/Academic_Awards}
+\input{cv_zh/Internship_Experience}
+\input{cv_zh/Research_Experience}
+\input{cv_zh/Skill}
+\input{cv_zh/Campus_Experience}
+
+\end{document}

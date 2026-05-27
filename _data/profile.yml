@@ -4,6 +4,8 @@ secondary_name: "阮炜霖"
 navbar_name: "Weilin Ruan"
 
 positions:
+- name: Incoming PhD Student @ CUHK CSE
+  date: Aug 2026 - June 2029
 - name: MPhil Student @ HKUST(GZ)
   date: Sep 2024 - June 2026
 - name: Bachelor of Engineering @ Jinan University
@@ -16,10 +18,10 @@ github: rwlinno
 
 short_bio: >-
   <p style="margin-bottom: 5px;">
-  I am a second-year MPhil student in <a href="http://dsa.hkust-gz.edu.cn/" target="_blank">Data Science</a> at the <a href="https://www.hkust-gz.edu.cn/" target="_blank">Hong Kong University of Science and Technology (Guangzhou)</a>, supervised by <a href="https://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
+  I am an incoming PhD student in <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Computer Science and Engineering</a> at <a href="https://www.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong (CUHK)</a>, supervised by <a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a>, jointly trained with <a href="https://knowin.ai" target="_blank">Knowin AI Inc. (Shenzhen)</a>. I received my MPhil from <a href="https://www.hkust-gz.edu.cn/" target="_blank">HKUST(GZ)</a> supervised by <a href="https://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
   </p>
   <p style="margin-bottom: 5px;">
-  My research interests include Time Series Forecasting, Spatio-Temporal Data Mining, Multimodal Learning, Multi-Agent Systems, and Embodied AI.
+  My research interests include Spatio-Temporal World/Action Models, Embodied Foundation Models, Data Generation & Verification, and Infrastructure (Infra) for AI systems. And my research experiences include Spatio-Temporal Data Mining, Time Series Forecasting, and Multi-Modal Learning.
   </p>
 
 portrait_url: /images/4000x4000ce.jpg

@@ -55,7 +55,7 @@ giscus:
   enabled: true
   installed: false
   repo: "RWLinno/RWLinno.github.io"
-  repo_id: ""
+  repo_id: "R_kgDOOARz2Q"
   category: "General"
   category_id: ""
   mapping: "pathname"
