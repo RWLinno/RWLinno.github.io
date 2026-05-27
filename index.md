@@ -81,7 +81,7 @@ navbar_title: Home
                             <div class="flex-grow-1">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <strong>CUHK</strong> - Computer Science and Engineering - PhD
+                                        <strong>The Chinese University of Hong Kong</strong> - Computer Science and Engineering
                                         <br><small class="text-muted">Supervised by <a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a> | Joint training with <a href="https://knowin.ai" target="_blank">Knowin AI</a></small>
                                     </div>
                                     <div>
@@ -140,17 +140,7 @@ navbar_title: Home
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between">
                             <div>
-                                <strong>PhD Admission</strong> - Admitted to the PhD program in Computer Science and Engineering at <a href="https://www.cse.cuhk.edu.hk/" target="_blank">CUHK</a>, supervised by <a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a>.
-                            </div>
-                            <div>
-                                <span class="badge badge-pill badge-secondary">Aug 2026</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item border-0">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                <strong>Paper Acceptance</strong> - Paper "<a href="https://arxiv.org/abs/2602.11550" target="_blank">TS-Memory: Plug-and-Play Memory for Time Series Foundation Models</a>" accepted to KDD 2026.
+                                <strong>Paper Acceptance</strong> - One paper accepted to KDD 2026.
                             </div>
                             <div>
                                 <span class="badge badge-pill badge-secondary">May 2026</span>
