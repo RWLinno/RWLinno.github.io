@@ -10,9 +10,9 @@ navbar_title: Hobbies
         <div class="col">
             <div class="card border-0 shadow-sm bg-white rounded-lg">
                 <div class="card-body text-center p-4">
-                    <h2 class="card-title display-4 mb-3">
-                        <i class="fas fa-heart text-danger"></i> My Hobbies
-                    </h2>
+                    <h1 class="card-title display-4 mb-3">
+                        <i class="fas fa-heart text-danger" aria-hidden="true"></i> My Hobbies
+                    </h1>
                     <div class="alert alert-danger rounded-lg py-3" role="alert">
                         <strong><i class="fas fa-user-friends mr-2"></i> I hope I can make friends with you all through the following information!!!</strong>
                     </div>
@@ -26,9 +26,9 @@ navbar_title: Hobbies
         <div class="col">
             <div class="card border-0 shadow-sm bg-white rounded-lg hover-effect">
                 <div class="card-body p-4">
-                    <h3 class="card-title mb-3">
+                    <h2 class="card-title h3 mb-3">
                         <i class="fas fa-gamepad text-primary"></i> Play Games
-                    </h3>
+                    </h2>
                     <p class="lead text-muted">Gaming is one of my favorite pastimes. I enjoy a variety of genres and platforms.</p>
                 </div>
             </div>
@@ -40,19 +40,19 @@ navbar_title: Hobbies
         <div class="col">
             <div class="card border-0 shadow-sm bg-white rounded-lg">
                 <div class="card-body p-4">
-                    <h3 class="card-title mb-4">
+                    <h2 class="card-title h3 mb-4">
                         <i class="fas fa-brain text-success"></i> Daily Challenges
-                    </h3>
+                    </h2>
                     <div class="row">
                         <!-- Daily Chess Puzzle -->
                         <div class="col-md-4 mb-4">
                             <div class="card h-100 border-0 shadow-sm hover-effect">
                                 <div class="card-header bg-gradient-primary text-white py-3">
-                                    <h5 class="mb-0"><i class="fas fa-chess mr-2"></i> Daily Chess Puzzle</h5>
+                                    <h3 class="h5 mb-0"><i class="fas fa-chess mr-2" aria-hidden="true"></i> Daily Chess Puzzle</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="challenge-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-                                        <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 100%; height: 400px;" allowtransparency="true" frameborder="0"></iframe>
+                                        <iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" title="Daily chess puzzle" style="width: 100%; height: 400px;" allowtransparency="true" frameborder="0" loading="lazy"></iframe>
                                     </div>
                                     <div class="text-center mt-3">
                                         <p class="small text-muted">
@@ -67,14 +67,16 @@ navbar_title: Hobbies
                         <div class="col-md-4 mb-4">
                             <div class="card h-100 border-0 shadow-sm hover-effect">
                                 <div class="card-header bg-gradient-warning text-white py-3">
-                                    <h5 class="mb-0"><i class="fas fa-puzzle-piece mr-2"></i> Daily Sudoku Puzzle</h5>
+                                    <h3 class="h5 mb-0"><i class="fas fa-puzzle-piece mr-2" aria-hidden="true"></i> Daily Sudoku Puzzle</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="challenge-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                         <iframe src="https://www.websudoku.com/?level=3&embed=true" 
+                                                title="Daily Sudoku puzzle"
                                                 style="width: 100%; height: 400px;" 
                                                 allowtransparency="true" 
-                                                frameborder="0">
+                                                frameborder="0"
+                                                loading="lazy">
                                         </iframe>
                                     </div>
                                     <div class="text-center mt-3">
@@ -90,14 +92,16 @@ navbar_title: Hobbies
                         <div class="col-md-4 mb-4">
                             <div class="card h-100 border-0 shadow-sm hover-effect">
                                 <div class="card-header bg-gradient-info text-white py-3">
-                                    <h5 class="mb-0"><i class="fas fa-code mr-2"></i> Daily Coding Challenge</h5>
+                                    <h3 class="h5 mb-0"><i class="fas fa-code mr-2" aria-hidden="true"></i> Daily Coding Challenge</h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="challenge-container" style="border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
                                         <iframe src="https://karimelghamry.github.io/Codeforces-Randomizer/" 
+                                                title="Random Codeforces coding challenge"
                                                 style="width: 100%; height: 400px; border: none;" 
                                                 allowtransparency="true" 
-                                                frameborder="0">
+                                                frameborder="0"
+                                                loading="lazy">
                                         </iframe>
                                     </div>
                                     <div class="text-center mt-3">
@@ -119,9 +123,9 @@ navbar_title: Hobbies
         <div class="col">
             <div class="card border-0 shadow-sm bg-white rounded-lg">
                 <div class="card-body p-4">
-                    <h3 class="card-title mb-4">
+                    <h2 class="card-title h3 mb-4">
                         <i class="fas fa-gamepad text-danger"></i> Game Development
-                    </h3>
+                    </h2>
 
                     <div class="container px-0">
                         {% assign game_projects = site.data.projects | where: "category", "Game Development" %}
@@ -131,7 +135,7 @@ navbar_title: Hobbies
                                 <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" class="img-fluid rounded shadow-sm hover-zoom">
                             </div>
                             <div class="col-md-8">
-                                <h4 class="font-weight-bold">{{ project.title }}</h4>
+                                <h3 class="h4 font-weight-bold">{{ project.title }}</h3>
                                 <p class="text-muted mb-2"><i class="far fa-calendar-alt mr-2"></i> {{ project.status }}</p>
                                 <p class="project-description">{{ project.description }}</p>
                                 <div class="mt-2 mb-3">
@@ -159,9 +163,9 @@ navbar_title: Hobbies
         <div class="col">
             <div class="card border-0 shadow-sm bg-white rounded-lg">
                 <div class="card-body p-4">
-                    <h3 class="card-title mb-4">
+                    <h2 class="card-title h3 mb-4">
                         <i class="fas fa-blog text-info"></i> Blog
-                    </h3>
+                    </h2>
                     <p class="lead">I maintain a CSDN blog where I share my knowledge and experiences, particularly related to ACM.</p>
                     
                     <div class="row mb-4">
@@ -169,7 +173,7 @@ navbar_title: Hobbies
                             <div class="card border-0 shadow-sm hover-effect">
                                 <div class="card-body text-center p-4">
                                     <i class="fas fa-rss-square text-warning mb-3" style="font-size: 3rem;"></i>
-                                    <h5 class="card-title">CSDN Blog</h5>
+                                    <h3 class="card-title h5">CSDN Blog</h3>
                                     <p class="card-text"><span class="badge badge-pill badge-success">3000+ Fans</span></p>
                                     <p class="card-text">Sharing ACM knowledge and programming insights</p>
                                     <a href="https://blog.csdn.net/SC_Linno" target="_blank" class="btn btn-primary btn-block">
@@ -182,7 +186,7 @@ navbar_title: Hobbies
                         <div class="col-md-8">
                             <div class="card border-0 shadow-sm">
                                 <div class="card-header bg-light">
-                                    <h5 class="mb-0"><i class="fas fa-file-alt mr-2"></i> Random Blog Post</h5>
+                                    <h3 class="h5 mb-0"><i class="fas fa-file-alt mr-2" aria-hidden="true"></i> Random Blog Post</h3>
                                 </div>
                                 <div class="card-body blog-content">
                                     <div id="github-md-container">
@@ -324,7 +328,7 @@ navbar_title: Hobbies
 </style>
 
 <!-- JavaScript for GitHub Markdown rendering -->
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="{{ '/assets/vendor/marked/marked.min.js' | relative_url }}"></script>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const apiUrl = 'https://api.github.com/repos/RWLinno/notes/contents';

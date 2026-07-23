@@ -8,9 +8,9 @@ navbar_title: Guestbook
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
-                <h4 class="card-title">
-                    <i class="fas fa-comments"></i> Guestbook
-                </h4>
+                <h1 class="card-title h4">
+                    <i class="fas fa-comments" aria-hidden="true"></i> Guestbook
+                </h1>
                 <p class="text-muted">
                     Welcome to leave your thoughts, suggestions, or collaboration ideas.
                 </p>

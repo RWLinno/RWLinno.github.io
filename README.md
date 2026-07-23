@@ -16,6 +16,11 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 - [x] 将 Publications 页面升级为 Research，加入 Publications 与 Academic Service。
 - [x] 保留 `/publications/` 旧地址并自动跳转到 `/research/`，避免旧链接失效。
 - [x] 加入人工维护的中英文切换，不使用第三方机器翻译；目前覆盖全站导航、个人卡片、主页核心内容、Research 页面和页脚。
+- [x] Academic Service 加入 EMNLP Reviewer，当前统一展示 9 个 Reviewer venues。
+- [x] 采纳 NEWS-01：主页默认展示 6 条动态和 3 篇精简论文，其余内容可展开。
+- [x] 采纳 A11Y-01：加入跳转正文、语义化标题、键盘菜单、44px 移动端触控目标、图片尺寸和 iframe 标题。
+- [x] 采纳 PERF-01：移除 5 个第三方运行时脚本，将 Bootstrap 与 Font Awesome 改为本地静态资源，并排除未使用的旧模板资产。
+- [x] 采纳 METRIC-01：主页人工统计统一由 `_data/metrics.yml` 提供，并记录 `last_verified`。
 
 ## 当前数据基线
 
@@ -27,11 +32,11 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 | 已录用 / 已发表论文记录 | 11 | 排除 4 条 Under Review 记录 |
 | Pinned publications | 10 | publication front matter 中的 `pinned: true` |
 | Latest News | 20 | `_data/news.yml` 中的动态数 |
-| Academic service venues | 8 | Research 页统一展示为 Reviewer，不标注年份 |
-| Google Scholar citations | 100+ | 主页人工维护值，建议定期核验 |
-| Awards | 20+ | 主页人工维护值，建议与 Awards 页统一口径 |
-| CSDN followers | 3600+ | 主页人工维护值，建议定期核验 |
+| Academic service venues | 9 | Research 页统一展示为 Reviewer，不标注年份 |
+| 人工维护统计 | Canonical data source | citations、awards、followers 与核验日期统一存放在 `_data/metrics.yml` |
 | 双语核心页面 | 2 / 8 | Home、Research；其余内容页尚未完整翻译 |
+| 默认主页列表 | 6 条动态 / 3 篇论文 | 支持键盘操作的渐进展开，完整论文链接至 Research |
+| 首页运行时 JavaScript | 1 个本地脚本 | 不再加载 jQuery、Lazy、Popper、Bootstrap JS、GitHub Buttons |
 | Jekyll build | Pass | Jekyll 3.9.5 / GitHub Pages 231 本地构建通过 |
 
 ## 待审批改善建议
@@ -42,12 +47,8 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 | --- | --- | --- | --- | --- |
 | I18N-01 | P0 | 为 Awards、Hobbies、Experiences、Links、Biography、Guestbook 补齐人工中文内容 | 实现真正的全站双语，而不是只翻译导航 | 8 / 8 内容页可一键完整切换 |
 | DATA-01 | P0 | 为论文统一补充 `venue_full`、`accepted_date`、DOI、BibTeX、项目主页和代码状态字段 | 避免空链接、简称不一致和年份歧义 | 所有已录用论文字段完整率 100% |
-| METRIC-01 | P0 | 把 citations、awards、followers 等统计集中到 `_data/metrics.yml`，加入 `last_verified` | 防止主页、README、CV 数字不一致 | 同一指标只有一个数据源，过期值有提示 |
 | SEO-01 | P1 | 加入 Person、ScholarlyArticle、BreadcrumbList 的 JSON-LD 和统一 Open Graph 图片 | 改善搜索引擎与社交分享展示 | Rich Results 无结构化数据错误 |
-| PERF-01 | P1 | 清理未使用的旧模板 CSS/JS，并评估自托管关键字体和图标 | 减少第三方请求、阻塞资源和历史包袱 | Lighthouse Performance ≥ 95，LCP ≤ 2.5 s |
-| A11Y-01 | P1 | 做一次 WCAG 2.2 AA 审计，重点检查色彩对比、键盘导航、图片替代文本和 iframe 标题 | 提升可访问性与移动端可用性 | Lighthouse Accessibility ≥ 95，严重错误为 0 |
 | PUB-01 | P1 | Research 页增加按年份分组、作者角色标记和 BibTeX 下载 | 方便审稿人、合作者快速浏览和引用 | 论文可按年份定位，每条可复制标准引用 |
-| NEWS-01 | P2 | 首页仅展示最近 6–8 条动态，其余进入可展开归档或 News 页面 | 缩短首页、突出最新成果 | 首屏后滚动长度明显下降，旧动态仍可访问 |
 | ANALYTICS-01 | P2 | 在明确隐私策略后接入轻量、隐私友好的访问统计 | 获得真实访问量、来源和热门页面 | 可查看 PV、UV、来源、设备和热门页面 |
 | GUESTBOOK-01 | P2 | 完成 GitHub Discussions 与 Giscus 配置 | 让 Guestbook 从说明页变为可用留言区 | 无配置告警，可正常发帖与加载评论 |
 | CONTENT-01 | P2 | 更新 Biography 和 Experiences 中已经过时的阶段描述 | 保证身份、研究方向与时间线一致 | 与最新 CV 逐项核对，无过期描述 |
@@ -85,4 +86,4 @@ JEKYLL_ENV=production bundle exec jekyll build
 - 新动态：在 `_data/news.yml` 同时填写英文与人工校对后的中文。
 - 新学术服务：更新 `_data/services.yml`；统一按 Reviewer 维护，不展示年份。
 - 新界面文案：在 `_data/i18n.yml` 同时补充 `en` 与 `zh`，并在页面使用 `data-i18n`。
-- 新的长期统计：优先执行 `METRIC-01`，不要继续在多个页面硬编码同一个数字。
+- 新的长期统计：只更新 `_data/metrics.yml`，并在需要时同步重新生成 CV，避免在页面和 README 中重复硬编码。

@@ -37,7 +37,7 @@ permalink: /research/
         <div class="section-heading-row">
             <div>
                 <p class="section-kicker" data-i18n="research.output_label">Selected research output</p>
-                <h2 id="publications-heading" class="h4 mb-1"><i class="fas fa-book"></i> <span data-i18n="research.publications">Publications</span></h2>
+                <h2 id="publications-heading" class="h4 mb-1"><i class="fas fa-book" aria-hidden="true"></i> <span data-i18n="research.publications">Publications</span></h2>
                 <p class="text-muted mb-0" data-i18n="research.publication_intro">Peer-reviewed papers and selected preprints, with first-author and featured work prioritized.</p>
             </div>
         </div>
@@ -60,7 +60,7 @@ permalink: /research/
             <article class="row mb-4 border-bottom pb-4 publication-item publication-row" data-categories="{{ item.categories | join: '|' }}">
                 {% if item.cover %}
                 <div class="col-md-3 mb-3 mb-md-0">
-                    <img src="{{ item.cover | relative_url }}" alt="Cover image for {{ item.title }}" class="img-fluid rounded publication-cover" loading="lazy">
+                    <img src="{{ item.cover | relative_url }}" alt="Cover image for {{ item.title }}" class="img-fluid rounded publication-cover" width="640" height="400" loading="lazy">
                 </div>
                 <div class="col-md-9">
                 {% else %}
@@ -107,7 +107,7 @@ permalink: /research/
             </article>
             {% endfor %}
         </div>
-        <p id="publication-empty" class="publication-empty text-muted" hidden data-i18n="research.no_results">No publications match this research area.</p>
+        <p id="publication-empty" class="publication-empty text-muted" role="status" aria-live="polite" hidden data-i18n="research.no_results">No publications match this research area.</p>
     </div>
 </section>
 
@@ -116,7 +116,7 @@ permalink: /research/
         <div class="section-heading-row">
             <div>
                 <p class="section-kicker" data-i18n="research.community_label">Research community</p>
-                <h2 id="service-heading" class="h4 mb-1"><i class="fas fa-people-group"></i> <span data-i18n="research.academic_service">Academic Service</span></h2>
+                <h2 id="service-heading" class="h4 mb-1"><i class="fas fa-people-group" aria-hidden="true"></i> <span data-i18n="research.academic_service">Academic Service</span></h2>
                 <p class="text-muted mb-0" data-i18n="research.service_intro">Selected reviewing activities for international conferences and workshops.</p>
             </div>
         </div>
@@ -139,26 +139,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const publicationItems = document.querySelectorAll('.publication-item');
     const emptyState = document.getElementById('publication-empty');
 
+    function applyFilter(filterValue, updateUrl) {
+        let visibleCount = 0;
+
+        filterButtons.forEach(function (candidate) {
+            const isActive = candidate.getAttribute('data-filter') === filterValue;
+            candidate.classList.toggle('active', isActive);
+            candidate.setAttribute('aria-pressed', String(isActive));
+        });
+
+        publicationItems.forEach(function (item) {
+            const categories = item.getAttribute('data-categories').split('|');
+            const isVisible = filterValue === 'all' || categories.indexOf(filterValue) !== -1;
+            item.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+        });
+
+        emptyState.hidden = visibleCount !== 0;
+        if (updateUrl) {
+            const url = new URL(window.location.href);
+            if (filterValue === 'all') url.searchParams.delete('filter');
+            else url.searchParams.set('filter', filterValue);
+            window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+        }
+    }
+
     filterButtons.forEach(function (button) {
         button.addEventListener('click', function () {
-            const filterValue = button.getAttribute('data-filter');
-            let visibleCount = 0;
-
-            filterButtons.forEach(function (candidate) {
-                const isActive = candidate === button;
-                candidate.classList.toggle('active', isActive);
-                candidate.setAttribute('aria-pressed', String(isActive));
-            });
-
-            publicationItems.forEach(function (item) {
-                const categories = item.getAttribute('data-categories').split('|');
-                const isVisible = filterValue === 'all' || categories.indexOf(filterValue) !== -1;
-                item.hidden = !isVisible;
-                if (isVisible) visibleCount += 1;
-            });
-
-            emptyState.hidden = visibleCount !== 0;
+            applyFilter(button.getAttribute('data-filter'), true);
         });
     });
+
+    const requestedFilter = new URLSearchParams(window.location.search).get('filter');
+    const validFilter = Array.from(filterButtons).some(function (button) {
+        return button.getAttribute('data-filter') === requestedFilter;
+    });
+    applyFilter(validFilter ? requestedFilter : 'all', false);
 });
 </script>

@@ -8,9 +8,9 @@ navbar_title: Awards
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
-                <h4 class="card-title">
-                    <i class="fas fa-trophy"></i> Scholarships
-                </h4>
+                <h1 class="card-title h4">
+                    <i class="fas fa-trophy" aria-hidden="true"></i> Scholarships
+                </h1>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between align-items-center">
@@ -58,9 +58,9 @@ navbar_title: Awards
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
-                <h4 class="card-title">
-                    <i class="fas fa-medal"></i> Competitions
-                </h4>
+                <h2 class="card-title h4">
+                    <i class="fas fa-medal" aria-hidden="true"></i> Competitions
+                </h2>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between align-items-center">

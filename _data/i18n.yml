@@ -38,6 +38,11 @@ en:
     education: Education
     latest_news: Latest News
     pinned_publications: Pinned Publications
+    show_all_news: Show All News
+    show_fewer_news: Show Fewer News
+    show_all_publications: Show More Publications
+    show_fewer_publications: Show Fewer Publications
+    metrics_verified: Metrics verified
     selected_awards: Selected Awards
     view_all_publications: View all publications
     view_all_awards: View all awards
@@ -77,12 +82,14 @@ en:
     reviewer: Reviewer
   footer:
     daily_quote: Daily Quote
-    loading_quote: Loading quote...
+    loading_quote: Loading quote…
     links: Links
     contact: Contact
     location: Guangzhou, China
     rights: All rights reserved.
     last_updated: "Last updated:"
+  accessibility:
+    skip_to_content: Skip to main content
 
 zh:
   nav:
@@ -124,6 +131,11 @@ zh:
     education: 教育经历
     latest_news: 最新动态
     pinned_publications: 重点论文
+    show_all_news: 展开全部动态
+    show_fewer_news: 收起动态
+    show_all_publications: 展开更多论文
+    show_fewer_publications: 收起论文
+    metrics_verified: 数据核验于
     selected_awards: 代表性荣誉
     view_all_publications: 查看全部论文
     view_all_awards: 查看全部荣誉
@@ -169,3 +181,5 @@ zh:
     location: 中国广州
     rights: 版权所有。
     last_updated: "最后更新："
+  accessibility:
+    skip_to_content: 跳转到正文

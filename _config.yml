@@ -43,7 +43,34 @@ kramdown:
 
 # Build settings
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", ".DS_Store", "node_modules", "vendor"]
+exclude:
+  - lib
+  - config.rb
+  - Capfile
+  - config
+  - log
+  - Rakefile
+  - Rakefile.rb
+  - tmp
+  - less
+  - .DS_Store
+  - node_modules
+  - vendor
+  - CV
+  - README.md
+  - assets/README.md
+  - assets/Read Me.txt
+  - assets/demo.html
+  - assets/demo-files
+  - assets/fonts
+  - assets/less
+  - assets/selection.json
+  - assets/style.css
+  - assets/css/main.css
+  - assets/css/ie.css
+  - assets/js/main.js
+  - assets/js/main.min.js
+  - assets/js/vendor
 
 # Plugins
 plugins:

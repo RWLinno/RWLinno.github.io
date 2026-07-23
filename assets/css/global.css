@@ -18,10 +18,70 @@ body {
         linear-gradient(180deg, #f8fafc 0, var(--paper) 38rem) !important;
 }
 
+a {
+    color: #1d5f94;
+}
+
+a:hover {
+    color: #123f65;
+}
+
+.btn-outline-primary {
+    color: var(--research-blue);
+    border-color: var(--research-blue);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+    color: #fff;
+    background-color: var(--research-blue);
+    border-color: var(--research-blue);
+}
+
+.btn-outline-success {
+    color: #1f6f3d;
+    border-color: #1f6f3d;
+}
+
+.btn-outline-info {
+    color: #0b7285;
+    border-color: #0b7285;
+}
+
+.badge-primary {
+    background-color: var(--research-blue);
+}
+
+.badge-success {
+    background-color: #287a45;
+}
+
+.badge-info {
+    background-color: #0b7285;
+}
+
+.skip-link {
+    position: fixed;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 1100;
+    padding: 0.65rem 0.9rem;
+    border-radius: 0.35rem;
+    color: #fff;
+    background: var(--ink);
+    transform: translateY(-160%);
+}
+
+.skip-link:focus-visible {
+    color: #fff;
+    transform: translateY(0);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: var(--ink);
+    text-wrap: balance;
 }
 
 html[lang="zh-CN"] body {
@@ -84,6 +144,10 @@ body > .container {
     margin-bottom: 1.25rem;
 }
 
+.profile-portrait {
+    object-fit: cover;
+}
+
 .navbar {
     box-shadow: 0 2px 14px rgba(24, 52, 79, 0.07);
     border-bottom: 1px solid rgba(220, 230, 237, 0.85);
@@ -105,6 +169,14 @@ body > .container {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
     color: var(--research-blue) !important;
+}
+
+.navbar-toggler,
+.nav-link,
+.btn,
+.language-switch button {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(31, 102, 159, 0.16);
 }
 
 .language-switch {
@@ -130,6 +202,10 @@ body > .container {
 }
 
 .language-switch button.active {
+    color: var(--research-blue);
+}
+
+.language-switch button:hover {
     color: var(--research-blue);
 }
 
@@ -197,6 +273,26 @@ footer {
     font-weight: 700;
 }
 
+.publication-title {
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+    text-wrap: pretty;
+}
+
+.collapsible-toggle {
+    min-height: 44px;
+    font-weight: 700;
+}
+
+.metric-verification {
+    color: var(--ink-soft);
+    font-size: 0.78rem;
+}
+
+.metric-verification time {
+    font-variant-numeric: tabular-nums;
+}
+
 .research-hero {
     position: relative;
     display: grid;
@@ -243,7 +339,7 @@ footer {
 .research-intro {
     max-width: 720px;
     margin-bottom: 0;
-    color: rgba(255, 255, 255, 0.78);
+    color: rgba(255, 255, 255, 0.88);
     font-size: 1.05rem;
 }
 
@@ -298,7 +394,7 @@ footer {
 
 .research-metrics dd {
     margin: 0.35rem 0 0;
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.82);
     font-size: 0.82rem;
 }
 
@@ -324,10 +420,6 @@ footer {
     border-radius: 999px !important;
     font-size: 0.82rem;
     font-weight: 700;
-}
-
-.publication-title {
-    line-height: 1.45;
 }
 
 .publication-categories {
@@ -390,8 +482,24 @@ button:focus-visible {
 }
 
 @media (max-width: 991.98px) {
+    .navbar-nav .nav-link,
+    .navbar-toggler,
+    .language-switch button {
+        display: inline-flex;
+        min-width: 44px;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-nav .nav-link {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
     .language-switch {
         margin-bottom: 0.75rem;
+        padding: 0 0.35rem;
     }
 }
 
@@ -411,12 +519,33 @@ button:focus-visible {
     }
 
     .education-date,
-    .news-date {
+    .education-date {
         margin-left: 66px;
     }
 
     .news-copy {
         flex-basis: 100%;
+    }
+
+    .news-date {
+        margin-left: 0;
+    }
+
+    .card-body {
+        padding: 1.15rem;
+    }
+
+    .social-buttons .btn,
+    .publication-links .btn,
+    .home-section .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer a {
+        overflow-wrap: anywhere;
     }
 
     .research-hero {

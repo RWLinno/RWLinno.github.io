@@ -8,12 +8,12 @@ navbar_title: Biography
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body">
-                <h4 class="card-title">
-                    <i class="fas fa-user"></i> About Me
-                </h4>
+                <h1 class="card-title h4">
+                    <i class="fas fa-user" aria-hidden="true"></i> About Me
+                </h1>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <img src="{{ '/images/selfie1.jpg' | relative_url }}" alt="Profile Photo" class="img-fluid rounded">
+                        <img src="{{ '/images/selfie1.jpg' | relative_url }}" alt="Portrait of Weilin Ruan" class="img-fluid rounded" width="383" height="383">
                     </div>
                     <div class="col-md-8">
                         <p>
@@ -28,7 +28,7 @@ navbar_title: Biography
                     </div>
                 </div>
 
-                <h5 class="mt-4">Research Interests</h5>
+                <h2 class="h5 mt-4">Research Interests</h2>
                 <ul>
                     <li>Time Series Analysis and Forecasting</li>
                     <li>Spatio-temporal Data Mining</li>
@@ -37,12 +37,12 @@ navbar_title: Biography
                     <li>Deep Learning Applications</li>
                 </ul>
 
-                <h5 class="mt-4">Academic Journey</h5>
+                <h2 class="h5 mt-4">Academic Journey</h2>
                 <p>
                     Throughout my academic career, I've had the opportunity to work on various challenging projects and collaborate with talented researchers. My work has been recognized through publications in top-tier conferences and journals in the field of artificial intelligence and data mining.
                 </p>
 
-                <h5 class="mt-4">Future Goals</h5>
+                <h2 class="h5 mt-4">Future Goals</h2>
                 <p>
                     Looking ahead, I aim to continue pushing the boundaries of research in time series analysis and multimodal learning. I'm particularly interested in developing more efficient and interpretable models that can handle complex real-world data. My goal is to contribute meaningful solutions to challenging problems in urban computing and temporal data analysis.
                 </p>
