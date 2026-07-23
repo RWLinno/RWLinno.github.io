@@ -27,7 +27,7 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 | 已录用 / 已发表论文记录 | 11 | 排除 4 条 Under Review 记录 |
 | Pinned publications | 10 | publication front matter 中的 `pinned: true` |
 | Latest News | 20 | `_data/news.yml` 中的动态数 |
-| Academic service venues | 8 | 2 项 Program Committee + 6 项 Reviewer |
+| Academic service venues | 8 | Research 页统一展示为 Reviewer，不标注年份 |
 | Google Scholar citations | 100+ | 主页人工维护值，建议定期核验 |
 | Awards | 20+ | 主页人工维护值，建议与 Awards 页统一口径 |
 | CSDN followers | 3600+ | 主页人工维护值，建议定期核验 |
@@ -83,6 +83,6 @@ JEKYLL_ENV=production bundle exec jekyll build
 
 - 新论文：在 `_publications/` 新建 front matter 记录；不要保留空的 Paper 或 Code 按钮。
 - 新动态：在 `_data/news.yml` 同时填写英文与人工校对后的中文。
-- 新学术服务：更新 `_data/services.yml`；只有来源明确时才写年份。
+- 新学术服务：更新 `_data/services.yml`；统一按 Reviewer 维护，不展示年份。
 - 新界面文案：在 `_data/i18n.yml` 同时补充 `en` 与 `zh`，并在页面使用 `data-i18n`。
 - 新的长期统计：优先执行 `METRIC-01`，不要继续在多个页面硬编码同一个数字。

@@ -1,16 +1,10 @@
-program_committee:
-  - venue: AAAI
-    year: 2026
-    icon: fa-users-gear
-  - venue: WebST Workshop
-    year: 2025
-    icon: fa-globe
-
 reviewer:
   - venue: ICLR
-    year: 2026
+    distinction: Top200
   - venue: NeurIPS
+  - venue: AAAI
   - venue: KDD
   - venue: IJCAI
   - venue: ICASSP
   - venue: IJCNN
+  - venue: WebST Workshop

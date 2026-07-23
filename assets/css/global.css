@@ -368,24 +368,6 @@ footer {
     background: var(--research-blue);
 }
 
-.service-list {
-    margin: 1rem 0 0;
-    padding: 0;
-    list-style: none;
-}
-
-.service-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.6rem 0;
-    border-top: 1px solid var(--line);
-}
-
-.service-list span {
-    color: var(--ink-soft);
-    font-variant-numeric: tabular-nums;
-}
-
 .service-venue-cloud {
     display: flex;
     flex-wrap: wrap;
@@ -399,11 +381,6 @@ footer {
     border-radius: 0.45rem;
     color: #216a70;
     background: #eff8f7;
-}
-
-.service-note {
-    color: var(--ink-soft);
-    font-size: 0.78rem;
 }
 
 a:focus-visible,

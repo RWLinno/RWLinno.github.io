@@ -5,7 +5,7 @@ navbar_title: Research
 i18n_title: research.page_title
 permalink: /research/
 ---
-{% assign service_count = site.data.services.program_committee.size | plus: site.data.services.reviewer.size %}
+{% assign service_count = site.data.services.reviewer.size %}
 
 <header class="research-hero mb-4">
     <div class="research-hero-copy">
@@ -117,35 +117,19 @@ permalink: /research/
             <div>
                 <p class="section-kicker" data-i18n="research.community_label">Research community</p>
                 <h2 id="service-heading" class="h4 mb-1"><i class="fas fa-people-group"></i> <span data-i18n="research.academic_service">Academic Service</span></h2>
-                <p class="text-muted mb-0" data-i18n="research.service_intro">Selected reviewing and program committee activities for international conferences and workshops.</p>
+                <p class="text-muted mb-0" data-i18n="research.service_intro">Selected reviewing activities for international conferences and workshops.</p>
             </div>
         </div>
 
-        <div class="row mt-4 service-grid">
-            <div class="col-lg-5 mb-3 mb-lg-0">
-                <div class="service-card h-100">
-                    <div class="service-card-icon"><i class="fas fa-users-gear" aria-hidden="true"></i></div>
-                    <h3 class="h5" data-i18n="research.program_committee">Program Committee</h3>
-                    <ul class="service-list">
-                        {% for item in site.data.services.program_committee %}
-                        <li><strong>{{ item.venue }}</strong><span>{{ item.year }}</span></li>
-                        {% endfor %}
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <div class="service-card h-100">
-                    <div class="service-card-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></div>
-                    <h3 class="h5" data-i18n="research.reviewer">Reviewer</h3>
-                    <div class="service-venue-cloud">
-                        {% for item in site.data.services.reviewer %}
-                        <span><strong>{{ item.venue }}</strong>{% if item.year %} {{ item.year }}{% endif %}</span>
-                        {% endfor %}
-                    </div>
-                </div>
+        <div class="service-card mt-4">
+            <div class="service-card-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></div>
+            <h3 class="h5" data-i18n="research.reviewer">Reviewer</h3>
+            <div class="service-venue-cloud">
+                {% for item in site.data.services.reviewer %}
+                <span><strong>{{ item.venue }}</strong>{% if item.distinction %} ({{ item.distinction }}){% endif %}</span>
+                {% endfor %}
             </div>
         </div>
-        <p class="service-note mb-0 mt-3"><i class="fas fa-circle-info mr-1" aria-hidden="true"></i><span data-i18n="research.service_note">Venue names without a year follow the current CV record; years are shown only when confirmed elsewhere on this site.</span></p>
     </div>
 </section>
 

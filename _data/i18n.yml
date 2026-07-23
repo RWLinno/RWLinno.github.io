@@ -57,7 +57,7 @@ en:
     heading: Research, publications & service
     intro: My work centers on spatio-temporal intelligence, time-series forecasting, and multimodal learning, with a growing focus on embodied foundation models and AI infrastructure.
     publication_records: Publication records
-    service_venues: Service venues
+    service_venues: Reviewer venues
     research_tracks: Research tracks
     publications: Publications
     publication_intro: Peer-reviewed papers and selected preprints, with first-author and featured work prioritized.
@@ -73,10 +73,8 @@ en:
     no_results: No publications match this research area.
     academic_service: Academic Service
     community_label: Research community
-    service_intro: Selected reviewing and program committee activities for international conferences and workshops.
-    program_committee: Program Committee
+    service_intro: Selected reviewing activities for international conferences and workshops.
     reviewer: Reviewer
-    service_note: Venue names without a year follow the current CV record; years are shown only when confirmed elsewhere on this site.
   footer:
     daily_quote: Daily Quote
     loading_quote: Loading quote...
@@ -145,7 +143,7 @@ zh:
     heading: 研究、论文与学术服务
     intro: 我的研究围绕时空智能、时间序列预测与多模态学习展开，并逐步拓展至具身基础模型和 AI 基础设施。
     publication_records: 论文记录
-    service_venues: 学术服务会议
+    service_venues: 审稿会议
     research_tracks: 研究方向
     publications: 论文
     publication_intro: 同行评审论文与精选预印本，优先展示第一作者和代表性工作。
@@ -161,10 +159,8 @@ zh:
     no_results: 该研究方向下暂无论文。
     academic_service: 学术服务
     community_label: 学术共同体
-    service_intro: 在国际会议和研讨会中承担的部分审稿与程序委员会工作。
-    program_committee: 程序委员会
+    service_intro: 在国际会议和研讨会中承担的部分审稿工作。
     reviewer: 审稿人
-    service_note: 未标注年份的会议沿用当前 CV 记录；仅对站内已有信息确认的经历展示年份。
   footer:
     daily_quote: 每日引言
     loading_quote: 正在加载引言……
