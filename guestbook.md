@@ -15,7 +15,10 @@ navbar_title: Guestbook
                     Welcome to leave your thoughts, suggestions, or collaboration ideas.
                 </p>
 
-                {% assign giscus_ready = site.giscus.enabled and site.giscus.installed and site.giscus.repo_id != "" and site.giscus.category_id != "" %}
+                {% assign giscus_ready = false %}
+                {% if site.giscus.enabled and site.giscus.installed and site.giscus.repo_id != "" and site.giscus.category_id != "" %}
+                {% assign giscus_ready = true %}
+                {% endif %}
                 {% if giscus_ready %}
                 <script src="https://giscus.app/client.js"
                         data-repo="{{ site.giscus.repo }}"

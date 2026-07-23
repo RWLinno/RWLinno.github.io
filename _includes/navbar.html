@@ -10,12 +10,20 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                {% for page in site.data.navigation.pages %}
+                {% for nav_page in site.data.navigation.pages %}
+                {% assign nav_url_with_slash = nav_page.url | append: '/' %}
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ page.url | relative_url }}">{{ page.name }}</a>
+                    <a class="nav-link{% if page.url == nav_page.url or page.url == nav_url_with_slash %} active{% endif %}" href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url or page.url == nav_url_with_slash %} aria-current="page"{% endif %}>
+                        <span data-i18n="{{ nav_page.i18n_key }}">{{ nav_page.name }}</span>
+                    </a>
                 </li>
                 {% endfor %}
             </ul>
+            <div class="language-switch ml-lg-3 mt-3 mt-lg-0" role="group" aria-label="Language / 语言">
+                <button type="button" data-language="en" aria-pressed="true">EN</button>
+                <span aria-hidden="true">/</span>
+                <button type="button" data-language="zh" aria-pressed="false">中文</button>
+            </div>
         </div>
     </div>
-</nav> 
+</nav>

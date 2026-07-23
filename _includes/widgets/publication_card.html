@@ -43,7 +43,7 @@
                             
                             <p class="small mb-0">
                                 {% for link in item.links %}
-                                {% if link[1].url %}
+                                {% if link[1].url and link[1].url != "" %}
                                 <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}" class="btn btn-sm btn-outline-primary mr-1">{{ link[0] }}</a>
                                 {% else %}
                                 <a target="_blank" href="{{ link[1] }}" class="btn btn-sm btn-outline-primary mr-1">{{ link[0] }}</a>
@@ -80,12 +80,12 @@
                 
                 {% if include.show_all_link %}
                 <div class="text-right">
-                    <a href="{{ 'publications' | relative_url }}" class="btn btn-sm btn-primary">
-                        All Publications <i class="fas fa-angle-double-right"></i>
+                    <a href="{{ '/research/' | relative_url }}#publications" class="btn btn-sm btn-primary">
+                        <span data-i18n="home.view_all_publications">View all publications</span> <i class="fas fa-angle-double-right"></i>
                     </a>
                 </div>
                 {% endif %}
             </div>
         </div>
     </div>
-</div> 
+</div>

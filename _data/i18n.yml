@@ -1,0 +1,175 @@
+en:
+  nav:
+    home: Home
+    research: Research
+    awards: Awards
+    hobbies: Hobbies
+    experiences: Experiences
+    links: Links
+    biography: Biography
+    guestbook: Guestbook
+  profile:
+    cv: Curriculum Vitae
+    cv_zh: Chinese CV
+  home:
+    page_title: Homepage
+    milestones: Milestones
+    milestones_intro: Key progress in research and academic activities.
+    publications: Publications
+    citations: Citations
+    awards: Awards
+    blog_followers: Blog followers
+    interests: Interests
+    interests_intro: Beyond research, I enjoy these activities in daily life.
+    video_games: Video games
+    badminton: Badminton
+    hiking: Hiking
+    movies: Movies
+    cars: Cars
+    travel: Travel
+    photography: Photography
+    music: Music
+    indie_games: Indie game development
+    pets: Pets
+    chess: Chess
+    board_games: Board games
+    web_novels: Web novels
+    more_hobbies: View more hobbies
+    education: Education
+    latest_news: Latest News
+    pinned_publications: Pinned Publications
+    selected_awards: Selected Awards
+    view_all_publications: View all publications
+    view_all_awards: View all awards
+  publication:
+    pinned: Pinned
+    featured: Featured
+    under_review: Under Review
+    oral: Oral
+    spotlight: Spotlight
+    paper: Paper
+    code: Code
+    slides: Slides
+    poster: Poster
+  research:
+    page_title: Research
+    eyebrow: Research profile
+    heading: Research, publications & service
+    intro: My work centers on spatio-temporal intelligence, time-series forecasting, and multimodal learning, with a growing focus on embodied foundation models and AI infrastructure.
+    publication_records: Publication records
+    service_venues: Service venues
+    research_tracks: Research tracks
+    publications: Publications
+    publication_intro: Peer-reviewed papers and selected preprints, with first-author and featured work prioritized.
+    output_label: Selected research output
+    filter_label: Filter publications by research area
+    all: All
+    spatio_temporal: Spatio-temporal
+    time_series: Time Series
+    multimodal: Multimodal
+    multi_agent: Multi-Agent Systems
+    computer_vision: Computer Vision
+    reinforcement_learning: Reinforcement Learning
+    no_results: No publications match this research area.
+    academic_service: Academic Service
+    community_label: Research community
+    service_intro: Selected reviewing and program committee activities for international conferences and workshops.
+    program_committee: Program Committee
+    reviewer: Reviewer
+    service_note: Venue names without a year follow the current CV record; years are shown only when confirmed elsewhere on this site.
+  footer:
+    daily_quote: Daily Quote
+    loading_quote: Loading quote...
+    links: Links
+    contact: Contact
+    location: Guangzhou, China
+    rights: All rights reserved.
+    last_updated: "Last updated:"
+
+zh:
+  nav:
+    home: 首页
+    research: 研究
+    awards: 荣誉
+    hobbies: 兴趣
+    experiences: 经历
+    links: 链接
+    biography: 简介
+    guestbook: 留言
+  profile:
+    cv: 英文简历
+    cv_zh: 中文简历
+  home:
+    page_title: 主页
+    milestones: 学术概览
+    milestones_intro: 研究与学术活动中的阶段性进展。
+    publications: 论文
+    citations: 引用
+    awards: 荣誉
+    blog_followers: 博客关注者
+    interests: 兴趣爱好
+    interests_intro: 科研之外，我也享受这些日常活动。
+    video_games: 电子游戏
+    badminton: 羽毛球
+    hiking: 徒步
+    movies: 电影
+    cars: 汽车
+    travel: 旅行
+    photography: 摄影
+    music: 音乐
+    indie_games: 独立游戏开发
+    pets: 宠物
+    chess: 国际象棋
+    board_games: 桌游
+    web_novels: 网络小说
+    more_hobbies: 查看更多兴趣
+    education: 教育经历
+    latest_news: 最新动态
+    pinned_publications: 重点论文
+    selected_awards: 代表性荣誉
+    view_all_publications: 查看全部论文
+    view_all_awards: 查看全部荣誉
+  publication:
+    pinned: 置顶
+    featured: 精选
+    under_review: 审稿中
+    oral: 口头报告
+    spotlight: 亮点报告
+    paper: 论文
+    code: 代码
+    slides: 幻灯片
+    poster: 海报
+  research:
+    page_title: 研究
+    eyebrow: 研究概览
+    heading: 研究、论文与学术服务
+    intro: 我的研究围绕时空智能、时间序列预测与多模态学习展开，并逐步拓展至具身基础模型和 AI 基础设施。
+    publication_records: 论文记录
+    service_venues: 学术服务会议
+    research_tracks: 研究方向
+    publications: 论文
+    publication_intro: 同行评审论文与精选预印本，优先展示第一作者和代表性工作。
+    output_label: 代表性研究成果
+    filter_label: 按研究方向筛选论文
+    all: 全部
+    spatio_temporal: 时空智能
+    time_series: 时间序列
+    multimodal: 多模态
+    multi_agent: 多智能体系统
+    computer_vision: 计算机视觉
+    reinforcement_learning: 强化学习
+    no_results: 该研究方向下暂无论文。
+    academic_service: 学术服务
+    community_label: 学术共同体
+    service_intro: 在国际会议和研讨会中承担的部分审稿与程序委员会工作。
+    program_committee: 程序委员会
+    reviewer: 审稿人
+    service_note: 未标注年份的会议沿用当前 CV 记录；仅对站内已有信息确认的经历展示年份。
+  footer:
+    daily_quote: 每日引言
+    loading_quote: 正在加载引言……
+    links: 链接
+    contact: 联系方式
+    location: 中国广州
+    rights: 版权所有。
+    last_updated: "最后更新："

@@ -4,11 +4,14 @@ secondary_name: "阮炜霖"
 navbar_name: "Weilin Ruan"
 
 positions:
-- name: Incoming PhD Student @ CUHK CSE
+- name: PhD Student @ CUHK CSE
+  name_zh: 香港中文大学计算机科学与工程系博士生
   date: Aug 2026 - June 2029
 - name: MPhil Student @ HKUST(GZ)
+  name_zh: 香港科技大学（广州）哲学硕士
   date: Sep 2024 - June 2026
 - name: Bachelor of Engineering @ Jinan University
+  name_zh: 暨南大学工学学士
   date: Sep 2020 - June 2024
 
 email: rwlinno@gmail.com
@@ -18,10 +21,18 @@ github: rwlinno
 
 short_bio: >-
   <p style="margin-bottom: 5px;">
-  I am an incoming PhD student in <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Computer Science and Engineering</a> at <a href="https://www.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong (CUHK)</a>, supervised by <a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a>, jointly trained with <a href="https://knowin.ai" target="_blank">Knowin AI Inc. (Shenzhen)</a>. I received my MPhil from <a href="https://www.hkust-gz.edu.cn/" target="_blank">HKUST(GZ)</a> supervised by <a href="https://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
+  I am a PhD student in <a href="https://www.cse.cuhk.edu.hk/" target="_blank">Computer Science and Engineering</a> at <a href="https://www.cuhk.edu.hk/" target="_blank">The Chinese University of Hong Kong (CUHK)</a>, supervised by <a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a>, jointly trained with <a href="https://knowin.ai" target="_blank">Knowin AI Inc. (Shenzhen)</a>. I received my MPhil from <a href="https://www.hkust-gz.edu.cn/" target="_blank">HKUST(GZ)</a> supervised by <a href="https://yuxuanliang.com/" target="_blank">Prof. Yuxuan Liang</a>.
   </p>
   <p style="margin-bottom: 5px;">
   My research interests include Spatio-Temporal World/Action Models, Embodied Foundation Models, Data Generation & Verification, and Infrastructure (Infra) for AI systems. And my research experiences include Spatio-Temporal Data Mining, Time Series Forecasting, and Multi-Modal Learning.
+  </p>
+
+short_bio_zh: >-
+  <p style="margin-bottom: 5px;">
+  我是<a href="https://www.cuhk.edu.hk/" target="_blank">香港中文大学（CUHK）</a><a href="https://www.cse.cuhk.edu.hk/" target="_blank">计算机科学与工程系</a>博士生，师从<a href="https://www.cse.cuhk.edu.hk/~jcheng/" target="_blank">Prof. James Cheng</a>，并与<a href="https://knowin.ai" target="_blank">深圳市知见智能科技有限公司（Knowin AI）</a>联合培养。我于<a href="https://www.hkust-gz.edu.cn/" target="_blank">香港科技大学（广州）</a>取得哲学硕士学位，师从<a href="https://yuxuanliang.com/" target="_blank">梁宇轩教授（Prof. Yuxuan Liang）</a>。
+  </p>
+  <p style="margin-bottom: 5px;">
+  我的研究兴趣包括时空世界/动作模型、具身基础模型、数据生成与验证，以及 AI 系统基础设施；此前的研究经历涵盖时空数据挖掘、时间序列预测和多模态学习。
   </p>
 
 portrait_url: /images/4000x4000ce.jpg

@@ -1,21 +1,29 @@
 pages:
 - name: Home
+  i18n_key: nav.home
   url: /
-- name: Publications
-  url: /publications
+- name: Research
+  i18n_key: nav.research
+  url: /research
 - name: Awards
+  i18n_key: nav.awards
   url: /awards
 # - name: Projects  # 注释掉Projects
 #   url: /projects  
 - name: Hobbies
+  i18n_key: nav.hobbies
   url: /hobbies
 #- name: Daily Challenges
 #  url: /daily-challenges
 - name: Experiences
+  i18n_key: nav.experiences
   url: /experiences
 - name: Links
+  i18n_key: nav.links
   url: /links 
 - name: Biography
+  i18n_key: nav.biography
   url: /biography
 - name: Guestbook
+  i18n_key: nav.guestbook
   url: /guestbook
