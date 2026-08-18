@@ -21,6 +21,8 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 - [x] 采纳 A11Y-01：加入跳转正文、语义化标题、键盘菜单、44px 移动端触控目标、图片尺寸和 iframe 标题。
 - [x] 采纳 PERF-01：移除 5 个第三方运行时脚本，将 Bootstrap 与 Font Awesome 改为本地静态资源，并排除未使用的旧模板资产。
 - [x] 采纳 METRIC-01：主页人工统计统一由 `_data/metrics.yml` 提供，并记录 `last_verified`。
+- [x] CV 预览版移除独立 Project Experience，将 VQA Cleaner、OnCallAgent 和 ST-LoRA 合并到对应实习/科研经历，并同步中英文引用量为 200+。
+- [x] 将 GSTRL 更新为 CIKM 2026 录用论文，并新增 GenRouter 图像生成预印本到 Latest News 与 Research。
 
 ## 当前数据基线
 
@@ -28,10 +30,10 @@ Personal academic website for **Weilin Ruan (阮炜霖)**, built with Jekyll and
 
 | 指标 | 当前值 | 数据来源 / 说明 |
 | --- | ---: | --- |
-| Publication records | 15 | `_publications/` 中的记录数 |
-| 已录用 / 已发表论文记录 | 11 | 排除 4 条 Under Review 记录 |
-| Pinned publications | 10 | publication front matter 中的 `pinned: true` |
-| Latest News | 20 | `_data/news.yml` 中的动态数 |
+| Publication records | 16 | `_publications/` 中的记录数 |
+| 已录用 / 已发表论文记录 | 12 | 排除 4 条 Under Review / Preprint 记录 |
+| Pinned publications | 12 | publication front matter 中的 `pinned: true` |
+| Latest News | 23 | `_data/news.yml` 中的动态数 |
 | Academic service venues | 9 | Research 页统一展示为 Reviewer，不标注年份 |
 | 人工维护统计 | Canonical data source | citations、awards、followers 与核验日期统一存放在 `_data/metrics.yml` |
 | 双语核心页面 | 2 / 8 | Home、Research；其余内容页尚未完整翻译 |
@@ -87,3 +89,16 @@ JEKYLL_ENV=production bundle exec jekyll build
 - 新学术服务：更新 `_data/services.yml`；统一按 Reviewer 维护，不展示年份。
 - 新界面文案：在 `_data/i18n.yml` 同时补充 `en` 与 `zh`，并在页面使用 `data-i18n`。
 - 新的长期统计：只更新 `_data/metrics.yml`，并在需要时同步重新生成 CV，避免在页面和 README 中重复硬编码。
+
+## CV 维护
+
+- 仓库中的 `CV/` 是唯一维护源；Downloads 目录中的旧副本不再同步。
+- `CV/cv.tex` 是面向基础模型研究实习的英文长版预览源，按教育、实习/科研、论文、竞赛、荣誉、技能与本科经历的优先级展示，不硬限制页数；独立项目章节默认不编译。
+- `CV/CV_zh.tex` 是中文长版预览源，结构和关键信息应与英文版同步更新。
+- `file/CV_en_preview.pdf` 和 `file/CV_zh_preview.pdf` 仅供审批，不替换网站当前链接的正式 CV；审批通过后再发布为正式版。
+
+```bash
+cd CV
+latexmk -pdf cv.tex
+latexmk -xelatex CV_zh.tex
+```

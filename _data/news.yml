@@ -1,3 +1,26 @@
+- date_en: August 2026
+  date_zh: 2026年8月
+  label_en: Paper Acceptance
+  label_zh: 论文录用
+  content_en: One paper was accepted to CIKM 2026.
+  content_zh: 一篇论文被 CIKM 2026 录用。
+
+- date_en: August 2026
+  date_zh: 2026年8月
+  label_en: New Preprint
+  label_zh: 新预印本
+  content_en: >-
+    <a href="https://huggingface.co/papers/2608.16721" target="_blank" rel="noopener noreferrer">GenRouter: Unified Workflow Routing for Agentic Image Generation</a> is available on Hugging Face Papers and arXiv.
+  content_zh: >-
+    合作论文 <a href="https://huggingface.co/papers/2608.16721" target="_blank" rel="noopener noreferrer">GenRouter: Unified Workflow Routing for Agentic Image Generation</a> 已发布于 Hugging Face Papers 和 arXiv。
+
+- date_en: August 2026
+  date_zh: 2026年8月
+  label_en: Citation Milestone
+  label_zh: 引用里程碑
+  content_en: Google Scholar citations reached 200+.
+  content_zh: Google Scholar 引用量达到 200+。
+
 - date_en: July 2026
   date_zh: 2026年7月
   label_en: Paper Acceptance

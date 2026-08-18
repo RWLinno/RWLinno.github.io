@@ -1,16 +1,10 @@
-%最后更新: 2026.3.25
+% Last updated: 2026-08-04
 
 \documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 % moderncv version 1.5.1 (29 Apr 2013)
 
 \moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-% \usepackage[noindent]{ctex} %中文支持
-% \setCJKmainfont{Libian SC}
-% \setCJKmainfont{Hannotate SC}
-
-%\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
 \usepackage[top=1cm,bottom=1.5cm,left=1cm,right=1cm]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
@@ -22,12 +16,9 @@
 \usepackage{url}
 %\usepackage{ifpdf}
 \usepackage[final]{pdfpages}
-\usepackage{CJK}
 \usepackage{ulem}
 \usepackage{graphicx} %插入图片的宏包
 \graphicspath{ {.} }
-
-\input zhwinfonts
 %----------------------------------------------------------------------------------------
 %   NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
@@ -40,7 +31,7 @@
 \newcommand*{\wechatsocialsymbol}{{\small\faWeixin}~}
 \social[wechat]{RWLinno}
 \social[github]{RWLinno}
-\homepage{https://rwlinno.github.io/}
+\homepage{rwlinno.github.io}
 
 \newcommand*{\scholarsocialsymbol}{\includegraphics[height=.7\baselineskip]{fig/google-scholar.pdf}}
 \collectionadd[scholar]{socials}{\href{https://scholar.google.com/citations?user=9uk1jJoAAAAJ&hl=zh-CN}{Google Scholar}}
@@ -55,11 +46,11 @@
 \makecvtitle
 
 \input{cv/Education}
+\input{cv/Internship_Experience}
 \input{cv/Publication}
+% \input{cv/Research_Experience}
 \input{cv/Competition}
 \input{cv/Academic_Awards}
-\input{cv/Internship_Experience}
-\input{cv/Research_Experience}
 \input{cv/Skill}
 \input{cv/Campus_Experience}
 
