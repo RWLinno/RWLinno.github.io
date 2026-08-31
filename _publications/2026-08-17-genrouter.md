@@ -8,13 +8,13 @@ authors:
   - Yingjie Xu
   - Litao Guo
   - Ying-Cong Chen
-pub: "arXiv"
+pub: "Under Review"
 pub_date: "2026"
-status: "Preprint"
+status: "Under Review"
 selected: true
 pinned: true
 categories: ["Computer Vision", "Image Generation", "Agentic AI"]
-abstract: "We propose GenRouter, a unified workflow routing framework for agentic image generation. It standardizes diverse agentic pipelines into reusable primitives and adaptively routes heterogeneous prompts through demand profiling, experience matching, and Pareto filtering, improving visual alignment while reducing execution cost and latency."
+abstract: "We propose GenRouter, a unified workflow routing framework for agentic image generation. It standardizes diverse agentic pipelines into reusable primitives and adaptively routes heterogeneous prompts through demand profiling, experience matching, and Pareto filtering, improving visual alignment while reducing execution cost by over 95% and latency by 65%."
 links:
   Paper:
     url: "https://arxiv.org/abs/2608.16721"

@@ -13,28 +13,28 @@ navbar_title: Biography
                 </h1>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <img src="{{ '/images/selfie1.jpg' | relative_url }}" alt="Portrait of Weilin Ruan" class="img-fluid rounded" width="383" height="383">
+                        <img src="{{ '/images/selfie1.jpg' | relative_url }}" alt="Portrait of Weilin RUAN" class="img-fluid rounded" width="383" height="383">
                     </div>
                     <div class="col-md-8">
                         <p>
-                            Hello! I'm Weilin Ruan (阮炜霖), a graduate student at the Hong Kong University of Science and Technology (Guangzhou), where I'm pursuing my studies in Data Science and Analytics at the Information Hub. My research interests primarily focus on time series analysis, spatio-temporal data mining, and multimodal learning.
+                            Hello! I'm Weilin RUAN (阮炜霖), a Ph.D. student in Computer Science and Engineering at The Chinese University of Hong Kong. My research focuses on multimodal learning, time-series foundation models, spatio-temporal data mining, agentic AI, and embodied intelligence.
                         </p>
                         <p>
                             My academic journey began at Jinan University, where I completed my undergraduate studies in Network Engineering. During my undergraduate years, I developed a strong foundation in computer science and discovered my passion for research in artificial intelligence and data science.
                         </p>
                         <p>
-                            Currently, I'm working on several exciting projects that combine deep learning techniques with real-world applications in urban computing and time series forecasting. My research aims to develop innovative solutions that can help better understand and predict complex temporal patterns in various domains.
+                            Currently, I'm working on foundation-model data synthesis, embodied perception evaluation, and multimodal spatio-temporal forecasting. My research aims to build reliable, scalable models that connect real-world temporal signals, visual reasoning, and decision-making systems.
                         </p>
                     </div>
                 </div>
 
                 <h2 class="h5 mt-4">Research Interests</h2>
                 <ul>
-                    <li>Time Series Analysis and Forecasting</li>
-                    <li>Spatio-temporal Data Mining</li>
-                    <li>Multimodal Learning</li>
-                    <li>Urban Computing</li>
-                    <li>Deep Learning Applications</li>
+                    <li>Time-series Foundation Models</li>
+                    <li>Spatio-temporal Data Mining and Forecasting</li>
+                    <li>Multimodal Learning and Visual Reasoning</li>
+                    <li>Embodied Foundation Models</li>
+                    <li>Agentic AI Systems</li>
                 </ul>
 
                 <h2 class="h5 mt-4">Academic Journey</h2>
@@ -44,7 +44,7 @@ navbar_title: Biography
 
                 <h2 class="h5 mt-4">Future Goals</h2>
                 <p>
-                    Looking ahead, I aim to continue pushing the boundaries of research in time series analysis and multimodal learning. I'm particularly interested in developing more efficient and interpretable models that can handle complex real-world data. My goal is to contribute meaningful solutions to challenging problems in urban computing and temporal data analysis.
+                    Looking ahead, I aim to keep pushing the boundary of multimodal and embodied foundation models. I am particularly interested in efficient data-generation and evaluation pipelines that make models more reliable in complex real-world environments.
                 </p>
             </div>
         </div>

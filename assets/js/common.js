@@ -47,7 +47,7 @@
 
         const titleKey = document.body.getAttribute('data-i18n-title');
         const translatedTitle = titleKey && lookup(normalizedLanguage, titleKey);
-        if (translatedTitle) document.title = translatedTitle + ' - Weilin Ruan';
+        if (translatedTitle) document.title = translatedTitle + ' - Weilin RUAN';
 
         if (persist !== false) {
             try {
