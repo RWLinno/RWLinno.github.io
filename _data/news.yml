@@ -1,5 +1,14 @@
 - date_en: August 2026
   date_zh: 2026年8月
+  label_en: Competition Award
+  label_zh: 竞赛获奖
+  content_en: >-
+    Team VeriLens received the Silver Award (Rank 3) in Track 2: General AIGC Audio-Video Detection at DDL 2.0, IJCAI-ECAI 2026 AI Safety Workshop.
+  content_zh: >-
+    VeriLens 团队在 IJCAI-ECAI 2026 AI Safety Workshop DDL 2.0 Track 2: General AIGC Audio-Video Detection 中获得 Silver Award（Rank 3）。
+
+- date_en: August 2026
+  date_zh: 2026年8月
   label_en: Academic Service
   label_zh: 学术服务
   content_en: Appointed as a reviewer for IEEE TPAMI.

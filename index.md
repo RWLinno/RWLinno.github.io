@@ -154,6 +154,12 @@ i18n_title: home.page_title
                 </h2>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item border-0 news-entry">
+                        <span data-lang-content="en"><strong>Silver Award (Rank 3)</strong> - DDL 2.0, IJCAI-ECAI 2026 AI Safety Workshop</span>
+                        <span data-lang-content="zh"><strong>银奖（第3名）</strong> - IJCAI-ECAI 2026 AI Safety Workshop DDL 2.0</span>
+                        <span class="badge badge-pill badge-secondary" data-lang-content="en">2026</span>
+                        <span class="badge badge-pill badge-secondary" data-lang-content="zh">2026年</span>
+                    </li>
+                    <li class="list-group-item border-0 news-entry">
                         <span data-lang-content="en"><strong>Outstanding Graduate</strong> - Jinan University</span>
                         <span data-lang-content="zh"><strong>优秀毕业生</strong> - 暨南大学</span>
                         <span class="badge badge-pill badge-secondary" data-lang-content="en">2024</span>

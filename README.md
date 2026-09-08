@@ -34,7 +34,7 @@ Personal academic website for **Weilin RUAN (阮炜霖)**, built with Jekyll and
 | Publication records | 16 | `_publications/` 中的记录数 |
 | 已录用 / 已发表论文记录 | 12 | 排除 4 条 Under Review / Preprint 记录 |
 | Pinned publications | 12 | publication front matter 中的 `pinned: true` |
-| Latest News | 24 | `_data/news.yml` 中的动态数 |
+| Latest News | 25 | `_data/news.yml` 中的动态数 |
 | Academic service venues | 10 | Research 页统一展示为 Reviewer，不标注年份 |
 | 人工维护统计 | Canonical data source | citations、awards、followers 与核验日期统一存放在 `_data/metrics.yml` |
 | 双语核心页面 | 2 / 8 | Home、Research；其余内容页尚未完整翻译 |

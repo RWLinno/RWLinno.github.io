@@ -64,6 +64,12 @@ navbar_title: Awards
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item border-0">
                         <div class="d-flex justify-content-between align-items-center">
+                            <span><strong>Silver Award (Rank 3)</strong>: <a href="https://ai-safety-workshop-ijcai2026.github.io/leaderboard.html" target="_blank" rel="noopener noreferrer">DDL 2.0, IJCAI-ECAI 2026 AI Safety Workshop</a>, Track 2: General AIGC Audio-Video Detection, Team VeriLens</span>
+                            <span class="badge badge-primary">2026</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item border-0">
+                        <div class="d-flex justify-content-between align-items-center">
                             <span><strong>3 Bronze Medals</strong>: The ICPC International Collegiate Programming Contest (ACM-ICPC) 45-47th</span>
                             <span class="badge badge-primary">2020-2022</span>
                         </div>
