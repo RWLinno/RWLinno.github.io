@@ -12,12 +12,16 @@ sitemap: false
 .filters{display:flex;gap:8px;margin:0 0 16px;flex-wrap:wrap}.filters button{border:1px solid var(--line);border-radius:30px;padding:8px 17px;color:var(--muted);background:transparent;font-size:13px}.filters button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:white}.trip-switch{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.trip-choice{grid-template-columns:60px 1fr;gap:12px;padding:18px}.trip-choice[aria-pressed=true]{padding:17px}.trip-choice strong{font-size:28px}.trip-choice small{font-family:inherit;font-size:11px}.purpose-title{font-size:12px;color:var(--land);margin:24px 0 5px}.intro{margin-top:5px}.sheet[data-kind=visited] .status{background:#e7f2ec;color:#286549}.trip-choice[data-kind=visited] i{color:#28755b}
 @media screen and (max-width:900px){.trip-switch{grid-template-columns:repeat(2,minmax(0,1fr))}.trip-choice{grid-template-columns:1fr;gap:6px}}
 @media print{.filters{display:none!important}.purpose-title{margin:12px 0 5px}}
+
+.photo-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}.photo-gallery[hidden]{display:none}.photo-gallery figure{margin:0;min-width:0}.photo-gallery a{display:block;border-radius:8px;overflow:hidden;background:#edf2f3}.photo-gallery img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain}.photo-gallery figcaption{color:var(--muted);font-size:12px;line-height:1.5;padding:9px 0 0}.photo-gallery a:hover{outline:2px solid var(--ocean);outline-offset:3px}
+@media screen and (max-width:720px){.photo-gallery{grid-template-columns:1fr;gap:18px}.photo-gallery img{aspect-ratio:auto}}
+@media print{.photo-gallery{grid-template-columns:1fr 1fr;gap:10px;margin:12px 0;break-inside:avoid}.photo-gallery img{max-height:42mm;aspect-ratio:auto;object-fit:contain}.photo-gallery figcaption{font-size:8pt}}
 </style></head><body>
 <header><a class="brand" href="/">RWLINNO / TRAVEL</a><div class="languages" role="group" aria-label="Language / 语言"><button data-lang="zh" aria-pressed="true">中文</button><button data-lang="en" aria-pressed="false">English</button></div></header>
 <main><section class="hero"><div><p class="eyebrow">PLACES VISITED · JOURNEYS AHEAD</p><h1 id="pageTitle">全球旅游计划</h1><p id="tagline"></p></div><svg class="globe" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#7199ae" stroke-width="1"><circle cx="100" cy="100" r="77"/><ellipse cx="100" cy="100" rx="37" ry="77"/><ellipse cx="100" cy="100" rx="77" ry="29"/><path d="M23 100h154M100 23v154"/></g><path d="M42 63 Q138 24 151 115 Q90 165 50 130" stroke="#28755b" fill="none" stroke-width="2.5" stroke-dasharray="4 4"/><circle cx="42" cy="63" r="5" fill="#b26c40"/><circle cx="151" cy="115" r="5" fill="#256b89"/><circle cx="50" cy="130" r="5" fill="#28755b"/></svg></section>
 <div class="filters" id="filters" role="group" aria-label="行程分类 / Trip category"></div><div class="trip-switch" id="trips" role="group" aria-label="选择行程 / Choose a trip"></div>
-<article class="sheet" id="itinerary" aria-labelledby="tripTitle"><div class="sheet-head"><p class="print-title">全球旅游计划 / Global travel plans · rwlinno.github.io/travel/</p><p class="eyebrow" id="region"></p><h2 id="tripTitle"></h2><span class="status" id="status"></span><h3 class="purpose-title" id="purposeTitle"></h3><p class="intro" id="intro"></p><div class="facts" id="facts"></div></div><div class="route"><svg id="route" viewBox="0 0 900 130" role="img" aria-label="行程路线示意 / Route schematic"></svg><div id="mobileRoute" class="mobile-route" aria-hidden="true"></div><p id="routeNote"></p></div>
-<div class="body"><div class="section-head"><h3 id="scheduleTitle"></h3><div class="tools"><button id="print"></button><button id="download"></button></div></div><div id="notice" role="status"></div><div class="table-wrap"><table><thead id="thead"></thead><tbody id="days"></tbody></table></div><div class="lower"><section><h3 id="modulesTitle"></h3><ul id="modules"></ul></section><section><h3 id="checksTitle"></h3><ul id="checks"></ul></section></div><section class="source"><strong id="sourceTitle"></strong><nav class="source-links" id="sources" aria-label="官方来源 / Official sources"></nav><p id="provenance"></p></section></div></article><p class="screen-note" id="publicNote"></p><noscript>请开启 JavaScript 查看中英文行程。Enable JavaScript to view the bilingual itinerary.</noscript></main><footer><span id="footerNote"></span><a href="/" id="homeLink"></a></footer>
+<article class="sheet" id="itinerary" aria-labelledby="tripTitle"><div class="sheet-head"><p class="print-title">全球旅游计划 / Global travel plans · rwlinno.github.io/travel/</p><p class="eyebrow" id="region"></p><h2 id="tripTitle"></h2><span class="status" id="status"></span><h3 class="purpose-title" id="purposeTitle"></h3><p class="intro" id="intro"></p><div class="facts" id="facts"></div><div class="photo-gallery" id="gallery" aria-label="旅途风景 / Travel photographs"></div></div><div class="route"><svg id="route" viewBox="0 0 900 130" role="img" aria-label="行程路线示意 / Route schematic"></svg><div id="mobileRoute" class="mobile-route" aria-hidden="true"></div><p id="routeNote"></p></div>
+<div class="body"><div class="section-head"><h3 id="scheduleTitle"></h3><div class="tools"><button id="print"></button><button id="download"></button></div></div><div id="notice" role="status"></div><div class="table-wrap"><table><thead id="thead"></thead><tbody id="days"></tbody></table></div><div class="lower"><section><h3 id="modulesTitle"></h3><ul id="modules"></ul></section><section><h3 id="checksTitle"></h3><ul id="checks"></ul></section></div><section class="source"><strong id="sourceTitle"></strong><nav class="source-links" id="sources" aria-label="官方来源 / Official sources"></nav></section></div></article><p class="screen-note" id="publicNote"></p><noscript>请开启 JavaScript 查看中英文行程。Enable JavaScript to view the bilingual itinerary.</noscript></main><footer><span id="footerNote"></span><a href="/" id="homeLink"></a></footer>
 <script id="travel-data" type="application/json">[
   {
     "id": "vietnam-2026",
@@ -32,104 +36,134 @@ sitemap: false
       "en": "A cruise stop above the clouds"
     },
     "dates": {
-      "zh": "2026.05.01、05.03 · 视频记录",
-      "en": "01 & 03 MAY 2026 · video records"
+      "zh": "2026.05.01—05.05 · 5 天",
+      "en": "01–05 MAY 2026 · 5 days"
     },
     "status": {
-      "zh": "已去过 · 回顾与参考",
-      "en": "Visited · retrospective & reference"
+      "zh": "已去过 · 旅行回顾",
+      "en": "Visited · travel journal"
     },
     "intro": {
-      "zh": "以邮轮体验和岘港岸上游为主线，串联巴拿山缆车、金桥、山顶建筑与海滩。按视频能够确认的片段重建活动，不补写缺失日期或完整航程。",
-      "en": "Pair a cruise experience with a Da Nang shore excursion: Bà Nà Hills cable cars, the Golden Bridge, hilltop architecture and the beach. Activities are reconstructed only from supported video segments, without filling in missing dates or a complete sailing itinerary."
+      "zh": "从香港乘邮轮出发，五天往返越南。第三天停靠顺化／岘港区域，搭乘巴士前往巴拿山和海边一日游；其余时间在海上度过，享受甲板海风与沿途日落。",
+      "en": "Sail from Hong Kong on a five-day return cruise to Vietnam. On day three, call in the Hue / Da Nang region and take a bus excursion to Bà Nà Hills and the coast. Spend the remaining sailing days enjoying sea breezes and sunsets on board."
     },
     "facts": [
       [
         {
-          "zh": "旅行主题",
-          "en": "Focus"
+          "zh": "出发与返回",
+          "en": "Start & finish"
         },
         {
-          "zh": "邮轮 · 山地景观与海岸",
-          "en": "Cruise · mountain views & coast"
+          "zh": "香港往返",
+          "en": "Hong Kong round trip"
         }
       ],
       [
         {
-          "zh": "已确认片区",
-          "en": "Confirmed areas"
+          "zh": "旅行长度",
+          "en": "Duration"
         },
         {
-          "zh": "巴拿山、金桥、岘港海岸",
-          "en": "Bà Nà Hills, Golden Bridge, Da Nang coast"
+          "zh": "5 天 · 4 晚",
+          "en": "5 days · 4 nights"
         }
       ],
       [
         {
-          "zh": "材料覆盖",
-          "en": "Source coverage"
+          "zh": "岸上游",
+          "en": "Shore excursion"
         },
         {
-          "zh": "3 集视频 · 非完整航程",
-          "en": "3 episodes · partial voyage"
+          "zh": "第 3 天 · 巴拿山与海边",
+          "en": "Day 3 · Bà Nà Hills & coast"
         }
       ]
     ],
     "route": [
-      "CRUISE",
-      "DA NANG",
-      "BÀ NÀ HILLS",
-      "COAST",
-      "CRUISE"
+      "HONG KONG",
+      "AT SEA",
+      "HUE / DA NANG",
+      "AT SEA",
+      "HONG KONG"
     ],
     "routeNote": {
-      "zh": "根据片头集数排序，文件名顺序不作为依据；海滩具体名称与完整港口顺序未确认。",
-      "en": "Ordered by episode title cards rather than filenames; the beach name and full port sequence are unconfirmed."
+      "zh": "香港往返邮轮路线。顺化／岘港停靠日乘巴士往返巴拿山与海岸，整趟旅程仅安排这一天岸上游。",
+      "en": "Round-trip cruise from Hong Kong. The Hue / Da Nang call includes a bus excursion to Bà Nà Hills and the coast, the voyage’s only shore-excursion day."
     },
     "days": [
       {
         "date": "05.01",
         "city": {
-          "zh": "登船与船上空间",
-          "en": "Boarding & ship spaces"
+          "zh": "香港登船",
+          "en": "Embark in Hong Kong"
         },
         "activity": {
-          "zh": "第一集片头标记 2026.05.01；可见登船后的公共空间、甲板、餐饮和船上设施。出发港不作推定。",
-          "en": "Episode 1 is dated 1 May 2026 and shows public interiors, decks, dining and ship facilities after boarding. The departure port is not inferred."
+          "zh": "办理登船，熟悉船上公共空间与甲板，开始五天邮轮旅程。",
+          "en": "Board in Hong Kong, explore the ship’s public spaces and decks, and begin the five-day voyage."
         },
         "stay": {
-          "zh": "视频第一集",
-          "en": "Episode 1"
+          "zh": "登船日",
+          "en": "Embarkation"
         }
       },
       {
-        "date": "05.03 · A",
+        "date": "05.02",
         "city": {
-          "zh": "巴拿山与金桥",
-          "en": "Bà Nà Hills & Golden Bridge"
+          "zh": "海上航行",
+          "en": "At sea"
         },
         "activity": {
-          "zh": "第二集片头标记 2026.05.03；从港区转入山地缆车、金桥和法式街区／山顶园区。",
-          "en": "Episode 2 is dated 3 May 2026, moving from a port area to mountain cable cars, the Golden Bridge and French-style streets / hilltop attractions."
+          "zh": "全天海上航行，以船上休闲、餐饮与甲板观海为主。",
+          "en": "A full sailing day for relaxing on board, dining and enjoying the sea from the deck."
         },
         "stay": {
-          "zh": "视频第二集",
-          "en": "Episode 2"
+          "zh": "海上日",
+          "en": "Sea day"
         }
       },
       {
-        "date": "05.03 · B",
+        "date": "05.03",
         "city": {
-          "zh": "山顶 → 海岸 → 回船",
-          "en": "Hilltop → coast → ship"
+          "zh": "顺化／岘港 · 巴拿山与海边",
+          "en": "Hue / Da Nang · Bà Nà Hills & coast"
         },
         "activity": {
-          "zh": "第三集同样标记 2026.05.03；继续山顶建筑与园区，缆车下山后出现海滩及回船片段。",
-          "en": "Episode 3 also carries 3 May 2026: more hilltop buildings and attractions, a cable-car descent, then beach and ship-return footage."
+          "zh": "靠港后乘巴士参加一日游：巴拿山缆车、金桥与山顶园区，随后前往海边，结束后返回邮轮。",
+          "en": "After docking, take a bus day trip to Bà Nà Hills for cable cars, the Golden Bridge and hilltop attractions, followed by the coast and a return to the ship."
         },
         "stay": {
-          "zh": "视频第三集",
-          "en": "Episode 3"
+          "zh": "岸上游",
+          "en": "Shore excursion"
+        }
+      },
+      {
+        "date": "05.04",
+        "city": {
+          "zh": "海上返航",
+          "en": "Return sailing"
+        },
+        "activity": {
+          "zh": "在海上返航，留出休息、甲板散步与整理行李的时间。",
+          "en": "Sail back towards Hong Kong, with time to rest, walk the decks and pack."
+        },
+        "stay": {
+          "zh": "海上日",
+          "en": "Sea day"
+        }
+      },
+      {
+        "date": "05.05",
+        "city": {
+          "zh": "返回香港",
+          "en": "Return to Hong Kong"
+        },
+        "activity": {
+          "zh": "抵达香港后离船，结束五天四晚行程。",
+          "en": "Disembark in Hong Kong, completing the five-day, four-night trip."
+        },
+        "stay": {
+          "zh": "离船日",
+          "en": "Disembarkation"
         }
       }
     ],
@@ -145,16 +179,16 @@ sitemap: false
     ],
     "checks": [
       {
-        "zh": "先确认实际停靠港、岸上交通与最晚回船时刻；示意路线不能替代船公司行程单。",
-        "en": "Confirm the actual port, shore transport and all-aboard time; the schematic does not replace the cruise itinerary."
+        "zh": "岸上游按最晚回船时间倒排交通与缆车排队，巴拿山为主要活动，海边停留随时间调整。",
+        "en": "Work backwards from the all-aboard deadline, allowing for road transfers and cable-car queues; prioritise Bà Nà Hills and adjust beach time accordingly."
       },
       {
-        "zh": "园区票种、缆车运营与天气以当日公告为准，预留上下山排队和港区接驳时间。",
-        "en": "Check current park tickets, cable-car operations and weather; allow for queues and port transfers."
+        "zh": "山上多云雾，备轻便雨具与防滑鞋；海边和甲板则注意防晒与风浪。",
+        "en": "Bring light rain protection and grippy shoes for misty mountain conditions; prepare for sun and wind on the coast and deck."
       },
       {
-        "zh": "视频未覆盖的日期不排入“实际行程”；海滩名称不确定，保留为岘港海岸模块。",
-        "en": "Dates absent from the footage are not presented as actual travel days; the unnamed beach remains a Da Nang coastal module."
+        "zh": "出行前向船公司确认登船时间、岸上游集合地点与返船安排。",
+        "en": "Confirm boarding times, shore-excursion meeting points and return arrangements with the cruise operator."
       }
     ],
     "sources": [
@@ -167,10 +201,26 @@ sitemap: false
         "https://vietnam.travel/things-to-do/must-visit-places-in-da-nang"
       ]
     ],
-    "provenance": {
-      "zh": "三段视频各抽取 18 帧，结合片头日期、集数与可辨认地标整理；未做完整音频转录。片头第一集为 5 月 1 日，第二、三集为 5 月 3 日，不能由此推定总天数或其他港口。",
-      "en": "Compiled from 18 sampled frames per video, title-card dates, episode numbers and identifiable landmarks, without full audio transcription. Episode 1 is dated 1 May and episodes 2–3 are dated 3 May; total trip duration and other ports cannot be inferred."
-    }
+    "photos": [
+      {
+        "src": "images/vietnam-sea-sunset.webp",
+        "caption": {
+          "zh": "海上晚霞",
+          "en": "Sunset at sea"
+        },
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "src": "images/vietnam-ba-na-cable-car.webp",
+        "caption": {
+          "zh": "巴拿山缆车与山林",
+          "en": "Cable cars and forest at Bà Nà Hills"
+        },
+        "width": 1024,
+        "height": 768
+      }
+    ]
   },
   {
     "id": "singapore-2026",
@@ -189,8 +239,8 @@ sitemap: false
       "en": "20–27 JAN 2026"
     },
     "status": {
-      "zh": "已去过 · 回顾与参考",
-      "en": "Visited · retrospective & reference"
+      "zh": "已去过 · 旅行回顾",
+      "en": "Visited · travel journal"
     },
     "intro": {
       "zh": "把学术会议与城市公共空间串联起来：博物馆和校园提供文化线，圣淘沙提供游乐与海岸线，公园连道骑行则展示城市的另一面。",
@@ -219,12 +269,12 @@ sitemap: false
       ],
       [
         {
-          "zh": "材料覆盖",
-          "en": "Source coverage"
+          "zh": "路线亮点",
+          "en": "Highlights"
         },
         {
-          "zh": "行程 PDF＋3 段视频",
-          "en": "Itinerary PDF + 3 videos"
+          "zh": "城市展馆 · 圣淘沙 · 海岸骑行",
+          "en": "Museums · Sentosa · coastal rides"
         }
       ]
     ],
@@ -236,8 +286,8 @@ sitemap: false
       "CHANGI"
     ],
     "routeNote": {
-      "zh": "示意为活动片区串联，不是完整骑行轨迹；视频不能证明已完成环岛骑行。",
-      "en": "An overview of activity areas, not a full cycling track; the videos do not establish a completed round-island ride."
+      "zh": "城市、圣淘沙与公园连道分区安排，骑行日单独留足时间。",
+      "en": "Group activities into city, Sentosa and park-connector areas, allowing dedicated time for cycling days."
     },
     "days": [
       {
@@ -258,12 +308,12 @@ sitemap: false
       {
         "date": "01.21",
         "city": {
-          "zh": "博物馆与福康宁",
-          "en": "Museums & Fort Canning"
+          "zh": "博物馆、福康宁与夜间动物园",
+          "en": "Museums, Fort Canning & Night Safari"
         },
         "activity": {
-          "zh": "国家博物馆、福康宁公园与万礼一带晚间活动；具体夜间场馆不作进一步推定。",
-          "en": "National Museum, Fort Canning Park and an evening activity in the Mandai area; the precise evening venue is not inferred."
+          "zh": "白天参观国家博物馆和福康宁公园，晚上前往万礼夜间野生动物园（Night Safari）。",
+          "en": "Visit the National Museum and Fort Canning Park by day, then head to Night Safari in Mandai in the evening."
         },
         "stay": {
           "zh": "文化与公园",
@@ -322,12 +372,12 @@ sitemap: false
           "en": "East Coast & cross-city cycling"
         },
         "activity": {
-          "zh": "东海岸、公园连道与向西部校园延伸的骑行片段；复用时拆成短距离白天路线。",
-          "en": "Riding footage covers East Coast, park connectors and a westward extension towards campus areas; adapt this into shorter daylight routes."
+          "zh": "从东海岸出发，串联公园连道与西部校园方向的跨城路线；沿途安排补水和休息。",
+          "en": "Ride from East Coast through park connectors towards the western campus areas, with water and rest stops along the way."
         },
         "stay": {
-          "zh": "骑行片段",
-          "en": "Cycling segments"
+          "zh": "骑行日",
+          "en": "Cycling day"
         }
       },
       {
@@ -373,8 +423,8 @@ sitemap: false
     ],
     "checks": [
       {
-        "zh": "骑行画面包含夜间与较长路段，攻略不将其作为默认推荐；留意禁骑区域、雷雨和路面标识。",
-        "en": "The footage includes night and long-distance riding; these are not the default recommendation. Observe no-cycling areas, storms and route signs."
+        "zh": "骑行宜拆成较短的白天路线，留意禁骑区域、雷雨和路面标识；夜间行车配备照明并降低强度。",
+        "en": "Prefer shorter daylight rides, observing no-cycling areas, storms and route signs; use lights and reduce intensity after dark."
       },
       {
         "zh": "观景、花穹和圣淘沙项目分别核对票种与运营时间，勿把历史套餐视为当前包含项。",
@@ -401,12 +451,32 @@ sitemap: false
       [
         "NParks · Route etiquette",
         "https://pcn.nparks.gov.sg/sharing-the-pcn/sharingpcn/"
+      ],
+      [
+        "Mandai · Night Safari",
+        "https://www.mandai.com/en/night-safari.html"
       ]
     ],
-    "provenance": {
-      "zh": "行程 PDF 与三集视频交叉整理。视频采用抽帧与片头核对，未逐秒观看或逐字转录；只提取地点、活动及可确认日期，不发布原片、人物画面或身份信息。",
-      "en": "Cross-checked against the itinerary PDF and three video episodes using sampled frames and title cards, not second-by-second viewing or verbatim transcription. Only places, activities and supported dates are retained; source videos, people and identities are not published."
-    }
+    "photos": [
+      {
+        "src": "images/singapore-coastal-ride.webp",
+        "caption": {
+          "zh": "海岸绿道与骑行",
+          "en": "A coastal ride beneath the palms"
+        },
+        "width": 1182,
+        "height": 666
+      },
+      {
+        "src": "images/singapore-marina-bay.webp",
+        "caption": {
+          "zh": "滨海湾夜色",
+          "en": "Marina Bay after dark"
+        },
+        "width": 1182,
+        "height": 666
+      }
+    ]
   },
   {
     "id": "portugal-2025",
@@ -425,8 +495,8 @@ sitemap: false
       "en": "14–20 SEP 2025"
     },
     "status": {
-      "zh": "已去过 · 回顾与参考",
-      "en": "Visited · retrospective & reference"
+      "zh": "已去过 · 旅行回顾",
+      "en": "Visited · travel journal"
     },
     "intro": {
       "zh": "以波尔图的学术会议为行程支点，结合旧城建筑、艺术馆、杜罗河两岸步行与河谷一日游，最后留半天给大西洋海岸。",
@@ -578,8 +648,8 @@ sitemap: false
     ],
     "checks": [
       {
-        "zh": "热门书店、宫殿和博物馆以官方预约及休馆日为准；历史日记中的票价不作报价。",
-        "en": "Check official reservations and closing days for bookshops, palaces and museums; diary prices are not current quotes."
+        "zh": "热门书店、宫殿和博物馆提前预约，出发前查看休馆日与最新票价。",
+        "en": "Book popular bookshops, palaces and museums ahead, checking closing days and current ticket prices before visiting."
       },
       {
         "zh": "杜罗河谷行程先锁定往返交通，再安排游船，避免只看单程耗时。",
@@ -600,10 +670,26 @@ sitemap: false
         "https://www.visitportugal.com/en/content/douro-valley"
       ]
     ],
-    "provenance": {
-      "zh": "依据 2025 年 9 月行程与回顾文字重组，仅保留目的地、活动和通用交通信息；攻略用于复用路线，营业信息须重新核实。",
-      "en": "Reconstructed from the September 2025 itinerary and retrospective notes, retaining destinations, activities and general transport only. Recheck operating information before reusing the route."
-    }
+    "photos": [
+      {
+        "src": "images/portugal-porto-rooftops.webp",
+        "caption": {
+          "zh": "波尔图旧城屋顶",
+          "en": "Rooftops of Porto"
+        },
+        "width": 1182,
+        "height": 664
+      },
+      {
+        "src": "images/portugal-atlantic-coast.webp",
+        "caption": {
+          "zh": "大西洋岸的礁石与海浪",
+          "en": "Rocks and surf on the Atlantic coast"
+        },
+        "width": 1182,
+        "height": 664
+      }
+    ]
   },
   {
     "id": "japan-2025",
@@ -622,8 +708,8 @@ sitemap: false
       "en": "28 MAY–03 JUN 2025"
     },
     "status": {
-      "zh": "已去过 · 回顾与参考",
-      "en": "Visited · retrospective & reference"
+      "zh": "已去过 · 旅行回顾",
+      "en": "Visited · travel journal"
     },
     "intro": {
       "zh": "以东京为城市探索基地，穿插富士山周边湖区与镰仓／江之岛海岸。旅行重点是街区文化、观景与铁路串联，路线适合拆成城市段和近郊段复用。",
@@ -669,8 +755,8 @@ sitemap: false
       "TOKYO / NRT"
     ],
     "routeNote": {
-      "zh": "关西为抵达与转场节点；途经城市不列作已游览目的地。富士山段为山麓观景，不是登山路线。",
-      "en": "Kansai is an arrival and transfer point; cities passed en route are not counted as visits. The Fuji section covers foothill views, not a mountain ascent."
+      "zh": "关西抵达后乘铁路转往东京，再延伸至富士山麓和镰仓海岸；从成田机场返程。",
+      "en": "Arrive in Kansai and travel by rail to Tokyo, then explore the Fuji foothills and Kamakura coast before departing from Narita."
     },
     "days": [
       {
@@ -725,8 +811,8 @@ sitemap: false
           "en": "Akihabara & Tokyo Skytree"
         },
         "activity": {
-          "zh": "秋叶原和晴空塔周边活动；原记录中的烟花取消，不列为已完成项目。",
-          "en": "Explore Akihabara and the Skytree area. Fireworks were cancelled in the source account and are not counted as a completed activity."
+          "zh": "游览秋叶原与东京晴空塔周边，将购物、街区散步与都市观景安排在同一天。",
+          "en": "Explore Akihabara and the Tokyo Skytree area, combining shopping, neighbourhood walks and city views."
         },
         "stay": {
           "zh": "城市弹性日",
@@ -740,8 +826,8 @@ sitemap: false
           "en": "Fuji foothills & lakes"
         },
         "activity": {
-          "zh": "富士吉田／河口湖 → 忍野八海 → 山中湖 → 河口湖；原路线较紧，复用时建议减少到一至两个片区。",
-          "en": "Fujiyoshida / Kawaguchiko → Oshino Hakkai → Yamanakako → Kawaguchiko. This was a rushed route; choose one or two areas when adapting it."
+          "zh": "富士吉田／河口湖 → 忍野八海 → 山中湖 → 河口湖，沿湖区与山麓串联观景点；复用路线时建议减少到一至两个片区。",
+          "en": "Fujiyoshida / Kawaguchiko → Oshino Hakkai → Yamanakako → Kawaguchiko, linking lake and foothill viewpoints. Choose one or two areas when adapting this busy route."
         },
         "stay": {
           "zh": "近郊段",
@@ -812,11 +898,7 @@ sitemap: false
         "Fujikawaguchiko Tourism",
         "https://fujisan.ne.jp/"
       ]
-    ],
-    "provenance": {
-      "zh": "依据压缩包内行程表与回顾 PDF，回顾记录优先于预案。纠正取消活动的呈现，无法确认的场馆名采用片区描述，不保留个人日记内容。",
-      "en": "Based on the itinerary table and retrospective PDF in the archive, prioritising the retrospective over the plan. Cancelled activities are marked; uncertain venue names use area descriptions. Personal diary content is omitted."
-    }
+    ]
   },
   {
     "id": "malaysia",
@@ -831,16 +913,16 @@ sitemap: false
       "en": "City streets to the islands of Sabah"
     },
     "dates": {
-      "zh": "10.04—10.12 · 年份未明确",
-      "en": "04–12 OCT · year unspecified"
+      "zh": "2025.10.04—10.12",
+      "en": "04–12 OCT 2025"
     },
     "status": {
-      "zh": "已去过 · 回顾与参考",
-      "en": "Visited · retrospective & reference"
+      "zh": "已去过 · 旅行回顾",
+      "en": "Visited · travel journal"
     },
     "intro": {
-      "zh": "用吉隆坡的街区、建筑与饮食作为起点，再串联仙本那的海岛与亚庇的滨海风景。以下按原材料整理为可复用路线，未逐项认定为实际到访。",
-      "en": "Begin with Kuala Lumpur’s neighbourhoods, architecture and food, then connect Semporna’s islands with Kota Kinabalu’s coast. The source itinerary is retained as a reusable route, not a checklist of confirmed visits."
+      "zh": "用吉隆坡的街区、建筑与饮食作为起点，再串联仙本那的海岛与亚庇的滨海风景。九天行程从城市文化切换到海岛自然，以亚庇的日落与街头美食收尾。",
+      "en": "Begin with Kuala Lumpur’s neighbourhoods, architecture and food, then connect Semporna’s islands with Kota Kinabalu’s coast. This nine-day journey moves from urban culture to island nature, ending with sunsets and local food in Kota Kinabalu."
     },
     "facts": [
       [
@@ -865,12 +947,12 @@ sitemap: false
       ],
       [
         {
-          "zh": "材料覆盖",
-          "en": "Source coverage"
+          "zh": "行程长度",
+          "en": "Duration"
         },
         {
-          "zh": "9 天参考路线",
-          "en": "9-day reference route"
+          "zh": "9 天",
+          "en": "9 days"
         }
       ]
     ],
@@ -882,8 +964,8 @@ sitemap: false
       "KUALA LUMPUR"
     ],
     "routeNote": {
-      "zh": "路线示意；斗湖为前往仙本那的交通门户。原稿 10 月 7—8 日重复列出跳岛安排，现合并为一个活动窗口。",
-      "en": "Schematic route; Tawau is the gateway to Semporna. Duplicate island-tour entries on 7–8 October are combined into one activity window."
+      "zh": "吉隆坡飞斗湖，陆路前往仙本那；海岛游览后转往亚庇，再经吉隆坡返程。",
+      "en": "Fly from Kuala Lumpur to Tawau and continue overland to Semporna; after the islands, travel to Kota Kinabalu and return via Kuala Lumpur."
     },
     "days": [
       {
@@ -897,8 +979,8 @@ sitemap: false
           "en": "After arrival, use Petaling Street, the National Mosque and Islamic Arts Museum as a cultural route; KL Tower, Jalan Alor and Bukit Bintang are evening options."
         },
         "stay": {
-          "zh": "参考安排",
-          "en": "Reference plan"
+          "zh": "城市探索",
+          "en": "City exploration"
         }
       },
       {
@@ -923,8 +1005,8 @@ sitemap: false
           "en": "Semporna islands"
         },
         "activity": {
-          "zh": "敦沙卡兰海洋公园跳岛窗口；Bohey Dulang、Mantabuan、Sibuan 为原稿候选。10 月 8 日晚经斗湖转往亚庇，须按实际交通压缩活动。",
-          "en": "Island-tour window in Tun Sakaran Marine Park, with Bohey Dulang, Mantabuan and Sibuan as source options. The plan continues via Tawau to Kota Kinabalu on the evening of 8 October; shorten activities to fit transfers."
+          "zh": "以仙本那为基地安排海岛游览与浮潜，体验敦沙卡兰海洋公园一带风景；10 月 8 日晚经斗湖转往亚庇。",
+          "en": "Use Semporna as a base for island visits and snorkelling around Tun Sakaran Marine Park; continue via Tawau to Kota Kinabalu on the evening of 8 October."
         },
         "stay": {
           "zh": "天气与船班决定",
@@ -968,8 +1050,8 @@ sitemap: false
           "en": "Kota Kinabalu → Kuala Lumpur → home"
         },
         "activity": {
-          "zh": "市区留白后转机返程；加雅街市集须另查实际举办日期，不沿用原稿中“周六／周日市集”的冲突标注。",
-          "en": "Keep a city buffer before the return connections. Check the actual Gaya Street market day instead of relying on the source’s conflicting Saturday/Sunday labels."
+          "zh": "亚庇市区自由活动与美食收尾，随后经吉隆坡转机返程。",
+          "en": "Finish with free time and local food in Kota Kinabalu, then return via Kuala Lumpur."
         },
         "stay": {
           "zh": "返程",
@@ -997,8 +1079,8 @@ sitemap: false
         "en": "Allow time for the Tawau–Semporna road transfer and weather delays; avoid tight boat-to-flight connections."
       },
       {
-        "zh": "原材料价格与时间仅作历史背景；票价、清真寺参观时段和市集日期以当前公告为准。",
-        "en": "Treat source prices and times as historical; verify current fares, mosque visiting hours and market dates."
+        "zh": "票价、清真寺参观时段和加雅街市集日期以当前公告为准；海岛活动随天气与开放情况调整。",
+        "en": "Check current fares, mosque visiting hours and Gaya Street market dates, adjusting island activities to weather and access."
       }
     ],
     "sources": [
@@ -1015,10 +1097,26 @@ sitemap: false
         "https://sabahtourism.com/destination/bohey-dulang/"
       ]
     ],
-    "provenance": {
-      "zh": "根据行程 PDF 的地点清单与规划整理。国家归档为已去过；年份未明确，逐日路线含计划内容，不能据此认定所有景点均已完成。",
-      "en": "Compiled from the PDF’s place list and itinerary. The country is marked visited; the year is unspecified and individual stops include planned activities, not confirmed completion."
-    }
+    "photos": [
+      {
+        "src": "images/malaysia-kota-kinabalu-mosque.webp",
+        "caption": {
+          "zh": "亚庇市立清真寺",
+          "en": "Kota Kinabalu City Mosque"
+        },
+        "width": 1182,
+        "height": 664
+      },
+      {
+        "src": "images/malaysia-tanjung-aru.webp",
+        "caption": {
+          "zh": "丹绒亚路的日落",
+          "en": "Sunset at Tanjung Aru"
+        },
+        "width": 1182,
+        "height": 664
+      }
+    ]
   },
   {
     "id": "rio-2026",
@@ -1036,8 +1134,8 @@ sitemap: false
       "en": "08–17 NOV 2026"
     },
     "status": {
-      "zh": "计划整理版 · 订单状态需复核",
-      "en": "Consolidated plan · reconfirm bookings"
+      "zh": "计划中 · 会议与城市探索",
+      "en": "Planned · conference & city exploration"
     },
     "intro": {
       "zh": "以 ACM MM 2026 为核心，住在 Barra 区域；会议之外，把城市景观与自然海岸留作可交换的模块。",
@@ -1083,8 +1181,8 @@ sitemap: false
       "HKG"
     ],
     "routeNote": {
-      "zh": "路线示意，不按距离比例。去程仍参考原计划；11 月 16 日从里约返程采用后续材料，航班与衔接需按航空公司通知复核。",
-      "en": "Schematic, not to scale. Outbound routing follows the earlier plan; the 16 November departure from Rio reflects later records. Reconfirm all flights and connections."
+      "zh": "香港经多哈与圣保罗前往里约，11 月 16 日从里约返程、17 日抵港；出发前复核航班衔接。",
+      "en": "Travel from Hong Kong via Doha and São Paulo to Rio, leaving Rio on 16 November and arriving in Hong Kong on 17 November; reconfirm flight connections before departure."
     },
     "days": [
       {
@@ -1139,8 +1237,8 @@ sitemap: false
           "en": "Flexible day in Rio"
         },
         "activity": {
-          "zh": "天气允许时选一项城市或海岸活动；核对次日机场接送并整理行李。不再沿用旧稿的圣保罗过夜方案。",
-          "en": "Choose one city or coastal activity if conditions allow; reconfirm the airport transfer and pack. The older São Paulo overnight plan is superseded."
+          "zh": "天气允许时选一项城市或海岸活动；核对次日机场接送并整理行李。",
+          "en": "Choose one city or coastal activity if conditions allow, then confirm the airport transfer and pack."
         },
         "stay": {
           "zh": "里约",
@@ -1194,12 +1292,12 @@ sitemap: false
     ],
     "checks": [
       {
-        "zh": "以最新订单核对完整去返程、托运行李、转机与接送；不要使用旧截图代替航空公司通知。",
-        "en": "Check current bookings for all flights, baggage, connections and transfers; old screenshots do not replace airline notices."
+        "zh": "出发前核对完整去返程、托运行李、转机与接送，留意航空公司的最新通知。",
+        "en": "Before departure, confirm the full return itinerary, checked baggage, connections and transfers, and monitor airline updates."
       },
       {
-        "zh": "酒店区域采用后续住宿材料；具体酒店、房号和订单不放在公开网页。",
-        "en": "The accommodation area follows later records; hotel identity, room and booking details stay off this public page."
+        "zh": "以 Barra 区域为会议期间的住宿与出行基地，按交通情况安排每日通勤。",
+        "en": "Use Barra as the conference base, planning daily transfers around traffic conditions."
       },
       {
         "zh": "¥20,000 是原预算目标，并非实际消费；预留约 ¥2,000 缓冲，机票与住宿重新核价。",
@@ -1228,10 +1326,6 @@ sitemap: false
         "https://wwwnc.cdc.gov/travel/destinations/traveler/none/brazil"
       ]
     ],
-    "provenance": {
-      "zh": "原规划：2026-07-24；回程与住宿依据后续材料更新。会议日期与会场于 2026-10-14 核对。未实时核价，未核验当前订单状态。",
-      "en": "Original plan: 24 July 2026; return routing and stay updated from later records. Conference dates and venue checked on 14 October 2026. Prices and current booking status have not been revalidated."
-    },
     "kind": "planned"
   },
   {
@@ -1297,8 +1391,8 @@ sitemap: false
       "LAS / SFO / HKG"
     ],
     "routeNote": {
-      "zh": "路线示意，不按距离比例。采用 9 月更新版，移除旧稿中的圣迭戈；所有日期按当地日期理解，航班时刻未重新验证。",
-      "en": "Schematic, not to scale. Uses the September revision without San Diego. Dates are local; flight times have not been revalidated."
+      "zh": "旧金山入境后前往拉斯维加斯，再串联洛杉矶与棕榈泉，最后返回拉斯维加斯并经旧金山离境。日期按当地日期理解。",
+      "en": "Enter through San Francisco and continue to Las Vegas, Los Angeles and Palm Springs, then return to Las Vegas and depart via San Francisco. Dates are local."
     },
     "days": [
       {
@@ -1449,8 +1543,8 @@ sitemap: false
     ],
     "checks": [
       {
-        "zh": "确认真实航班和美国入境／转机安排；网页不是机票或签证材料。",
-        "en": "Confirm actual flights and US entry/connection arrangements; this webpage is not a ticket or visa document."
+        "zh": "出发前确认航班、入境和转机安排，预留国际抵达后的交通时间。",
+        "en": "Confirm flights, entry and connections before departure, allowing time for onward transport after international arrival."
       },
       {
         "zh": "首间 Vegas 客房从 1 月 3 日晚起订，提前确认凌晨抵达不会被视为 no-show。",
@@ -1483,18 +1577,14 @@ sitemap: false
         "https://quickmap.dot.ca.gov/"
       ]
     ],
-    "provenance": {
-      "zh": "采用 2026-09-01 更新的页面与行程资料；英文旧版曾包含圣迭戈，本版两种语言统一去除。整理于 2026-10-14，所有预订仍待重新核对。",
-      "en": "Based on the page and itinerary revision of 1 September 2026. An older English version included San Diego; both languages now omit it. Consolidated on 14 October 2026; bookings remain subject to reconfirmation."
-    },
     "kind": "planned"
   }
 ]</script>
 <script>
 const trips=JSON.parse(document.getElementById('travel-data').textContent),$=id=>document.getElementById(id);
-const ui={zh:{title:'全球旅游计划',tagline:'把去过的地方与下一段旅程，收进同一本路书。按旅游目的、行程安排与攻略参考，留下可复用的路线。',purpose:'旅游目的',schedule:'行程安排',modules:'攻略参考',checks:'出行提示',visited:'已去过',planned:'计划中',all:'全部',sources:'官方参考与材料说明',print:'打印当前语言',download:'下载双语行程 .md',public:'公开的精简行程；不是预订凭证。隐藏入口不提供访问保护，证件与订单请另行保存。',footer:'整理日期 2026.10.14 · 两种语言共用一份行程数据',home:'返回个人主页 ↗',heads:['日期／片段','城市／路线','活动安排','类型／状态'],selected:'正在查看',view:'查看行程 →',downloaded:'已生成双语 Markdown 行程。',stay:'住宿／状态'},en:{title:'Global travel plans',tagline:'Places visited and journeys ahead, in one small atlas. Travel purpose, itineraries and practical references for routes worth reusing.',purpose:'Travel purpose',schedule:'Itinerary',modules:'Travel references',checks:'Practical notes',visited:'Visited',planned:'Planned',all:'All',sources:'Official references & source notes',print:'Print this language',download:'Download bilingual .md',public:'A public planning summary, not a booking confirmation. A hidden entry does not restrict access; keep identity and booking documents separately.',footer:'Consolidated 14 OCT 2026 · One itinerary source, two languages',home:'Back to homepage ↗',heads:['Date / segment','City / route','Activities','Type / status'],selected:'Currently viewing',view:'View itinerary →',downloaded:'Bilingual Markdown itinerary generated.',stay:'Stay / status'}};
+const ui={zh:{title:'全球旅游计划',tagline:'把去过的地方与下一段旅程，收进同一本路书。按旅游目的、行程安排与攻略参考，留下可复用的路线。',purpose:'旅游目的',schedule:'行程安排',modules:'攻略参考',checks:'出行提示',visited:'已去过',planned:'计划中',all:'全部',sources:'官方攻略入口',print:'打印当前语言',download:'下载双语行程 .md',public:'旅行路线与攻略参考。再次出发前，请核对景点开放时间、交通与天气。',footer:'更新于 2026.10.14 · 旅行回顾与未来计划',home:'返回个人主页 ↗',heads:['当地日期','城市／路线','活动安排','类型／状态'],selected:'正在查看',view:'查看行程 →',downloaded:'已生成双语 Markdown 行程。',stay:'住宿／状态'},en:{title:'Global travel plans',tagline:'Places visited and journeys ahead, in one small atlas. Travel purpose, itineraries and practical references for routes worth reusing.',purpose:'Travel purpose',schedule:'Itinerary',modules:'Travel references',checks:'Practical notes',visited:'Visited',planned:'Planned',all:'All',sources:'Official travel references',print:'Print this language',download:'Download bilingual .md',public:'Routes and practical travel references. Check attraction hours, transport and weather before setting out again.',footer:'Updated 14 OCT 2026 · Travel journals & future plans',home:'Back to homepage ↗',heads:['Local date','City / route','Activities','Type / status'],selected:'Currently viewing',view:'View itinerary →',downloaded:'Bilingual Markdown itinerary generated.',stay:'Stay / status'}};
 let lang=new URLSearchParams(location.search).get('lang')==='en'?'en':'zh',selected=trips.find(t=>t.id===location.hash.slice(1))||trips[0];
-let category=selected.kind;
+let category='all';
 const value=x=>typeof x==='string'?x:x[lang];
 function text(tag,content){const e=document.createElement(tag);e.textContent=content;return e;}
 function list(id,items){$(id).replaceChildren(...items.map(x=>text('li',value(x))));}
@@ -1504,16 +1594,18 @@ document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed
 $('itinerary').dataset.kind=t.kind;
 $('filters').replaceChildren(...['visited','planned','all'].map(kind=>{const b=text('button',u[kind]+' · '+trips.filter(x=>kind==='all'||x.kind===kind).length);b.setAttribute('aria-pressed',category===kind);b.addEventListener('click',()=>{category=kind;if(kind!=='all'&&selected.kind!==kind)selected=trips.find(x=>x.kind===kind);updateURL();render();});return b;}));
 $('trips').replaceChildren(...trips.filter(x=>category==='all'||x.kind===category).map(trip=>{const b=document.createElement('button');b.className='trip-choice';b.dataset.kind=trip.kind;b.setAttribute('aria-pressed',trip.id===t.id);b.setAttribute('aria-controls','itinerary');b.append(text('strong',trip.code));const copy=text('span',value(trip.region));copy.append(text('small',value(trip.dates)),text('i',trip.id===t.id?u.selected:u.view));b.append(copy);b.addEventListener('click',()=>{selected=trip;updateURL();render();});return b;}));
-$('region').textContent=value(t.region)+' / '+value(t.dates);$('tripTitle').textContent=value(t.title);$('status').textContent=value(t.status);$('intro').textContent=value(t.intro);$('routeNote').textContent=value(t.routeNote);$('provenance').textContent=value(t.provenance);
+$('region').textContent=value(t.region)+' / '+value(t.dates);$('tripTitle').textContent=value(t.title);$('status').textContent=value(t.status);$('intro').textContent=value(t.intro);$('routeNote').textContent=value(t.routeNote);
 $('facts').replaceChildren(...t.facts.map(([a,b])=>{const el=document.createElement('div');el.className='fact';el.append(text('small',value(a)),text('strong',value(b)));return el;}));
 const head=document.createElement('tr');u.heads.forEach(h=>{const e=text('th',h);e.scope='col';head.append(e);});$('thead').replaceChildren(head);
 $('days').replaceChildren(...t.days.map(day=>{const row=document.createElement('tr');[day.date,value(day.city),value(day.activity),value(day.stay)].forEach(v=>row.append(text('td',v)));return row;}));list('modules',t.modules);list('checks',t.checks);
-$('sources').replaceChildren(...t.sources.map(([label,url])=>{const a=text('a',label+' ↗');a.href=url;a.rel='noreferrer';return a;}));$('notice').textContent='';drawRoute(t.route);}
+$('sources').replaceChildren(...t.sources.map(([label,url])=>{const a=text('a',label+' ↗');a.href=url;a.rel='noreferrer';return a;}));$('notice').textContent='';drawRoute(t.route);renderPhotos(t);}
+
+function renderPhotos(trip){const photos=trip.photos||[];$('gallery').hidden=photos.length===0;$('gallery').replaceChildren(...photos.map(photo=>{const figure=document.createElement('figure'),link=document.createElement('a'),img=document.createElement('img');link.href=photo.src;link.target='_blank';link.rel='noopener';link.setAttribute('aria-label',value(photo.caption)+(lang==='zh'?' · 打开照片':' · Open photo'));img.src=photo.src;img.alt=value(photo.caption);img.width=photo.width;img.height=photo.height;img.loading='lazy';img.decoding='async';link.append(img);figure.append(link,text('figcaption',value(photo.caption)));return figure;}));}
 function drawRoute(points){$('mobileRoute').replaceChildren(...points.map((p,i)=>text('span',(i?'→ ':'')+p)));const ns='http://www.w3.org/2000/svg',plot=$('route');plot.replaceChildren();const make=(tag,attrs,content='')=>{const e=document.createElementNS(ns,tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);e.textContent=content;return e;};plot.append(make('line',{x1:90,y1:52,x2:810,y2:52,stroke:'#adc5d2','stroke-width':2}));points.forEach((p,i)=>{const x=90+i*720/(points.length-1);plot.append(make('circle',{cx:x,cy:52,r:7,fill:i===2?'#28755b':'#256b89',stroke:'white','stroke-width':3}),make('text',{x,y:88,'text-anchor':'middle',fill:'#173c50','font-size':13,'font-family':'monospace'},p));});}
 function updateURL(){history.replaceState(null,'',`?lang=${lang}#${selected.id}`);}
-document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;updateURL();render();}));window.addEventListener('hashchange',()=>{selected=trips.find(t=>t.id===location.hash.slice(1))||trips[0];category=selected.kind;render();});
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;updateURL();render();}));window.addEventListener('hashchange',()=>{selected=trips.find(t=>t.id===location.hash.slice(1))||trips[0];category='all';render();});
 $('print').addEventListener('click',()=>window.print());
 function bilingual(x){return x.zh+' / '+x.en;}
-function markdown(t){let lines=[`# ${bilingual(t.title)}`,bilingual(t.dates),'',bilingual(t.status),'','## 旅游目的 / Travel purpose','',bilingual(t.intro),'',...t.facts.map(([label,val])=>'- '+bilingual(label)+': '+bilingual(val)),'',`Route: ${t.route.join(' → ')}`,'',bilingual(t.routeNote),'','## 行程安排 / Itinerary',''];for(const d of t.days)lines.push(`### ${d.date} · ${bilingual(d.city)}`,d.activity.zh,d.activity.en,`类型／状态 / Type / status: ${bilingual(d.stay)}`,'');for(const [title,items]of[['攻略参考 / Travel references',t.modules],['出行提示 / Practical notes',t.checks]])lines.push('## '+title,...items.map(x=>'- '+bilingual(x)),'');lines.push('## 来源与版本 / Sources & version',...t.sources.map(([name,url])=>`- [${name}](${url})`),'',bilingual(t.provenance),'',ui.zh.public,ui.en.public);return lines.join('\n');}
+function markdown(t){let lines=[`# ${bilingual(t.title)}`,bilingual(t.dates),'',bilingual(t.status),'','## 旅游目的 / Travel purpose','',bilingual(t.intro),'',...t.facts.map(([label,val])=>'- '+bilingual(label)+': '+bilingual(val)),'',`Route: ${t.route.join(' → ')}`,'',bilingual(t.routeNote),'','## 行程安排 / Itinerary',''];for(const d of t.days)lines.push(`### ${d.date} · ${bilingual(d.city)}`,d.activity.zh,d.activity.en,`类型／状态 / Type / status: ${bilingual(d.stay)}`,'');for(const [title,items]of[['攻略参考 / Travel references',t.modules],['出行提示 / Practical notes',t.checks]])lines.push('## '+title,...items.map(x=>'- '+bilingual(x)),'');lines.push('## 官方攻略入口 / Official travel references',...t.sources.map(([name,url])=>`- [${name}](${url})`),'',ui.zh.public,ui.en.public);if(t.photos?.length)lines.push('','## 旅途风景 / Travel photographs','',...t.photos.map(p=>`![${bilingual(p.caption)}](https://rwlinno.github.io/travel/${p.src})`));return lines.join('\n');}
 $('download').addEventListener('click',()=>{const url=URL.createObjectURL(new Blob([markdown(selected)],{type:'text/markdown;charset=utf-8'})),a=document.createElement('a');a.href=url;a.download=selected.id+'-bilingual.md';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$('notice').textContent=ui[lang].downloaded;});render();
 </script></body></html>
